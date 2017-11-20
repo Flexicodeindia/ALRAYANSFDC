@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This form is the managers 1-2-1 form to be used for monthly 1-2-1 discussions with Line managers.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Feedback_from_Staff__c</fullName>
+        <externalId>false</externalId>
+        <label>Feedback from Staff</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Managers_Comments_on_Review_Period__c</fullName>
+        <externalId>false</externalId>
+        <label>Managers Comments on Review Period</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Managers_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Managers Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>X1_2_1_Form_Manager</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Period_of_review__c</fullName>
+        <externalId>false</externalId>
+        <label>Period of review</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>January</fullName>
+                    <default>false</default>
+                    <label>January</label>
+                </value>
+                <value>
+                    <fullName>February</fullName>
+                    <default>false</default>
+                    <label>February</label>
+                </value>
+                <value>
+                    <fullName>March</fullName>
+                    <default>false</default>
+                    <label>March</label>
+                </value>
+                <value>
+                    <fullName>April</fullName>
+                    <default>false</default>
+                    <label>April</label>
+                </value>
+                <value>
+                    <fullName>May</fullName>
+                    <default>false</default>
+                    <label>May</label>
+                </value>
+                <value>
+                    <fullName>June</fullName>
+                    <default>false</default>
+                    <label>June</label>
+                </value>
+                <value>
+                    <fullName>July</fullName>
+                    <default>false</default>
+                    <label>July</label>
+                </value>
+                <value>
+                    <fullName>August</fullName>
+                    <default>false</default>
+                    <label>August</label>
+                </value>
+                <value>
+                    <fullName>September</fullName>
+                    <default>false</default>
+                    <label>September</label>
+                </value>
+                <value>
+                    <fullName>October</fullName>
+                    <default>false</default>
+                    <label>October</label>
+                </value>
+                <value>
+                    <fullName>November</fullName>
+                    <default>false</default>
+                    <label>November</label>
+                </value>
+                <value>
+                    <fullName>December</fullName>
+                    <default>false</default>
+                    <label>December</label>
+                </value>
+                <value>
+                    <fullName>January 2016</fullName>
+                    <default>false</default>
+                    <label>January 2016</label>
+                </value>
+                <value>
+                    <fullName>February 2016</fullName>
+                    <default>false</default>
+                    <label>February 2016</label>
+                </value>
+                <value>
+                    <fullName>March 2016</fullName>
+                    <default>false</default>
+                    <label>March 2016</label>
+                </value>
+                <value>
+                    <fullName>April 2016</fullName>
+                    <default>false</default>
+                    <label>April 2016</label>
+                </value>
+                <value>
+                    <fullName>May 2016</fullName>
+                    <default>false</default>
+                    <label>May 2016</label>
+                </value>
+                <value>
+                    <fullName>June 2016</fullName>
+                    <default>false</default>
+                    <label>June 2016</label>
+                </value>
+                <value>
+                    <fullName>July 2016</fullName>
+                    <default>false</default>
+                    <label>July 2016</label>
+                </value>
+                <value>
+                    <fullName>August 2016</fullName>
+                    <default>false</default>
+                    <label>August 2016</label>
+                </value>
+                <value>
+                    <fullName>September 2016</fullName>
+                    <default>false</default>
+                    <label>September 2016</label>
+                </value>
+                <value>
+                    <fullName>October 2016</fullName>
+                    <default>false</default>
+                    <label>October 2016</label>
+                </value>
+                <value>
+                    <fullName>November 2016</fullName>
+                    <default>false</default>
+                    <label>November 2016</label>
+                </value>
+                <value>
+                    <fullName>December 2016</fullName>
+                    <default>false</default>
+                    <label>December 2016</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Role_and_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Community Business Development Manager</fullName>
+                    <default>false</default>
+                    <label>Community Business Development Manager</label>
+                </value>
+                <value>
+                    <fullName>Customer Services Manager</fullName>
+                    <default>false</default>
+                    <label>Customer Services Manager</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Deputy Contact Centre Manager</fullName>
+                    <default>false</default>
+                    <label>Deputy Contact Centre Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Service Team Leader</fullName>
+                    <default>false</default>
+                    <label>Sales &amp; Service Team Leader</label>
+                </value>
+                <value>
+                    <fullName>Senior Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Senior Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Senior Business Development manager</fullName>
+                    <default>false</default>
+                    <label>Senior Business Development manager</label>
+                </value>
+                <value>
+                    <fullName>Commercial BDM</fullName>
+                    <default>false</default>
+                    <label>Commercial BDM</label>
+                </value>
+                <value>
+                    <fullName>Head of Customer Services</fullName>
+                    <default>false</default>
+                    <label>Head of Customer Services</label>
+                </value>
+                <value>
+                    <fullName>Contact Centre Manager</fullName>
+                    <default>false</default>
+                    <label>Contact Centre Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staff_Members_comments_on_review_period__c</fullName>
+        <externalId>false</externalId>
+        <label>Staff Members comments on review period</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Staff_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Staff Name</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipName>X1_2_1_Form_Manager</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>X1_Action_Points_from_last_One_to_One__c</fullName>
+        <externalId>false</externalId>
+        <label>1. Action Points from last One to One</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X2_Updates_since_last_month__c</fullName>
+        <externalId>false</externalId>
+        <label>2. Updates since last month</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X3_Progress_against_performance_Objectiv__c</fullName>
+        <externalId>false</externalId>
+        <label>3. Progress against performance Objectiv</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X4_Risks__c</fullName>
+        <externalId>false</externalId>
+        <label>4. Risks</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X5_Departmental_Project_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>5. Departmental Project Status</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X6_Development_Coaching__c</fullName>
+        <externalId>false</externalId>
+        <label>6. Development &amp; Coaching</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X7_Staffing_Personnel_Issues_Admin__c</fullName>
+        <externalId>false</externalId>
+        <label>7. Staffing/Personnel Issues/Admin</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X8_Any_other_Issues_Points_to_raise__c</fullName>
+        <externalId>false</externalId>
+        <label>8. Any other Issues/Points to raise</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>X9_Specific_Action_Points__c</fullName>
+        <externalId>false</externalId>
+        <label>9. Specific Action Points</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <label>Manager 1-2-1 Form</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Manager 1-2-1 Form Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>1-2-1 Form Manager</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

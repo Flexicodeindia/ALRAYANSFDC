@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_with_IBB_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_with_IBB__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account with IBB Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_with_IBB__c</fullName>
+        <externalId>false</externalId>
+        <label>Account with IBB</label>
+        <referenceTo>Account_with_IBB__c</referenceTo>
+        <relationshipLabel>Account Holders</relationshipLabel>
+        <relationshipName>Account_Holders</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Customer_EBS_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer EBS ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_EBS_ID_from_profile__c</fullName>
+        <externalId>false</externalId>
+        <formula>Prospect_Customer__r.EBS_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer EBS ID  from profile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deactivation_Reason__c</fullName>
+        <description>C0560</description>
+        <externalId>false</externalId>
+        <label>Deactivation Reason</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>EBS ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>C0560</description>
+        <externalId>false</externalId>
+        <label>Is Active</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Account_Holder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Primary Account Holder</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Primary_Account_Holder__c, 1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_flag_is_correct__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Primary_Account_Holder__c, 
+
+IF(Customer_EBS_ID_from_profile__c = Account_with_IBB__r.Primary_SFDC_Account__r.EBS_ID__c , true, false) 
+, 
+
+IF(Customer_EBS_ID_from_profile__c = Account_with_IBB__r.Primary_SFDC_Account__r.EBS_ID__c , false, true) 
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary flag is correct</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prospect_Customer__c</fullName>
+        <externalId>false</externalId>
+        <label>Prospect/Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Holders</relationshipLabel>
+        <relationshipName>Account_Holders</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Relationship_To_Primary_Applicant1__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship To Primary Applicant</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_To_Primary_Applicant__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Prospect_Customer__r.Relationship_To_Primary_Applicant__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Relationship To Primary Applicant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Relationship Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signatory_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Signatory Group</label>
+        <referenceTo>Signatory_Group__c</referenceTo>
+        <relationshipLabel>Account Holders</relationshipLabel>
+        <relationshipName>Account_Holders</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Account Holder</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Account Holder Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Account Holders</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupFilterFields>Customer_EBS_ID__c</lookupFilterFields>
+        <lookupFilterFields>EBS_ID__c</lookupFilterFields>
+        <lookupFilterFields>Prospect_Customer__c</lookupFilterFields>
+        <lookupFilterFields>Primary_Account_Holder__c</lookupFilterFields>
+        <lookupFilterFields>Account_with_IBB__c</lookupFilterFields>
+        <searchFilterFields>EBS_ID__c</searchFilterFields>
+        <searchFilterFields>Customer_EBS_ID__c</searchFilterFields>
+        <searchFilterFields>Prospect_Customer__c</searchFilterFields>
+        <searchFilterFields>Account_with_IBB__c</searchFilterFields>
+        <searchResultsAdditionalFields>Account_with_IBB__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Primary_Account_Holder__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>EBS_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Prospect_Customer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Relationship_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Relationship_To_Primary_Applicant__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

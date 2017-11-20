@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Any_general_comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Any general comments</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Best_service__c</fullName>
+        <description>Who in IT provides the best customer service and why?</description>
+        <externalId>false</externalId>
+        <label>Best service</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_understanding_improvement__c</fullName>
+        <description>Has the business understanding from IT improved since June of this year?</description>
+        <externalId>false</externalId>
+        <label>Business understanding improvement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Have_you_raised_a_case_with_IT__c</fullName>
+        <description>Have you raise a case with IT in the last 3 months?</description>
+        <externalId>false</externalId>
+        <label>Have you raised a case with IT</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key_priority_for_2014__c</fullName>
+        <description>In your view, where should the IT budget be spent in 2015</description>
+        <externalId>false</externalId>
+        <label>Key priority for 2014</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New IT equipment</fullName>
+                    <default>false</default>
+                    <label>New IT equipment</label>
+                </value>
+                <value>
+                    <fullName>Faster internet connection</fullName>
+                    <default>false</default>
+                    <label>Faster internet connection</label>
+                </value>
+                <value>
+                    <fullName>Faster applications (such as the speed of EBS)</fullName>
+                    <default>false</default>
+                    <label>Faster applications (such as the speed of EBS)</label>
+                </value>
+                <value>
+                    <fullName>Enhancing existing systems</fullName>
+                    <default>false</default>
+                    <label>Enhancing existing systems</label>
+                </value>
+                <value>
+                    <fullName>Replacing existing systems</fullName>
+                    <default>false</default>
+                    <label>Replacing existing systems</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Level_of_automation_with_IBB_systems__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Level of automation with IBB systems</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(CreatedBy.Branch__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Satisfaction_with_IT__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Overall Satisfaction with IT</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Raise_a_case__c</fullName>
+        <description>How do you usually raise a case with the IT Servicedesk?</description>
+        <externalId>false</externalId>
+        <label>Raise a case</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Face to face</fullName>
+                    <default>false</default>
+                    <label>Face to face</label>
+                </value>
+                <value>
+                    <fullName>Over the phone</fullName>
+                    <default>false</default>
+                    <label>Over the phone</label>
+                </value>
+                <value>
+                    <fullName>Through Salesforce</fullName>
+                    <default>false</default>
+                    <label>Through Salesforce</label>
+                </value>
+                <value>
+                    <fullName>By email</fullName>
+                    <default>false</default>
+                    <label>By email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_improvement__c</fullName>
+        <description>Has the resolution time to your IT case improved since June of this year?</description>
+        <externalId>false</externalId>
+        <label>Resolution improvement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Resolution_satisfaction__c</fullName>
+        <description>On a scale of 1 to 10 where 10 is very satisfied and 1 is very dissatisfied, how satisfied are you with the time taken to resolve your IT case?</description>
+        <externalId>false</externalId>
+        <label>Resolution satisfaction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Response_improvement__c</fullName>
+        <description>Has the response time to your IT case improved since June of this year?</description>
+        <externalId>false</externalId>
+        <label>Response improvement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Response_satisfaction__c</fullName>
+        <description>On a scale of 1 to 10 where 10 is very satisfied and 1 is very dissatisfied, how satisfied are you with the time taken to respond to your IT case?</description>
+        <externalId>false</externalId>
+        <label>Response satisfaction</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_with_IBB_s_IT_kit__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This includes items such as desktops, printers etc.
+Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Satisfaction with IBB&apos;s IT kit</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_with_IBB_s_systems__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This includes all of IBB&apos;s systems such as EBS, Salesforce etc. 
+Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Satisfaction with day 2 day applications</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_taken_to_resolve_Ncritical_issues__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Time taken to resolve noncritical issues</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_taken_to_resolve_critical_issues__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Time taken to resolve critical issues</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Understand_business_needs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where 10 is extremely satisfied and 1 is extremely dissatisfied.</inlineHelpText>
+        <label>Level of business understanding</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>IT Survey</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ITS{0000}</displayFormat>
+        <label>IT Survey Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>IT Surveys</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

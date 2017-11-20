@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>DynamicPageConfig__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DynamicPageConfig</label>
+        <referenceTo>DynamicPageConfig__c</referenceTo>
+        <relationshipLabel>Page Layout Maps</relationshipLabel>
+        <relationshipName>Page_Layout_Maps</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Text( Type__c) = &apos;User&apos;, if(isBlank(ProductEventDirector__c), 15 ,10 ), 
+
+if(Text(Type__c) = &apos;Profile&apos;, if(isBlank(ProductEventDirector__c), 25 ,20 ), 
+
+IF( and(isBlank(Record_Type__c),isBlank(ProductEventDirector__c)) , 40 , if(isBlank(ProductEventDirector__c), 35 ,30 )) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductEventDirector__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ProductEventDirector</label>
+        <referenceTo>ProductEventDirector__c</referenceTo>
+        <relationshipLabel>Page Layout Maps</relationshipLabel>
+        <relationshipName>Page_Layout_Maps</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Profile_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Profile Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Record_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Record Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SObject__c</fullName>
+        <externalId>false</externalId>
+        <label>SObject</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>User</fullName>
+                    <default>false</default>
+                    <label>User</label>
+                </value>
+                <value>
+                    <fullName>Profile</fullName>
+                    <default>false</default>
+                    <label>Profile</label>
+                </value>
+                <value>
+                    <fullName>Global</fullName>
+                    <default>false</default>
+                    <label>Global</label>
+                </value>
+                <value>
+                    <fullName>RecordType</fullName>
+                    <default>false</default>
+                    <label>RecordType</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Use_Standard_Layout__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Use Standard Layout</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Page_Layout_Maps</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Page Layout Map</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>User__c</columns>
+        <columns>DynamicPageConfig__c</columns>
+        <columns>ProductEventDirector__c</columns>
+        <columns>Profile_Name__c</columns>
+        <columns>Record_Type__c</columns>
+        <columns>Type__c</columns>
+        <columns>Use_Standard_Layout__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Defaults</fullName>
+        <columns>NAME</columns>
+        <columns>Record_Type__c</columns>
+        <columns>DynamicPageConfig__c</columns>
+        <columns>Type__c</columns>
+        <columns>Use_Standard_Layout__c</columns>
+        <columns>User__c</columns>
+        <columns>Profile_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Global</value>
+        </filters>
+        <label>Defaults</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>Map-{0000}</displayFormat>
+        <label>Page Layout Map Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Page Layout Maps</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Cant_have_record_type_and_director</fullName>
+        <active>true</active>
+        <errorConditionFormula>if(AND(Not(isBlank(ProductEventDirector__c)),Not(isBlank(Record_Type__c))),true,false )</errorConditionFormula>
+        <errorMessage>You can&apos;t select both record type and director</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Profile_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(AND(Text(Type__c) = &apos;Profile&apos;, isBlank(Profile_Name__c) ) , true, false)</errorConditionFormula>
+        <errorMessage>Profile name required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>User_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(AND(Text(Type__c) = &apos;User&apos;, isBlank(User__c) ) , true, false)</errorConditionFormula>
+        <errorMessage>User required</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

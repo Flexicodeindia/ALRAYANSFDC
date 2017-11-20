@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>NumberOfClosedOpportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Closed Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities__c</fullName>
+        <description>The number of opportunities which have at some stage had this status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of opportunities which have at some stage had this status.</inlineHelpText>
+        <label>Number of Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities__c</fullName>
+        <description>The number of opportunities which have at some stage had this status and have been closed won.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of opportunities which have at some stage had this status and have been closed won.</inlineHelpText>
+        <label>Number of Won Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOppsWithCompletedDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Won Opps with Completed Date</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RunDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Run Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status/stage.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status/stage.</inlineHelpText>
+        <label>Status</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalNumberOfOpportunities__c</fullName>
+        <description>The total number of opportunities in Salesforce when the script was run.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of opportunities in Salesforce when the script was run.</inlineHelpText>
+        <label>Total Number of Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalStatusAgeToWon__c</fullName>
+        <description>The total number of days between this stage and closed won, for all opportunities which have been at this stage and have been set to closed won.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of days between this stage and closed won, for all opportunities which have been at this stage and have been set to closed won.</inlineHelpText>
+        <label>Total Status Age to Won</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>HPP Status Figures</label>
+    <visibility>Protected</visibility>
+</CustomObject>

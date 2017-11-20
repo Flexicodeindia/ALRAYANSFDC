@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Soql_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 10</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 1</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 2</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 3</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 4</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 5</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 6</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 7</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 8</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Soql_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Soql 9</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>SOQLQuery</label>
+    <visibility>Protected</visibility>
+</CustomObject>

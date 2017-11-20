@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Asset_Tag__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique Asset identifier</description>
+        <externalId>false</externalId>
+        <label>Asset Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <description>Brand of the product manufacturer</description>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Acer</fullName>
+                    <default>false</default>
+                    <label>Acer</label>
+                </value>
+                <value>
+                    <fullName>Gateway</fullName>
+                    <default>false</default>
+                    <label>Gateway</label>
+                </value>
+                <value>
+                    <fullName>Packard Bell</fullName>
+                    <default>false</default>
+                    <label>Packard Bell</label>
+                </value>
+                <value>
+                    <fullName>Asus</fullName>
+                    <default>false</default>
+                    <label>Asus</label>
+                </value>
+                <value>
+                    <fullName>Dell</fullName>
+                    <default>false</default>
+                    <label>Dell</label>
+                </value>
+                <value>
+                    <fullName>Hewlett-Packard</fullName>
+                    <default>false</default>
+                    <label>Hewlett-Packard</label>
+                </value>
+                <value>
+                    <fullName>Lenovo</fullName>
+                    <default>false</default>
+                    <label>Lenovo</label>
+                </value>
+                <value>
+                    <fullName>Samsung Electronics</fullName>
+                    <default>false</default>
+                    <label>Samsung Electronics</label>
+                </value>
+                <value>
+                    <fullName>LG</fullName>
+                    <default>false</default>
+                    <label>LG</label>
+                </value>
+                <value>
+                    <fullName>Apple</fullName>
+                    <default>false</default>
+                    <label>Apple</label>
+                </value>
+                <value>
+                    <fullName>Brother</fullName>
+                    <default>false</default>
+                    <label>Brother</label>
+                </value>
+                <value>
+                    <fullName>Canon</fullName>
+                    <default>false</default>
+                    <label>Canon</label>
+                </value>
+                <value>
+                    <fullName>HP</fullName>
+                    <default>false</default>
+                    <label>HP</label>
+                </value>
+                <value>
+                    <fullName>Konica Minolta</fullName>
+                    <default>false</default>
+                    <label>Konica Minolta</label>
+                </value>
+                <value>
+                    <fullName>Kyocera</fullName>
+                    <default>false</default>
+                    <label>Kyocera</label>
+                </value>
+                <value>
+                    <fullName>Lexmark</fullName>
+                    <default>false</default>
+                    <label>Lexmark</label>
+                </value>
+                <value>
+                    <fullName>OKI</fullName>
+                    <default>false</default>
+                    <label>OKI</label>
+                </value>
+                <value>
+                    <fullName>Olivetti</fullName>
+                    <default>false</default>
+                    <label>Olivetti</label>
+                </value>
+                <value>
+                    <fullName>Ricoh</fullName>
+                    <default>false</default>
+                    <label>Ricoh</label>
+                </value>
+                <value>
+                    <fullName>Samsung</fullName>
+                    <default>false</default>
+                    <label>Samsung</label>
+                </value>
+                <value>
+                    <fullName>Epson</fullName>
+                    <default>false</default>
+                    <label>Epson</label>
+                </value>
+                <value>
+                    <fullName>TVS Electronics</fullName>
+                    <default>false</default>
+                    <label>TVS Electronics</label>
+                </value>
+                <value>
+                    <fullName>Xerox</fullName>
+                    <default>false</default>
+                    <label>Xerox</label>
+                </value>
+                <value>
+                    <fullName>Microsoft</fullName>
+                    <default>false</default>
+                    <label>Microsoft</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Computer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Computer Name</label>
+        <length>70</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost including VAT</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_including_VAT__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost including VAT</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Device_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Device Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Desktop</fullName>
+                    <default>false</default>
+                    <label>Desktop</label>
+                </value>
+                <value>
+                    <fullName>AiO</fullName>
+                    <default>false</default>
+                    <label>AiO</label>
+                </value>
+                <value>
+                    <fullName>Laptopm</fullName>
+                    <default>false</default>
+                    <label>Laptopm</label>
+                </value>
+                <value>
+                    <fullName>Surface</fullName>
+                    <default>false</default>
+                    <label>Surface</label>
+                </value>
+                <value>
+                    <fullName>Dock - Surface</fullName>
+                    <default>false</default>
+                    <label>Dock - Surface</label>
+                </value>
+                <value>
+                    <fullName>Dock - PC</fullName>
+                    <default>false</default>
+                    <label>Dock - PC</label>
+                </value>
+                <value>
+                    <fullName>Desk Phone</fullName>
+                    <default>false</default>
+                    <label>Desk Phone</label>
+                </value>
+                <value>
+                    <fullName>Monitor</fullName>
+                    <default>false</default>
+                    <label>Monitor</label>
+                </value>
+                <value>
+                    <fullName>MFP</fullName>
+                    <default>false</default>
+                    <label>MFP</label>
+                </value>
+                <value>
+                    <fullName>MFD</fullName>
+                    <default>false</default>
+                    <label>MFD</label>
+                </value>
+                <value>
+                    <fullName>Projector</fullName>
+                    <default>false</default>
+                    <label>Projector</label>
+                </value>
+                <value>
+                    <fullName>TV</fullName>
+                    <default>false</default>
+                    <label>TV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IT_Component_Specification__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IT Component Specification</label>
+        <referenceTo>IT_Component_Specification__c</referenceTo>
+        <relationshipLabel>Asset Details</relationshipLabel>
+        <relationshipName>Asset_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Installation_Date__c</fullName>
+        <description>The date the IT Component was first installed</description>
+        <externalId>false</externalId>
+        <label>Installation Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Installed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user who installed the product</description>
+        <externalId>false</externalId>
+        <label>Installed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Asset_Details1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <description>Location</description>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact Centre</fullName>
+                    <default>false</default>
+                    <label>Contact Centre</label>
+                </value>
+                <value>
+                    <fullName>East Ham</fullName>
+                    <default>false</default>
+                    <label>East Ham</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Head Office</fullName>
+                    <default>false</default>
+                    <label>Head Office</label>
+                </value>
+                <value>
+                    <fullName>HPP Team</fullName>
+                    <default>false</default>
+                    <label>HPP Team</label>
+                </value>
+                <value>
+                    <fullName>Leicester</fullName>
+                    <default>false</default>
+                    <label>Leicester</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>Premier Banking</fullName>
+                    <default>false</default>
+                    <label>Premier Banking</label>
+                </value>
+                <value>
+                    <fullName>Small Heath</fullName>
+                    <default>false</default>
+                    <label>Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Southall</fullName>
+                    <default>false</default>
+                    <label>Southall</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Knightsbridge</fullName>
+                    <default>false</default>
+                    <label>Knightsbridge</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operating_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Operating System</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Win 10</fullName>
+                    <default>false</default>
+                    <label>Win 10</label>
+                </value>
+                <value>
+                    <fullName>Win 8.1</fullName>
+                    <default>false</default>
+                    <label>Win 8.1</label>
+                </value>
+                <value>
+                    <fullName>Win 8</fullName>
+                    <default>false</default>
+                    <label>Win 8</label>
+                </value>
+                <value>
+                    <fullName>Win 7</fullName>
+                    <default>false</default>
+                    <label>Win 7</label>
+                </value>
+                <value>
+                    <fullName>XP</fullName>
+                    <default>false</default>
+                    <label>XP</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Purchase_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please ensure a copy of the PO is uploaded via notes and attachments</inlineHelpText>
+        <label>Purchase Order Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Serial_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Serial Number</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Supplier_Discount__c</fullName>
+        <defaultValue>0.00</defaultValue>
+        <description>Any Discount applied to RRP Net for the purchase</description>
+        <externalId>false</externalId>
+        <label>Supplier Discount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Supplier__c</fullName>
+        <description>List of current Suppliers</description>
+        <externalId>false</externalId>
+        <label>Supplier</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Misco</fullName>
+                    <default>false</default>
+                    <label>Misco</label>
+                </value>
+                <value>
+                    <fullName>Keltec</fullName>
+                    <default>false</default>
+                    <label>Keltec</label>
+                </value>
+                <value>
+                    <fullName>Kelway</fullName>
+                    <default>false</default>
+                    <label>Kelway</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Update_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Installation_Date__c +
+CASE( IT_Component_Specification__r.Update_Cycle_Years__c ,
+&quot;1&quot;,  365,
+&quot;2&quot;,  730,
+&quot;3&quot;,  1095,
+&quot;4&quot;, 1460,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Update Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Asset_Details</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Asset Detail</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Cost__c</columns>
+        <columns>IT_Component_Specification__c</columns>
+        <columns>Brand__c</columns>
+        <columns>Asset_Tag__c</columns>
+        <columns>Location__c</columns>
+        <columns>User__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>AssetDetail{0000}</displayFormat>
+        <label>Asset Detail Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Asset Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

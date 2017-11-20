@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestsResultsCache
+    LastClearTime="0001-01-01T00:00:00">
+    <TestClassesCache>
+        <TestClassCache>
+            <TestClassId>01pD0000000ISQQIA4</TestClassId>
+            <TestQueueId>7099E000000acc0QAA</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>testOne</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01pD0000000IRrqIAG</TestClassId>
+            <TestQueueId>7099E000000aYSMQA2</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>testOne</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+        <TestClassCache>
+            <TestClassId>01pD0000000IRrqIAG</TestClassId>
+            <TestQueueId>7099E000000aYQuQAM</TestQueueId>
+            <TestMethodsCache>
+                <TestMethodCache>
+                    <Name>testOne</Name>
+                    <TestResultStatus>Pass</TestResultStatus>
+                </TestMethodCache>
+            </TestMethodsCache>
+        </TestClassCache>
+    </TestClassesCache>
+</TestsResultsCache>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Credit_Transaction_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Transaction Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Transaction_Narritive__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Transaction Narritive</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Transaction_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Transaction Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Transaction_Narritive__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Transaction Narritive</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Credit_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Credit Acc # / We Pay Funds Via</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Debit_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Debit Acc # / We Rec Funds From</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ISO_Currency_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>ISO Currency Code</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>false</default>
+                    <label>EUR</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Debit Card</fullName>
+                    <default>false</default>
+                    <label>Debit Card</label>
+                </value>
+                <value>
+                    <fullName>Bank Transfer</fullName>
+                    <default>false</default>
+                    <label>Bank Transfer</label>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>Inter Account Transfer to</fullName>
+                    <default>false</default>
+                    <label>Inter Account Transfer to</label>
+                </value>
+                <value>
+                    <fullName>Via bankers payment</fullName>
+                    <default>false</default>
+                    <label>Via bankers payment</label>
+                </value>
+                <value>
+                    <fullName>Via CHAPS</fullName>
+                    <default>false</default>
+                    <label>Via CHAPS</label>
+                </value>
+                <value>
+                    <fullName>Via demand draft</fullName>
+                    <default>false</default>
+                    <label>Via demand draft</label>
+                </value>
+                <value>
+                    <fullName>Via mail transfer</fullName>
+                    <default>false</default>
+                    <label>Via mail transfer</label>
+                </value>
+                <value>
+                    <fullName>Via payment order</fullName>
+                    <default>false</default>
+                    <label>Via payment order</label>
+                </value>
+                <value>
+                    <fullName>Via SWIFT</fullName>
+                    <default>false</default>
+                    <label>Via SWIFT</label>
+                </value>
+                <value>
+                    <fullName>Via telegraphic transfer</fullName>
+                    <default>false</default>
+                    <label>Via telegraphic transfer</label>
+                </value>
+                <value>
+                    <fullName>Via telex</fullName>
+                    <default>false</default>
+                    <label>Via telex</label>
+                </value>
+                <value>
+                    <fullName>Faster payments</fullName>
+                    <default>false</default>
+                    <label>Faster payments</label>
+                </value>
+                <value>
+                    <fullName>Direct Debit: Lump sum</fullName>
+                    <default>false</default>
+                    <label>Direct Debit: Lump sum</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeInitial</fullName>
+                    <default>false</default>
+                    <label>AdminFeeInitial</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeFull</fullName>
+                    <default>false</default>
+                    <label>AdminFeeFull</label>
+                </value>
+                <value>
+                    <fullName>ValuationFee</fullName>
+                    <default>false</default>
+                    <label>ValuationFee</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeFullInternalTransfer</fullName>
+                    <default>false</default>
+                    <label>AdminFeeFullInternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeInitialInternalTransfer</fullName>
+                    <default>false</default>
+                    <label>AdminFeeInitialInternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeFullExternalTransfer</fullName>
+                    <default>false</default>
+                    <label>AdminFeeFullExternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>AdminFeeInitialExternalTransfer</fullName>
+                    <default>false</default>
+                    <label>AdminFeeInitialExternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeInternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeInternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeExternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeExternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>ProductSwitchFee</fullName>
+                    <default>false</default>
+                    <label>ProductSwitchFee</label>
+                </value>
+                <value>
+                    <fullName>ProductSwitchFeeInternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ProductSwitchFeeInternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>ProductSwitchFeeExternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ProductSwitchFeeExternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>Ad hoc valuation</fullName>
+                    <default>false</default>
+                    <label>Ad hoc valuation</label>
+                </value>
+                <value>
+                    <fullName>Re-issue of offer letter</fullName>
+                    <default>false</default>
+                    <label>Re-issue of offer letter</label>
+                </value>
+                <value>
+                    <fullName>Special delivery eg overseas</fullName>
+                    <default>false</default>
+                    <label>Special delivery eg overseas</label>
+                </value>
+                <value>
+                    <fullName>Copies of statement</fullName>
+                    <default>false</default>
+                    <label>Copies of statement</label>
+                </value>
+                <value>
+                    <fullName>Copies of title deeds</fullName>
+                    <default>false</default>
+                    <label>Copies of title deeds</label>
+                </value>
+                <value>
+                    <fullName>Re-inspections</fullName>
+                    <default>false</default>
+                    <label>Re-inspections</label>
+                </value>
+                <value>
+                    <fullName>Copies of correspondence</fullName>
+                    <default>false</default>
+                    <label>Copies of correspondence</label>
+                </value>
+                <value>
+                    <fullName>Redemption</fullName>
+                    <default>false</default>
+                    <label>Redemption</label>
+                </value>
+                <value>
+                    <fullName>Redemption statement after the first</fullName>
+                    <default>false</default>
+                    <label>Redemption statement after the first</label>
+                </value>
+                <value>
+                    <fullName>Post abandon legal fees</fullName>
+                    <default>false</default>
+                    <label>Post abandon legal fees</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Legal costs</fullName>
+                    <default>false</default>
+                    <label>Legal costs</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeAssisted</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeAssisted</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeDiscounted</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeDiscounted</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeAssistedInternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeAssistedInternalTransfer</label>
+                </value>
+                <value>
+                    <fullName>ValuationFeeAssistedExternalTransfer</fullName>
+                    <default>false</default>
+                    <label>ValuationFeeAssistedExternalTransfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Reference Information</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Payment_Type__c</columns>
+        <columns>NAME</columns>
+        <columns>IBB_Credit_Account_Number__c</columns>
+        <columns>IBB_Debit_Account_Number__c</columns>
+        <columns>Request_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ACR-{000000}</displayFormat>
+        <label>AccountReferenceInformation Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Reference Information</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

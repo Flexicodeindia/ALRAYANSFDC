@@ -1,0 +1,2186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Agree_Agenda_for_Appointment__c</fullName>
+        <externalId>false</externalId>
+        <label>Agree Agenda for Appointment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Appearance_of_Staff_and_Office__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Workstation - Tidy and stocked of stationary</inlineHelpText>
+        <label>Appearance of Staff and Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Appropriate_Body_Language__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Open and approachable for customer to engage.</inlineHelpText>
+        <label>Appropriate Body Language</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Asked_ITAEICHYW__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Asked is there anything else I can help you with?</inlineHelpText>
+        <label>Asked Is There Anything Else?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Asked_for_Referrals__c</fullName>
+        <externalId>false</externalId>
+        <label>Asked for Referrals</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Closure_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Staff_Member_Summarised__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Leaflets_Cards_handed_to_customer__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Follow_up_task_added_to_diary__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Asked_ITAEICHYW__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Closure Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments11__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments12__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments13__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments14__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments15__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments16__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments17__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments18__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments19__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments20__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments21__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments22__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments23__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments24__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments25__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments26__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments27__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments28__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments29__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments30__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments31__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments32__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments33__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments34__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C10__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C2__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C3__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C4__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C5__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C6__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C7__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C8__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments_C9__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Observers overall summary comments of the observation.</inlineHelpText>
+        <label>Comments</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Compliance_Disclosures__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For any products agreed</inlineHelpText>
+        <label>Compliance Disclosures: FSA/DPA/Sharia</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Confirm_Customer_Details_Up_to_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Confirm Customer Details Up to Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Courteous_Professional__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Handles customer and communicates professional.</inlineHelpText>
+        <label>Courteous &amp; Professional</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cross_Sale_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Compliance_Disclosures__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  SMART_Banking_Options_Explained__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Sale_Completed__c , &quot;Pass&quot;,10, &quot;Minor development&quot;,7,&quot;Major Development&quot;,3, 0) + CASE(  Referral_Won__c  , &quot;Pass&quot;,10, &quot;Minor development&quot;,7,&quot;Major Development&quot;,3, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sale Score 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cross_Sale_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Identified_Needs__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Proposed_Products__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Asked_for_Referrals__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  T_Cs_explained_cross_sale__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sale Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Request_Processed_Accurately__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff processed request correctly on system.</inlineHelpText>
+        <label>Customer Request Processed Accurately</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Devleopment</fullName>
+                    <default>false</default>
+                    <label>Major Devleopment</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_s_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer&apos;s Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Branch Observation Forms</relationshipLabel>
+        <relationshipName>Branch_Observation_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_and_Time_of_Observation__c</fullName>
+        <externalId>false</externalId>
+        <label>Date and Time of Observation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Development_Areas_Maximum_of_3__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What development has been identified this observation?</inlineHelpText>
+        <label>Development Areas (Maximum of 3)</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Establish_Correct_Documents_for_Appt__c</fullName>
+        <externalId>false</externalId>
+        <label>Establish Correct Documents for Appt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Establish_OK_to_talk_and_Reason_for_call__c</fullName>
+        <externalId>false</externalId>
+        <label>Establish OK to talk and Reason for call</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Follow_up_task_added_to_diary__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Noted follow up on SFDC/Outlook/etc if applicable.</inlineHelpText>
+        <label>Follow up task added to diary</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Friendly_and_Helpful__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Shows willingness to help customer with their request.</inlineHelpText>
+        <label>Friendly and Helpful</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>GOAL_Aims_and_vision_SMART__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What does the staff member actually need to be?</inlineHelpText>
+        <label>GOAL - Aims and vision (SMART)?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Greeting__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer appropriately greeted and staff member introduced self where applicable.</inlineHelpText>
+        <label>Greeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Identified_Needs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff member explored, through open/closed questioning, customers potential wider needs.</inlineHelpText>
+        <label>Identified Needs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Inital_Query_Score_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Paperwork_Completed_Compliantly__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Salesforce_Updated__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  T_Cs__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Inital Query Score 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Initial_Query_Score_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Inital_Query_Score_2__c  +  Initial_Query_Score__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Initial Query Score Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Initial_Query_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Provide__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Process_System_Knowledge__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Processed_Customer_Request_Accurately__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Product_Knowledge__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)+ CASE(   Customer_Request_Processed_Accurately__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Initial Query Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Introduction2__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  MOS_Confirmed_Customer_Request__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Establish_Correct_Documents_for_Appt__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Agree_Agenda_for_Appointment__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Establish_OK_to_talk_and_Reason_for_call__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Introduction Score 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Introduction_Score_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Introduction_Score__c  +  Introduction2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Introduction Score Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Introduction_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Appearance_of_Staff_and_Office__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE( Greeting__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Security_ID_V_Completed__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Confirm_Customer_Details_Up_to_Date__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Introduction Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Leaflets_Cards_handed_to_customer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>All applicable leaflets handed over e.g. Customer care, Product leaflets, Charges, etc</inlineHelpText>
+        <label>Leaflets &amp; Cards handed to customer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>East Ham</fullName>
+                    <default>false</default>
+                    <label>East Ham</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Leicester</fullName>
+                    <default>false</default>
+                    <label>Leicester</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>Off site.</fullName>
+                    <default>false</default>
+                    <label>Off site.</label>
+                </value>
+                <value>
+                    <fullName>Premier Banking</fullName>
+                    <default>false</default>
+                    <label>Premier Banking</label>
+                </value>
+                <value>
+                    <fullName>Small Heath</fullName>
+                    <default>false</default>
+                    <label>Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Southall</fullName>
+                    <default>false</default>
+                    <label>Southall</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Whitechapel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MOS_Confirmed_Customer_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>MOS Confirmed Customer Request</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manager_s_Signature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Manager&apos;s Signature</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Branch_Observation_Forms4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OPTIONS_What_s_possible__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How can the staff member achieve the goal? What opportunities can they explore?</inlineHelpText>
+        <label>OPTIONS - What’s possible?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Observee_s_Line_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person Undertaking Observation</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Branch_Observation_Forms2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Developing(Major) : Some important areas need extra work</fullName>
+                    <default>false</default>
+                    <label>Developing(Major) : Some important areas need extra work</label>
+                </value>
+                <value>
+                    <fullName>Developing(Minor): Generally good: minor development points.</fullName>
+                    <default>false</default>
+                    <label>Developing(Minor): Generally good: minor development points.</label>
+                </value>
+                <value>
+                    <fullName>Fail: Below an acceptable standard.</fullName>
+                    <default>false</default>
+                    <label>Fail: Below an acceptable standard.</label>
+                </value>
+                <value>
+                    <fullName>Pass: High standard throughout</fullName>
+                    <default>false</default>
+                    <label>Pass: High standard throughout</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Paperwork_Completed_Compliantly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff completed related documentation correctly.</inlineHelpText>
+        <label>Paperwork Completed Compliantly</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Percentage_Scored__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total points available to use to calculate the % are:
+Calls = 124 
+Enquiries = 120
+Meetings = 132</inlineHelpText>
+        <label>Percentage Scored</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Person_File__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person File</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipLabel>Branch Observation Forms</relationshipLabel>
+        <relationshipName>Branch_Observation_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Development__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What development was raised from last observation?</inlineHelpText>
+        <label>Previous Development</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Process_System_Knowledge__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff was aware how to process customer request</inlineHelpText>
+        <label>Process System Knowledge</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processed_Customer_Request_Accurately__c</fullName>
+        <externalId>false</externalId>
+        <label>Processed Customer Request Accurately</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Knowledge__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff had sufficient knowledge of the product discussed.</inlineHelpText>
+        <label>Product Knowledge</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proposed_Products__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Pitched for products and service matching Features/benefits to customer needs.</inlineHelpText>
+        <label>Proposed Prod &amp; Related benefits to need</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provide__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Able to answer all customers questions accurately and confidently.</inlineHelpText>
+        <label>Provide Confident &amp; Accurate Answers</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>REALITY_Current_PTT_obs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Where is the staff member at present? Actual performance at present?</inlineHelpText>
+        <label>REALITY - Current PTT/obs?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Rapport_Building_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(  Friendly_and_Helpful__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Courteous_Professional__c , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Appropriate_Body_Language__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0) + CASE(  Tone_Pace_Clarity__c  , &quot;Pass&quot;,4, &quot;Minor development&quot;,3,&quot;Major Development&quot;,1, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rapport Building Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referral_Won__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was a referral gained or competently requested for?</inlineHelpText>
+        <label>Referral Won?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales and Service Advisor</fullName>
+                    <default>false</default>
+                    <label>Sales and Service Advisor</label>
+                </value>
+                <value>
+                    <fullName>Branch Customer Advisor</fullName>
+                    <default>false</default>
+                    <label>Branch Customer Advisor</label>
+                </value>
+                <value>
+                    <fullName>Cashier</fullName>
+                    <default>false</default>
+                    <label>Cashier</label>
+                </value>
+                <value>
+                    <fullName>Premier banking</fullName>
+                    <default>false</default>
+                    <label>Premier banking</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMART_Banking_Options_Explained__c</fullName>
+        <externalId>false</externalId>
+        <label>SMART Banking Options Explained</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <color>#33CC00</color>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <color>#78C953</color>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <color>#FFCC66</color>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <color>#FF0000</color>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <color>#DDDDDD</color>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sale_Completed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was a sale concluded or competently attempted to be concluded?</inlineHelpText>
+        <label>Sale Completed?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sales_Score_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cross_Sale_Score__c  +  Cross_Sale_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Score Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Updated__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the staff member completed all the necessary details on Salesforce?</inlineHelpText>
+        <label>Salesforce Updated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Security_ID_V_Completed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Via EBA for existing customers or KYC/KYB docs for new.</inlineHelpText>
+        <label>Security ID &amp; V Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staff_Member_Summarised__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Staff member summarized what has been done for them and what will happen next with SLA&apos;s of Cards, PIB, etc.</inlineHelpText>
+        <label>Staff Member Summarised</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Staff_Member_s_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Staff Member&apos;s Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Branch_Observation_Forms</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Signature__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Staff Signature</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Branch_Observation_Forms3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TOPIC_Area_of_improvement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the specific area of improvement?</inlineHelpText>
+        <label>TOPIC - Area of improvement?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>T_Cs__c</fullName>
+        <externalId>false</externalId>
+        <label>T&amp;Cs Explained including Sharia</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_Observation__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Pass</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Minor Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Major Development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <controllingFieldValue>Meeting</controllingFieldValue>
+                <valueName>Fail</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Call</controllingFieldValue>
+                <controllingFieldValue>Enquiry</controllingFieldValue>
+                <valueName>N/A</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>T_Cs_explained_cross_sale__c</fullName>
+        <externalId>false</externalId>
+        <label>T&amp;Cs explained for cross sales</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tone_Pace_Clarity__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Speaks clearly, at appropriate pace, pitch varied to emphasize importance where applicable.</inlineHelpText>
+        <label>Tone, Pace &amp; Clarity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Minor Development</fullName>
+                    <default>false</default>
+                    <label>Minor Development</label>
+                </value>
+                <value>
+                    <fullName>Major Development</fullName>
+                    <default>false</default>
+                    <label>Major Development</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Points_Scored_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Points Scored</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Observation__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Observation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call</fullName>
+                    <default>false</default>
+                    <label>Call</label>
+                </value>
+                <value>
+                    <fullName>Enquiry</fullName>
+                    <default>false</default>
+                    <label>Enquiry</label>
+                </value>
+                <value>
+                    <fullName>Meeting</fullName>
+                    <default>false</default>
+                    <label>Meeting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WILL_Commitment_s_agreed_to__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>What specific actions/activities will they do? When?</inlineHelpText>
+        <label>WILL - Commitment(s) agreed to?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Branch Observation Form</label>
+    <nameField>
+        <displayFormat>Form{000}</displayFormat>
+        <label>Branch Observation Form Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Branch Observation Forms</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Staff_Member_s_Name__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Staff_Member_s_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>Staff_Member_s_Name__c</searchFilterFields>
+        <searchFilterFields>Observee_s_Line_Manager__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>KPI&apos;s for the call centre covering number of calls, CPH&lt; Wrap time, Not ready time, Talk time</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CASE_Oldest_date_Outstanding__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the oldest dated date of any cases outstanding to the call centre from EBA Case</inlineHelpText>
+        <label>CASE - Oldest date Outstanding</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CASE_Open_tickets_Carried_forward__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of open tickets outstanding at close of business each working day from EBA CASE</inlineHelpText>
+        <label>CASE - Open tickets Carried forward</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CASE_Open_tickets_Received__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case_Open_Tickets__c + CASE_Open_tickets_Carried_forward__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CASE - Open tickets Received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CPH__c</fullName>
+        <description>Simple formulae for CPH</description>
+        <externalId>false</externalId>
+        <formula>Calls_taken__c  /  Time_at_Work__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CPH</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Calls_taken__c</fullName>
+        <description>Enter calls taken from CISCO report</description>
+        <externalId>false</externalId>
+        <label>Calls taken</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Open_Tickets__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Open ticket case items actioned by the call centre on the day from EBA CASES</inlineHelpText>
+        <label>Case - Open Tickets actioned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complaints_Received__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Volume of complaints receioved from EBA CASE</inlineHelpText>
+        <label>Complaints Received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complaints_Resolved__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Complaints resolved from EBA CASE</inlineHelpText>
+        <label>Complaints Resolved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complaints__c</fullName>
+        <description>Enter Number of complaints received for individual</description>
+        <externalId>false</externalId>
+        <label>Complaints</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compliments__c</fullName>
+        <description>Enter number of individual compliments received</description>
+        <externalId>false</externalId>
+        <label>Compliments</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_record__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of record</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_AHT_Secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter AHT in seconds from CISCO reports</inlineHelpText>
+        <label>HNW Calls AHT (Secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_AV_Time_to_Answer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter av. time to answer HNW calls from CISCO reports</inlineHelpText>
+        <label>HNW Calls AV. Time to Answer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_Abandoned__c</fullName>
+        <externalId>false</externalId>
+        <formula>( HNW_Calls_offered__c - HNW_Calls_Answered__c )/ HNW_Calls_Answered__c</formula>
+        <inlineHelpText>% calls abandoned HNW Line</inlineHelpText>
+        <label>HNW Calls % Abandoned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_Answered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter HNW Calls answered from CISCO Reports</inlineHelpText>
+        <label>HNW Calls Answered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_answered_in_30_seconds__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter HNW calls answered in 30 seconds % from CISCO Reports</inlineHelpText>
+        <label>HNW Calls % answered in 30 seconds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HNW_Calls_offered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter calls offered for HNW line from CISCO reports</inlineHelpText>
+        <label>HNW Calls offered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Calls_Answered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Eneter HPP Calls answered from CISCO Reports</inlineHelpText>
+        <label>HPP Calls Answered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Calls_Av_time_to_Answer_secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Eneter the av. time to answer fro HPP calls from CISCO Reports</inlineHelpText>
+        <label>HPP Calls Av. time to Answer (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Calls_Offered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter HPP Calls offered from CISCO reports</inlineHelpText>
+        <label>HPP Calls Offered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Calls_abandoned__c</fullName>
+        <externalId>false</externalId>
+        <formula>( HPP_Calls_Offered__c - HPP_Calls_Answered__c )/ HPP_Calls_Answered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPP Calls % abandoned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Calls_calls_answered_in_30_Secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter % HPP calls answered in 30 seconds from CISCO Reports</inlineHelpText>
+        <label>HPP Calls % calls answered in 30 Secs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>HPP_calls_AHT_secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the AHT in seconds fro HPP calls from CISCO reports</inlineHelpText>
+        <label>HPP calls AHT (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Overall_Calls_Handled__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Overall_Calls_Handled__c / Overall_Calls_offered__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IBB Overall % Calls Handled</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IVR_Total_calls_in_hours__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From IVR Report</inlineHelpText>
+        <label>IVR - Total calls in hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IVR_calls_handled_on_IVR__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From IVR Report</inlineHelpText>
+        <label>IVR - % calls handled on IVR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IVR_total_calls_Out_of_Hours__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From IVR Report</inlineHelpText>
+        <label>IVR - total calls Out of Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inbound_Unavailable_time__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter from CISCO reports and RTA</inlineHelpText>
+        <label>% Inbound Unavailable time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Inbound_Utilisation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the % inbound utilisation from CSICO reports and RTA</inlineHelpText>
+        <label>% Inbound Utilisation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Inbound_Wait_time__c</fullName>
+        <description>Time spent waiting for calls</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the wait time for iinbound consultants from CISCO Reports</inlineHelpText>
+        <label>% Inbound Wait time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Not_Ready__c</fullName>
+        <description>Not Ready % from CISCO Report</description>
+        <externalId>false</externalId>
+        <label>Not Ready</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Outbound_Customer_Service_calls__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter from CISCO Reports</inlineHelpText>
+        <label>Outbound Customer Service calls</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Av_time_to_Answer_Secs__c</fullName>
+        <externalId>false</externalId>
+        <formula>( HNW_Calls_offered__c * HNW_Calls_AHT_Secs__c + HPP_Calls_Offered__c * HPP_calls_AHT_secs__c + Sales_Calls_Offered__c * Sales_Calls_AHT_Secs__c +  Service_Calls_Offered__c * Service_Calls_AHT_secs__c )/(  HNW_Calls_offered__c + HPP_Calls_Offered__c + Sales_Calls_Offered__c + Service_Calls_Offered__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Av. time to Answer (Secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Calls_Answered_in_30_Seconds__c</fullName>
+        <externalId>false</externalId>
+        <formula>(  HPP_Calls_Answered__c *HPP_Calls_calls_answered_in_30_Secs__c)+(  Service_Calls_Answered__c *Sales_Calls_answered_in_30_Seconds__c)+ ( Service_Calls_Answered__c *Service_Calls_Answered_within_30_secs__c )/3</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall % Calls Answered in 30 Seconds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Calls_Handled__c</fullName>
+        <externalId>false</externalId>
+        <formula>HNW_Calls_Answered__c + HPP_Calls_Answered__c + Sales_Calls_Answered__c + Service_Calls_Answered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Calls Handled</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Calls_abandoned__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Overall_Calls_offered__c - Overall_Calls_Handled__c )/ Overall_Calls_Handled__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall % Calls abandoned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Calls_offered__c</fullName>
+        <externalId>false</externalId>
+        <formula>HNW_Calls_offered__c + HPP_Calls_Offered__c + Sales_Calls_Offered__c + Service_Calls_Offered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Calls offered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>related to People Object</description>
+        <externalId>false</externalId>
+        <label>Person</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipLabel>Call Centre KPI&apos;s</relationshipLabel>
+        <relationshipName>Call_Centre_KPI_s</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_AHT_Secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the Sales calls AHT from CISCO Reports</inlineHelpText>
+        <label>Sales Calls AHT (Secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_AV_Time_to_Answer_Secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the av time to anser for sales calls from CISCO reports</inlineHelpText>
+        <label>Sales Calls AV. Time to Answer (Secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_Abandoned__c</fullName>
+        <externalId>false</externalId>
+        <formula>( Sales_Calls_Offered__c - Sales_Calls_Answered__c )/ Sales_Calls_Answered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>% Calls abandoned on Sales Line</inlineHelpText>
+        <label>Sales Calls Abandoned %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_Answered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Eneter Sales Calls offered from CISCO Reports</inlineHelpText>
+        <label>Sales Calls Answered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_Offered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter Sales Calls Offered from CSICO reports</inlineHelpText>
+        <label>Sales Calls Offered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Calls_answered_in_30_Seconds__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the number of sales calls answered within 30 seconds from CISCO reports</inlineHelpText>
+        <label>Sales Calls % answered in 30 Seconds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_AHT_secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the AHT for Service calls from CISCO Reports</inlineHelpText>
+        <label>Service Calls AHT (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_Abandoned__c</fullName>
+        <description>% Calls Abandoned</description>
+        <externalId>false</externalId>
+        <formula>(Service_Calls_Offered__c - Service_Calls_Answered__c )/ Service_Calls_Answered__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Calls Abandoned %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_Answered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Eneter Service calls offered from CISCO reports</inlineHelpText>
+        <label>Service Calls Answered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_Answered_within_30_secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter % Service calls answered in 30 seconds from CISCO reports</inlineHelpText>
+        <label>Service Calls % Answered within 30 secs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_Av_Time_to_Answer_secs__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter Average time to Answer Service calls from CISCO reports</inlineHelpText>
+        <label>Service Calls Av. Time to Answer (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Calls_Offered__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Service calls offered from CISCO Report</inlineHelpText>
+        <label>Service Calls Offered</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Talk_time__c</fullName>
+        <description>Enter talk time from CISCO Report</description>
+        <externalId>false</externalId>
+        <label>Talk time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_at_Work__c</fullName>
+        <description>Complete how many hours the colleague was at work yesterday</description>
+        <externalId>false</externalId>
+        <inlineHelpText>please enter the hours worked for that day</inlineHelpText>
+        <label>Time at Work</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Outbound_Calls__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter from CISCO reports</inlineHelpText>
+        <label>Total Outbound Calls</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_Customer_service_enquiries_actio__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Details from DB Managers Outlook mailbox</inlineHelpText>
+        <label>Website Customer service enquiries actio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_HPP_Enquiries_oldest_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From HPP Inbox</inlineHelpText>
+        <label>Website - HPP Enquiries oldest date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Website_HPP_Enquiries_received__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From HPP Inbox</inlineHelpText>
+        <label>Website HPP Enquiries received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_HPP_enquiries_actioned__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From HPP Inboxc</inlineHelpText>
+        <label>Website HPP enquiries actioned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_Sales_enquiries_actioned__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From Sales inbox email</inlineHelpText>
+        <label>Website - Sales enquiries actioned</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_Sales_enquries_received__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From Outbound Sales inbox</inlineHelpText>
+        <label>Website - Sales enquries received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_Sales_enqury_oldest_date_OS__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From sales inbox</inlineHelpText>
+        <label>Website - Sales enqury oldest date OS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Website_Service_enquiries_received__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Figures from DB Managers outlook inbox by day</inlineHelpText>
+        <label>Website Service enquiries received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Website_enquiry_oldest_date_Outstandin__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>From DB mangers outlook box</inlineHelpText>
+        <label>Website enquiry - oldest date Outstandin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Wrap_time__c</fullName>
+        <description>Wrap time entered from CISCO Report</description>
+        <externalId>false</externalId>
+        <label>Wrap time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Call Centre KPI&apos;s</label>
+    <nameField>
+        <label>Call Centre KPI&apos;s Date</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Call Centre KPI&apos;s</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

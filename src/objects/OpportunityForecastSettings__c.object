@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AmountField__c</fullName>
+        <description>The Opportunity field which should be used to populate the Amount field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Opportunity field which should be used to populate the Amount field.</inlineHelpText>
+        <label>Amount Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>The value which should be populated in the Quantity field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value which should be populated in the Quantity field.</inlineHelpText>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Opportunity Forecast Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

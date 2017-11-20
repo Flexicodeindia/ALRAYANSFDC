@@ -1,0 +1,79 @@
+<apex:component >
+
+<apex:attribute name="res" type="AffordabilityResults__c" description=""   />
+<apex:attribute name="gross" type="Decimal" description=""   />
+<apex:attribute name="net" type="Decimal" description=""   />
+<apex:attribute name="total" type="Decimal" description=""   />
+
+
+<table width="100%">
+<tr>
+<td valign="top" width="33%">
+    <table width="100%">
+        <tr>
+            <td class="valtitle"> Income Multiplier (5 plus 1)</td><td><apex:outputText value="{0,number,£#,###,###.00}"><apex:param value="{!res.IncomeMultiplier5_1__c}" /></apex:outputText> </td><td><a style="width:50px;" class="redBtn" target="_blank" href="/{!res.id}">{!res.IncomeMultiplierResult__c}</a></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> Income Multiplier (4.5)</td><td><apex:outputText value="{0,number,£#,###,###.00}"><apex:param value="{!res.IncomeMultiplier4_5Total__c}" /></apex:outputText></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> Affordability</td><td><apex:outputText value="{0,number,0}%"><apex:param value="{!res.AffordabilityPercentage__c}" /></apex:outputText></td><td><a class="redBtn" style="width:50px;" target="_blank" href="/{!res.id}">{!res.AffordabilityResult__c}</a></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> FTI</td><td><apex:outputText value="{0,number,.00}"><apex:param value="{!res.FTI__c}" /></apex:outputText></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> Budget Planner</td><td><apex:outputText value="{0,number,£#,###,###.00}"><apex:param value="{!res.BudgetPlannerSurplusOrDeficit__c}" /></apex:outputText></td><td><a style="width:50px;" class="redBtn" target="_blank" href="/{!res.id}">{!res.BudgetPlannerResult__c}</a></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> Total Aggregation</td><td><apex:outputText value="{0,number,£#,###,###.00}"><apex:param value="{!total}" /></apex:outputText></td>
+        </tr>
+    </table>
+</td>
+<td valign="top" width="66%">
+    <table width="100%">
+        <tr>
+            <td></td><td class="valtitle">Gross Annual<br/>Income</td>
+            <td></td><td class="valtitle">Net Monthly<br/>Income</td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 1</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant1__c}" /></apex:outputText></td>
+            <td class="valtitle">App 1</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant1__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 2</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant2__c}" /></apex:outputText></td>
+            <td class="valtitle">App 2</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant2__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 3</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant3__c}" /></apex:outputText></td>
+            <td class="valtitle">App 3</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant3__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 4</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant4__c}" /></apex:outputText></td>
+            <td class="valtitle">App 4</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant4__c}" /></apex:outputText></td>
+            <!--  CPDR01 <td></td><td></td> -->  
+            <td class="valtitle">Additional Rental  <br/>Income</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.AdditionalRentalIncome__c}" /></apex:outputText></td> 
+            <!--  CPDR01 end -->
+        </tr>
+        <tr>
+            <td class="valtitle">Sum</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!Gross}" /></apex:outputText></td>
+            <td class="valtitle">Sum</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!Net}" /></apex:outputText></td>
+            <td class="valtitle">Total Monthly <br/>Expenditure</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.TotalCommitments__c}" /></apex:outputText></td>     
+        </tr>        
+        
+        
+         
+    </table>
+</td>
+
+
+</tr>
+</table>
+
+
+
+</apex:component>

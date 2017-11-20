@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LinkToSetupUserDetailAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UpdateBannerPhotoAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AIP_Allowed__c</fullName>
+        <externalId>false</externalId>
+        <label>AIP Allowed?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BDM_Manager__c</fullName>
+        <description>Field to capture BDM Performance on HPp Sales for Head of HPP Sales</description>
+        <externalId>false</externalId>
+        <label>BDM Manager</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Simon Walker</fullName>
+                    <default>true</default>
+                    <label>Simon Walker</label>
+                </value>
+                <value>
+                    <fullName>Jim Madden</fullName>
+                    <default>false</default>
+                    <label>Jim Madden</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DEWSBURY</fullName>
+                    <default>false</default>
+                    <label>DEWSBURY</label>
+                </value>
+                <value>
+                    <fullName>GLASGOW</fullName>
+                    <default>false</default>
+                    <label>GLASGOW</label>
+                </value>
+                <value>
+                    <fullName>LUTON</fullName>
+                    <default>false</default>
+                    <label>LUTON</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>TOOTING</fullName>
+                    <default>false</default>
+                    <label>TOOTING</label>
+                </value>
+                <value>
+                    <fullName>UIFM Internet Connec</fullName>
+                    <default>false</default>
+                    <label>UIFM Internet Connec</label>
+                </value>
+                <value>
+                    <fullName>On-line</fullName>
+                    <default>false</default>
+                    <label>On-line</label>
+                </value>
+                <value>
+                    <fullName>Knightsbridge</fullName>
+                    <default>false</default>
+                    <label>Knightsbridge</label>
+                </value>
+                <value>
+                    <fullName>Small Heath</fullName>
+                    <default>false</default>
+                    <label>Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Leicester</fullName>
+                    <default>false</default>
+                    <label>Leicester</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Head Office Birmingham</fullName>
+                    <default>false</default>
+                    <label>Head Office Birmingham</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_Centre_Team_Leader__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Centre Team Leader</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sajjad</fullName>
+                    <default>false</default>
+                    <label>Sajjad</label>
+                </value>
+                <value>
+                    <fullName>Mark</fullName>
+                    <default>false</default>
+                    <label>Mark</label>
+                </value>
+                <value>
+                    <fullName>Reena</fullName>
+                    <default>false</default>
+                    <label>Reena</label>
+                </value>
+                <value>
+                    <fullName>David</fullName>
+                    <default>false</default>
+                    <label>David</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Default_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>IGNORE</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Head Office Birmingham</fullName>
+                    <default>false</default>
+                    <label>Head Office Birmingham</label>
+                </value>
+                <value>
+                    <fullName>Alum Rock</fullName>
+                    <default>false</default>
+                    <label>Alum Rock</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>Coventry Road - Birmingham</fullName>
+                    <default>false</default>
+                    <label>Coventry Road - Birmingham</label>
+                </value>
+                <value>
+                    <fullName>East Ham London</fullName>
+                    <default>false</default>
+                    <label>East Ham London</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road - London</fullName>
+                    <default>false</default>
+                    <label>Edgware Road - London</label>
+                </value>
+                <value>
+                    <fullName>London Road - Leicester</fullName>
+                    <default>false</default>
+                    <label>London Road - Leicester</label>
+                </value>
+                <value>
+                    <fullName>Southall - London</fullName>
+                    <default>false</default>
+                    <label>Southall - London</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel - London</fullName>
+                    <default>false</default>
+                    <label>Whitechapel - London</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+                <value>
+                    <fullName>Private Clients Division</fullName>
+                    <default>false</default>
+                    <label>Private Clients Division</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EBSUserId__c</fullName>
+        <externalId>false</externalId>
+        <label>EBSUserId</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_Username__c</fullName>
+        <externalId>false</externalId>
+        <label>EBS Username</label>
+        <length>5</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPPAuthorityLevel__c</fullName>
+        <externalId>false</externalId>
+        <label>HPPAuthorityLevel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IBB_Autonum__c</fullName>
+        <displayFormat>IBB-{000000}{DD}</displayFormat>
+        <externalId>false</externalId>
+        <label>IBB Autonum</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>IBB_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Contact Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Division__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Division</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Branch</fullName>
+                    <default>false</default>
+                    <label>Branch</label>
+                </value>
+                <value>
+                    <fullName>Call Centre</fullName>
+                    <default>false</default>
+                    <label>Call Centre</label>
+                </value>
+                <value>
+                    <fullName>Operations</fullName>
+                    <default>false</default>
+                    <label>Operations</label>
+                </value>
+                <value>
+                    <fullName>Back Office</fullName>
+                    <default>false</default>
+                    <label>Back Office</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IBB_Employee_Number__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>IBB Employee Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>KPIMGR_Business_Area__c</fullName>
+        <externalId>false</externalId>
+        <label>KPIMGR Business Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                    <label>Sales</label>
+                </value>
+                <value>
+                    <fullName>IBB</fullName>
+                    <default>false</default>
+                    <label>IBB</label>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                    <label>Retail</label>
+                </value>
+                <value>
+                    <fullName>Contact Centre</fullName>
+                    <default>false</default>
+                    <label>Contact Centre</label>
+                </value>
+                <value>
+                    <fullName>Sajjad&apos;s team</fullName>
+                    <default>false</default>
+                    <label>Sajjad&apos;s team</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Limit_of_authority__c</fullName>
+        <externalId>false</externalId>
+        <label>Limit of authority</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Board Risk Credit Committee</fullName>
+                    <default>false</default>
+                    <label>Board Risk Credit Committee</label>
+                </value>
+                <value>
+                    <fullName>Credit Committee</fullName>
+                    <default>false</default>
+                    <label>Credit Committee</label>
+                </value>
+                <value>
+                    <fullName>Managing Director</fullName>
+                    <default>false</default>
+                    <label>Managing Director</label>
+                </value>
+                <value>
+                    <fullName>Head of Credit</fullName>
+                    <default>false</default>
+                    <label>Head of Credit</label>
+                </value>
+                <value>
+                    <fullName>Lead Underwriter</fullName>
+                    <default>false</default>
+                    <label>Lead Underwriter</label>
+                </value>
+                <value>
+                    <fullName>Underwriter</fullName>
+                    <default>false</default>
+                    <label>Underwriter</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Centre</fullName>
+                    <default>false</default>
+                    <label>Call Centre</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales</fullName>
+                    <default>false</default>
+                    <label>HPP Sales</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Small Heath</fullName>
+                    <default>false</default>
+                    <label>Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>Leicester</fullName>
+                    <default>false</default>
+                    <label>Leicester</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+                <value>
+                    <fullName>Head Office</fullName>
+                    <default>false</default>
+                    <label>Head Office</label>
+                </value>
+                <value>
+                    <fullName>Knightsbridge Branch</fullName>
+                    <default>false</default>
+                    <label>Knightsbridge Branch</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location_of_Lead_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Location of Lead Provider</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Edgware Road (1201)</fullName>
+                    <default>false</default>
+                    <label>Edgware Road (1201)</label>
+                </value>
+                <value>
+                    <fullName>Small Heath (1101)</fullName>
+                    <default>false</default>
+                    <label>Small Heath (1101)</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel (1210)</fullName>
+                    <default>false</default>
+                    <label>Whitechapel (1210)</label>
+                </value>
+                <value>
+                    <fullName>Manchester (1301)</fullName>
+                    <default>false</default>
+                    <label>Manchester (1301)</label>
+                </value>
+                <value>
+                    <fullName>Leicester (1120)</fullName>
+                    <default>false</default>
+                    <label>Leicester (1120)</label>
+                </value>
+                <value>
+                    <fullName>Premier Banking</fullName>
+                    <default>false</default>
+                    <label>Premier Banking</label>
+                </value>
+                <value>
+                    <fullName>Head Office Birmingham (1100)</fullName>
+                    <default>false</default>
+                    <label>Head Office Birmingham (1100)</label>
+                </value>
+                <value>
+                    <fullName>Community BDM (South)</fullName>
+                    <default>false</default>
+                    <label>Community BDM (South)</label>
+                </value>
+                <value>
+                    <fullName>Community BDM (North)</fullName>
+                    <default>false</default>
+                    <label>Community BDM (North)</label>
+                </value>
+                <value>
+                    <fullName>Knightsbridge Branch (1212)</fullName>
+                    <default>false</default>
+                    <label>Knightsbridge Branch (1212)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__MostRecentCallEventTimestamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The timestamp of the most recent call event (deliver, transfer...) that this user has handled</description>
+        <externalId>false</externalId>
+        <label>Most Recent Call Event Timestamp</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__MostRecentCallIsActive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Most Recent Call Is Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__MostRecentCall__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Most Recent Call</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__NVM_Agent_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>NVM Agent Id for Contact World for Salesforce</description>
+        <externalId>true</externalId>
+        <inlineHelpText>NVM Agent Id for Contact World for Salesforce. This should be set to the correct NVM Agent Id to make sure that call tasks are assigned to the correct Salesforce user.</inlineHelpText>
+        <label>NVM Agent Id</label>
+        <length>11</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__NVM_Cell__c</fullName>
+        <deprecated>false</deprecated>
+        <description>NewVoiceMedia click to dial Cell Phone</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+        LEN( MobilePhone  )&gt;0 , 
+        HYPERLINK( &quot;/apex/NVMContactWorld__NVM_AgentUI_ClickToDialInitiator?number=&quot; &amp; 
+                   SUBSTITUTE(MobilePhone , &quot;+&quot;, &quot;%2B&quot;) &amp; 
+                   &quot;&amp;oid=&quot; &amp; Id &amp; 
+                   &quot;&amp;name=&quot; &amp; FirstName &amp; &quot;%20&quot; &amp;  LastName &amp; 
+                   &quot;&amp;type=User&quot;, 
+                   MobilePhone  , &quot;nvm-clicktodial&quot;) 
+                   &amp; &quot; &quot; &amp; IMAGE( &quot;../servlet/servlet.FileDownload?file=015A0000000FU0f&quot;, &quot;Dial&quot;), &quot;&quot;)</formula>
+        <inlineHelpText>Click to dial Cell Phone</inlineHelpText>
+        <label>NVM Cell</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__NVM_Extension__c</fullName>
+        <deprecated>false</deprecated>
+        <description>NewVoiceMedia click to dial Extension Phone</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+        LEN( Extension  )&gt;0 , 
+        HYPERLINK( &quot;/apex/NVMContactWorld__NVM_AgentUI_ClickToDialInitiator?number=&quot; &amp; 
+                   SUBSTITUTE(Extension , &quot;+&quot;, &quot;%2B&quot;) &amp; 
+                   &quot;&amp;oid=&quot; &amp; Id &amp; 
+                   &quot;&amp;name=&quot; &amp; FirstName &amp; &quot;%20&quot; &amp;  LastName &amp; 
+                   &quot;&amp;type=User&quot;, 
+                   Extension  , &quot;nvm-clicktodial&quot;) 
+                   &amp; &quot; &quot; &amp; IMAGE( &quot;../servlet/servlet.FileDownload?file=015A0000000FU0f&quot;, &quot;Dial&quot;), &quot;&quot;)</formula>
+        <inlineHelpText>Click to dial Extension Phone</inlineHelpText>
+        <label>NVM Extension</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NVMContactWorld__NVM_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>NewVoiceMedia click to dial Phone</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+        LEN( Phone )&gt;0 , 
+        HYPERLINK( &quot;/apex/NVMContactWorld__NVM_AgentUI_ClickToDialInitiator?number=&quot; &amp; 
+                   SUBSTITUTE(Phone, &quot;+&quot;, &quot;%2B&quot;) &amp; 
+                   &quot;&amp;oid=&quot; &amp; Id &amp; 
+                   &quot;&amp;name=&quot; &amp; FirstName &amp; &quot;%20&quot; &amp;  LastName &amp; 
+                   &quot;&amp;type=User&quot;, 
+                   Phone, &quot;nvm-clicktodial&quot;) 
+                   &amp; &quot; &quot; &amp; IMAGE( &quot;../servlet/servlet.FileDownload?file=015A0000000FU0f&quot;, &quot;Dial&quot;), &quot;&quot;)</formula>
+        <inlineHelpText>Click to dial Phone</inlineHelpText>
+        <label>NVM Phone</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Risk__Selected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Selected</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Role_to_appear_on_HPP_letters__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Select a role which which be used on the HPP letters. If this is left blank, the letters will use the normal Salesforce role.</inlineHelpText>
+        <label>Role to appear on HPP letters</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency Manager</fullName>
+                    <default>false</default>
+                    <label>Agency Manager</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales Support</fullName>
+                    <default>false</default>
+                    <label>HPP Sales Support</label>
+                </value>
+                <value>
+                    <fullName>HPP Specialist</fullName>
+                    <default>false</default>
+                    <label>HPP Specialist</label>
+                </value>
+                <value>
+                    <fullName>Intermediary Specialist</fullName>
+                    <default>false</default>
+                    <label>Intermediary Specialist</label>
+                </value>
+                <value>
+                    <fullName>Senior Sales and Service</fullName>
+                    <default>false</default>
+                    <label>Senior Sales and Service</label>
+                </value>
+                <value>
+                    <fullName>Senior Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Senior Sales Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Org_Username__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Org Username</label>
+        <length>60</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sellers_delegated_approver_email__c</fullName>
+        <externalId>false</externalId>
+        <label>Sellers delegated approver email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_condition_team__c</fullName>
+        <externalId>false</externalId>
+        <label>Special condition team</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Reat</fullName>
+                    <default>false</default>
+                    <label>Reat</label>
+                </value>
+                <value>
+                    <fullName>Underwriting</fullName>
+                    <default>false</default>
+                    <label>Underwriting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Target_HPP_Leads__c</fullName>
+        <externalId>false</externalId>
+        <label>Target: HPP: Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TellerBranch__c</fullName>
+        <externalId>false</externalId>
+        <label>TellerBranch</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Branch_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Teller Branch Number</label>
+        <length>4</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Teller Group</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <listViews>
+        <fullName>ActiveUsers</fullName>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>EBSUserId__c</columns>
+        <columns>CORE.USERS.DEPARTMENT</columns>
+        <columns>CORE.PROFILE.USERTYPE</columns>
+        <columns>CORE.USERS.PHONE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Branch_Staff</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>branch,Advisor,BCA</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>notContain</operation>
+            <value>outbound</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Branch Staff</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Email_contains_IBB</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.EMAIL</field>
+            <operation>contains</operation>
+            <value>islamic-bank.com</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>notContain</operation>
+            <value>SFDC,test,NVM,external,backup</value>
+        </filters>
+        <label>Email contains IBB</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>High_Powered_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>system admin,super user</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>High Powered Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Live_Chat_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LIVEAGENT_USER</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Live Chat Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>MARKETING_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>notContain</operation>
+            <value>,IT</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>api</value>
+        </filters>
+        <label>Incorrect setup: marketing users needed</label>
+    </listViews>
+    <listViews>
+        <fullName>NVM</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>NVMContactWorld__NVM_Agent_Id__c</columns>
+        <columns>NVMContactWorld__NVM_Phone__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Standard,call,contact,bdm,reat</value>
+        </filters>
+        <label>NVM</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Non_Active_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Non Active Users</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Partners</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>Location_of_Lead_Provider__c</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.IS_PARTNER</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Partners</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Risk__ActiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Risk__AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filters>
+        <label>Admin Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Risk__AllUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Users_and_Contact_Numbers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.PHONE</columns>
+        <columns>CORE.USERS.CELL</columns>
+        <columns>CORE.USERS.TITLE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Users and Contact Numbers</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>full_users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.IS_PARTNER</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>full users</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Department_is_required</fullName>
+        <active>false</active>
+        <errorConditionFormula>ISBLANK( Department )</errorConditionFormula>
+        <errorDisplayField>Department</errorDisplayField>
+        <errorMessage>You must specify the department this user works in.</errorMessage>
+    </validationRules>
+</CustomObject>

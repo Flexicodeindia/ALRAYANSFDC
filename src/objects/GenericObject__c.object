@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>GenericObjects</relationshipLabel>
+        <relationshipName>GenericObjects</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CCJ_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ Reason</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CCJ_amount_of_CCJ__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ amount of CCJ</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CCJ_amount_repaid__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ amount repaid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CCJ_certificate_held__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ certificate held</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CCJ_date_of_CCJ__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ date of CCJ</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CCJ_date_repaid__c</fullName>
+        <externalId>false</externalId>
+        <label>CCJ date repaid</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Debt_consolidation_text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( text( Refinance_Type__c ) = &quot;repay other debts&quot;, &quot;As you have stated that an element of the finance balance is being used to consolidate other debts that you have, you should note that by adding other debts to the finance balance, the total cost of repaying the additional debt may be greater, because you will be repaying the additional debt over the term of your finance.&quot;, 
+IF( text( Refinance_Type__c ) = &quot;Personal debt consolidation to a family member or friend&quot;, &quot;As you have stated that an element of the finance balance is being used to consolidate other debts that you have, you should note that by adding other debts to the finance balance, the total cost of repaying the additional debt may be greater, because you will be repaying the additional debt over the term of your finance.&quot;, 
+IF( text( Refinance_Type__c ) = &quot;Third party debt consolidation for a family member or friend&quot;, &quot;As you have stated that an element of the finance balance is being used to consolidate other debts that you have, you should note that by adding other debts to the finance balance, the total cost of repaying the additional debt may be greater, because you will be repaying the additional debt over the term of your finance.&quot;, 
+&quot; &quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Debt consolidation text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debt_warning_text__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( text( Refinance_Type__c ) = &quot;repay other debts&quot;, &quot;THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME&quot;, 
+IF( text( Refinance_Type__c ) = &quot;Personal debt consolidation to a family member or friend&quot;, &quot;THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME&quot;, 
+IF( text( Refinance_Type__c ) = &quot;Third party debt consolidation for a family member or friend&quot;, &quot;THINK CAREFULLY BEFORE SECURING OTHER DEBTS AGAINST YOUR HOME&quot;, 
+&quot; &quot;)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Debt warning text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Default amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Default_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Default date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Default_date_repaid__c</fullName>
+        <externalId>false</externalId>
+        <label>Default date repaid</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Default_reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Default reason</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deposit_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Details</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Source</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Another source</fullName>
+                    <default>false</default>
+                    <label>Another source</label>
+                </value>
+                <value>
+                    <fullName>Gift</fullName>
+                    <default>false</default>
+                    <label>Gift</label>
+                </value>
+                <value>
+                    <fullName>Share equity</fullName>
+                    <default>false</default>
+                    <label>Share equity</label>
+                </value>
+                <value>
+                    <fullName>Personal Savings</fullName>
+                    <default>false</default>
+                    <label>Personal Savings</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deposit_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>GenericObjects</relationshipLabel>
+        <relationshipName>GenericObjects</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Refinance_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Refinance_Details</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Refinance_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Refinance_Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Home improvements</fullName>
+                    <default>false</default>
+                    <label>Home improvements</label>
+                </value>
+                <value>
+                    <fullName>Repay home improvements</fullName>
+                    <default>false</default>
+                    <label>Repay home improvements</label>
+                </value>
+                <value>
+                    <fullName>Repay car loan</fullName>
+                    <default>false</default>
+                    <label>Repay car loan</label>
+                </value>
+                <value>
+                    <fullName>Pay school fees</fullName>
+                    <default>false</default>
+                    <label>Pay school fees</label>
+                </value>
+                <value>
+                    <fullName>Purchase pension</fullName>
+                    <default>false</default>
+                    <label>Purchase pension</label>
+                </value>
+                <value>
+                    <fullName>Repay other debts</fullName>
+                    <default>false</default>
+                    <label>Repay other debts</label>
+                </value>
+                <value>
+                    <fullName>Cost &amp; fees for home finance arrangement</fullName>
+                    <default>false</default>
+                    <label>Cost &amp; fees for home finance arrangement</label>
+                </value>
+                <value>
+                    <fullName>Deposit on additional property</fullName>
+                    <default>false</default>
+                    <label>Deposit on additional property</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Personal debt consolidation to a family member or friend</fullName>
+                    <default>false</default>
+                    <label>Personal debt consolidation to a family member or friend</label>
+                </value>
+                <value>
+                    <fullName>Gift/donation to a family member friend or charitable organisation</fullName>
+                    <default>false</default>
+                    <label>Gift/donation to a family member friend or charitable organisation</label>
+                </value>
+                <value>
+                    <fullName>Funeral expenses</fullName>
+                    <default>false</default>
+                    <label>Funeral expenses</label>
+                </value>
+                <value>
+                    <fullName>Business purposes</fullName>
+                    <default>false</default>
+                    <label>Business purposes</label>
+                </value>
+                <value>
+                    <fullName>Investment (including stocks, shares or third parties)</fullName>
+                    <default>false</default>
+                    <label>Investment (including stocks, shares or third parties)</label>
+                </value>
+                <value>
+                    <fullName>Third party debt consolidation for a family member or friend</fullName>
+                    <default>false</default>
+                    <label>Third party debt consolidation for a family member or friend</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Refinance_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Refinance_Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>DepositSource</fullName>
+                    <default>false</default>
+                    <label>DepositSource</label>
+                </value>
+                <value>
+                    <fullName>RefinanceSource</fullName>
+                    <default>false</default>
+                    <label>RefinanceSource</label>
+                </value>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>false</default>
+                    <label>Default</label>
+                </value>
+                <value>
+                    <fullName>CCJ</fullName>
+                    <default>false</default>
+                    <label>CCJ</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>GenericObject</label>
+    <nameField>
+        <label>GenericObject Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>GenericObjects</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

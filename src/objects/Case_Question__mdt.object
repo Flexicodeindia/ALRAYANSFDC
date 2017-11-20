@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Level__c</fullName>
+        <description>Indicates the level while navigating through questions for selecting a case record type. 
+Used in CaseNavigationController.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Question__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Question</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Case Question</label>
+    <pluralLabel>Case Questions</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

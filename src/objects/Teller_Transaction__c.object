@@ -1,0 +1,1266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Approved_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Approved User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Authenticated_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Authenticated Date Time</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Authenticated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Authenticated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Beneficiary_Account_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Beneficiary Account No</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Beneficiary_Detail_Lines__c</fullName>
+        <externalId>false</externalId>
+        <label>Beneficiary Detail Lines</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Beneficiary_Sort_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Beneficiary Sort Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <referenceTo>Branch__c</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Buy_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Transaction_Amount__c*(-1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Buy Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Buy_CCY__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISBLANK(Debit_Account_Currency__c),
+Deposit_Currency__c, Debit_Account_Currency__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Buy CCY</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Teller_Depository__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Cancellation Teller Depository</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cancelled_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Cancelled By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Teller_Transaction1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cancelled_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancelled Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Cancelled_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancelled Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CashierID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedById</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>sfOwnerId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_Serial_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Serial No</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Created_Date_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created Date Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Account_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Account Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Account_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Account No</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Account_with_IBB__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Credit Account with IBB</label>
+        <referenceTo>Account_with_IBB__c</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_System_Parameter__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit System Parameter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Account_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Account Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Account_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Account No</label>
+        <length>13</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Account_with_IBB__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Debit Account with IBB</label>
+        <referenceTo>Account_with_IBB__c</referenceTo>
+        <relationshipLabel>Teller Transaction (Debit Account with IBB)</relationshipLabel>
+        <relationshipName>Teller_Transaction1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Debit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_System_Parameter__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit System Parameter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Declined_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Declined Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Declined_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Declined User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Teller_Transaction2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Deposit_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Deposit Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>EBS_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Credit_Account_with_IBB__c = Null,   Debit_Account_with_IBB__r.Primary_Customer_EBS_ID__c  , Credit_Account_with_IBB__r.Primary_Customer_EBS_ID__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Customer EBS ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EUR__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Buy_CCY__c = &quot;EUR&quot;,(if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,(Exchange_Amount__c),Transaction_Amount__c)),if(Sell_CCY__c = &quot;EUR&quot;,if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,  (Buy_Amount__c),Sell_Amount__c),0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EUR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EmailAddress__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Debit_Account_with_IBB__c = null,Credit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonEmail,Debit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonEmail
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EmailAddress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exchange_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>From_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>From Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>From_Depository__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>From Depository</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction (From Depository)</relationshipLabel>
+        <relationshipName>Teller_Transaction4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>From_Storage__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>From Storage</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction (From Storage)</relationshipLabel>
+        <relationshipName>Teller_Transaction1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GBP__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Buy_CCY__c = &quot;GBP&quot;,(if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,(Exchange_Amount__c),Transaction_Amount__c)),if(Sell_CCY__c = &quot;GBP&quot;,if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,  (Buy_Amount__c),Sell_Amount__c),0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GBP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Issuing_Bank__c</fullName>
+        <externalId>false</externalId>
+        <label>Issuing Bank</label>
+        <length>30</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobileNumber__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Debit_Account_with_IBB__c = null,Credit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonContact.MobilePhone
+,Credit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonContact.MobilePhone
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MobileNumber</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Narrative_Lines__c</fullName>
+        <externalId>false</externalId>
+        <label>Narrative Lines</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>No_Of_Cheques__c</fullName>
+        <externalId>false</externalId>
+        <label>No Of Cheques</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Num_Cheques__c</fullName>
+        <externalId>false</externalId>
+        <label>Num Cheques</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opt_Out_of_Survey__c</fullName>
+        <externalId>false</externalId>
+        <formula>Debit_Account_with_IBB__r.Primary_SFDC_Account__r.Opt_Out_of_Survey__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opt Out of Survey</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Detail_Lines__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Detail Lines</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Purpose__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Purpose</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Credit_Account_with_IBB__c = Null,    Debit_Account_with_IBB__r.Primary_SFDC_Account__r.Customer_Name__c  , Credit_Account_with_IBB__r.Primary_SFDC_Account__r.Customer_Name__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Primary Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Printed_HTML_Reciept__c</fullName>
+        <externalId>false</externalId>
+        <label>Printed HTML Reciept</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>QAR__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Buy_CCY__c = &quot;QAR&quot;,(if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,(Exchange_Amount__c),Transaction_Amount__c)),if(Sell_CCY__c = &quot;QAR&quot;,if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,  (Buy_Amount__c),Sell_Amount__c),0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>QAR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RelatedtoID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Debit_Account_with_IBB__c = null,Credit_Account_with_IBB__r.Primary_SFDC_Account__c,Debit_Account_with_IBB__r.Primary_SFDC_Account__c
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>sfWhatId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remainder_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Remainder Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remainder_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Remainder Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remainder_Deposit_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Remainder Deposit Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Remainder_Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Remainder Exchange Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Response_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Response Reference</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reverse_Exchange_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Reverse Exchange Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Exchange_Amount__c  * (-1)</formula>
+        <label>Sell Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sell_CCY__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+ISBLANK(Credit_Account_Currency__c), 
+Withdrawal_Currency__c, Credit_Account_Currency__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sell CCY</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Sent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Debit_Account_with_IBB__r.Primary_SFDC_Account__r.Survey_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Survey Sent</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TelephoneNumber__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Debit_Account_with_IBB__c = null,Credit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonMobilePhone
+
+,
+
+Debit_Account_with_IBB__r.Primary_SFDC_Account__r.PersonMobilePhone
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TelephoneNumber</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Depository__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Teller Depository</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction (Teller Depository)</relationshipLabel>
+        <relationshipName>Teller_Transaction2</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Teller_Function_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>Teller_Function__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Teller Function Text</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Function__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Teller Function</label>
+        <referenceTo>Teller_Function__c</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Teller_Transfer_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Teller Transfer Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Teller User</label>
+        <referenceTo>Teller_User__c</referenceTo>
+        <relationshipLabel>Teller Transaction</relationshipLabel>
+        <relationshipName>Teller_Transaction</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Template_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Template Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_taken_for_transaction_minutes__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND(MOD((LastModifiedDate - CreatedDate)*1440,60),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Time taken for transaction (minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_Depository__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>To Depository</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction (To Depository)</relationshipLabel>
+        <relationshipName>Teller_Transaction5</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>To_Storage__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>To Storage</label>
+        <referenceTo>Teller_Depository__c</referenceTo>
+        <relationshipLabel>Teller Transaction (To Storage)</relationshipLabel>
+        <relationshipName>Teller_Transaction3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Adding_to_Depository__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Transaction Adding to Depository</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Created__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Transaction Created</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Notes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Reference__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Reference</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Status_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Status Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Created</fullName>
+                    <default>false</default>
+                    <label>Created</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Submitted for Authorisation</fullName>
+                    <default>false</default>
+                    <label>Submitted for Authorisation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TransferType__c</fullName>
+        <externalId>false</externalId>
+        <label>TransferType</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cash Withdraw</fullName>
+                    <default>false</default>
+                    <label>Cash Withdraw</label>
+                </value>
+                <value>
+                    <fullName>Cash Deposit</fullName>
+                    <default>false</default>
+                    <label>Cash Deposit</label>
+                </value>
+                <value>
+                    <fullName>Cheque Withdraw</fullName>
+                    <default>false</default>
+                    <label>Cheque Withdraw</label>
+                </value>
+                <value>
+                    <fullName>Cheque Deposit</fullName>
+                    <default>false</default>
+                    <label>Cheque Deposit</label>
+                </value>
+                <value>
+                    <fullName>Storage Transfer</fullName>
+                    <default>false</default>
+                    <label>Storage Transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Transfer_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Transfer Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Transfer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Transfer Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Created</fullName>
+                    <default>false</default>
+                    <label>Created</label>
+                </value>
+                <value>
+                    <fullName>Recieved</fullName>
+                    <default>false</default>
+                    <label>Recieved</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                    <label>Cancelled</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Error</fullName>
+                    <default>false</default>
+                    <label>Error</label>
+                </value>
+                <value>
+                    <fullName>Authenticated</fullName>
+                    <default>false</default>
+                    <label>Authenticated</label>
+                </value>
+                <value>
+                    <fullName>Not Authenticated</fullName>
+                    <default>false</default>
+                    <label>Not Authenticated</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>USD__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Buy_CCY__c = &quot;USD&quot;,(if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,(Exchange_Amount__c),Transaction_Amount__c)),if(Sell_CCY__c = &quot;USD&quot;,if(Teller_Function_Text__c = &apos;FX Cash Withdrawal&apos;,  (Buy_Amount__c),Sell_Amount__c),0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>USD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Withdrawal_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Withdrawal Currency</label>
+        <length>3</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Teller Transaction</label>
+    <nameField>
+        <displayFormat>MT-{00000000}</displayFormat>
+        <label>Teller Transaction Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Teller Transaction</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

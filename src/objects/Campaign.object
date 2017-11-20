@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AdvancedSetup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>ActualCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Actual_cost_per_contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualCost  /  Total_Contacts_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual cost per Contact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Actual_response_rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Responses__c  /    Total_Contacts_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual response rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>AmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>AmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>Audience__c</fullName>
+        <externalId>false</externalId>
+        <label>Audience</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Prospects: internal</fullName>
+                    <default>false</default>
+                    <label>Prospects: internal</label>
+                </value>
+                <value>
+                    <fullName>Prospects: external</fullName>
+                    <default>false</default>
+                    <label>Prospects: external</label>
+                </value>
+                <value>
+                    <fullName>Customers</fullName>
+                    <default>false</default>
+                    <label>Customers</label>
+                </value>
+                <value>
+                    <fullName>Dormant customers</fullName>
+                    <default>false</default>
+                    <label>Dormant customers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>BudgetedCost</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CampaignMemberRecordTypeId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Closing_date_of_prize_draw__c</fullName>
+        <externalId>false</externalId>
+        <label>Closing date of prize draw</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Conversion_rate_achieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Responses__c  /  Total_Contacts_Target__c</formula>
+        <label>Conversion rate achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_opportunity_actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualCost / NumberOfOpportunities</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per opportunity actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_opportunity_target__c</fullName>
+        <externalId>false</externalId>
+        <formula>BudgetedCost / Opportunity_Target_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per opportunity target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_response__c</fullName>
+        <externalId>false</externalId>
+        <formula>BudgetedCost  /    NumberOfResponses</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per response</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_response_actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualCost  /  Total_Responses__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per response actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_response_target__c</fullName>
+        <externalId>false</externalId>
+        <formula>BudgetedCost  /  Response_Target_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per response target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_sale_actual__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualCost / Sales_achieved__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per sale actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_per_sale_target__c</fullName>
+        <externalId>false</externalId>
+        <formula>BudgetedCost / Sales_Target_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cost per sale target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Data_Source__c</fullName>
+        <description>For use with Campaigns to capture data source</description>
+        <externalId>false</externalId>
+        <label>Data Source</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Test Description field</description>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_address__c</fullName>
+        <externalId>false</externalId>
+        <label>Email address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExpectedResponse</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Expected_response__c</fullName>
+        <externalId>false</externalId>
+        <formula>ExpectedResponse  *  NumberSent</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected response</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gross_Leads__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumberOfLeads  +  NumberOfOpportunities</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gross Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HierarchyActualCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountAllOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyAmountWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyBudgetedCost</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyExpectedRevenue</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>HierarchyNumberSent</fullName>
+    </fields>
+    <fields>
+        <fullName>IBB_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IBB Product</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipLabel>Campaigns</relationshipLabel>
+        <relationshipName>Campaigns</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Key_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>Long Term Savings</fullName>
+                    <default>false</default>
+                    <label>Long Term Savings</label>
+                </value>
+                <value>
+                    <fullName>Short Term Savngs</fullName>
+                    <default>false</default>
+                    <label>Short Term Savngs</label>
+                </value>
+                <value>
+                    <fullName>BTL</fullName>
+                    <default>false</default>
+                    <label>BTL</label>
+                </value>
+                <value>
+                    <fullName>BTL ( rent only)</fullName>
+                    <default>false</default>
+                    <label>BTL ( rent only)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Line_associated_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Line associated to</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                    <label>Sales</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+                <value>
+                    <fullName>Branch</fullName>
+                    <default>false</default>
+                    <label>Branch</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Customer service</fullName>
+                    <default>false</default>
+                    <label>Customer service</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marketing_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_or_Non_Marketing__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing or Non Marketing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Non Marketing</fullName>
+                    <default>false</default>
+                    <label>Non Marketing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>NumberOfContacts</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfConvertedLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfLeads</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfResponses</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberOfWonOpportunities</fullName>
+    </fields>
+    <fields>
+        <fullName>NumberSent</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Number_of_calls_recieved__c</fullName>
+        <externalId>false</externalId>
+        <label>Calls received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_coupon_responses__c</fullName>
+        <externalId>false</externalId>
+        <label>Coupon responses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_website_responses__c</fullName>
+        <externalId>false</externalId>
+        <label>Website responses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Objective__c</fullName>
+        <externalId>false</externalId>
+        <label>Objective</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead generation</fullName>
+                    <default>false</default>
+                    <label>Lead generation</label>
+                </value>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+                <value>
+                    <fullName>Awareness</fullName>
+                    <default>false</default>
+                    <label>Awareness</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Conversion_Achieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumberOfOpportunities  /  Total_Responses__c</formula>
+        <label>Opportunity Conversion Achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_ROI__c</fullName>
+        <externalId>false</externalId>
+        <formula>AmountWonOpportunities    /  ActualCost</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity ROI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Target_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Response_Target_No__c * Response_to_opportunity__c</formula>
+        <label>Opportunity Target (No)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_responses__c</fullName>
+        <externalId>false</externalId>
+        <label>Online Coupon</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Personal_or_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Personal or Business?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business</fullName>
+                    <default>false</default>
+                    <label>Business</label>
+                </value>
+                <value>
+                    <fullName>Personal</fullName>
+                    <default>false</default>
+                    <label>Personal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prize_draw__c</fullName>
+        <externalId>false</externalId>
+        <label>Prize draw?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipLabel>Campaigns (Product)</relationshipLabel>
+        <relationshipName>Campaigns1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ROI__c</fullName>
+        <externalId>false</externalId>
+        <formula>AmountWonOpportunities   / ActualCost</formula>
+        <label>ROI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Response_Target_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Contacts_Target__c  *  Response_Target__c</formula>
+        <label>Response Target (No)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Response_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Response Target (%)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Response_to_opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Response to opportunity (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Conversion_Achieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumberOfWonOpportunities / NumberOfOpportunities</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Conversion Achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Target_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Target__c * Opportunity_Target_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales Target (No)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Target (%)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Sales_achieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>NumberOfWonOpportunities</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sales achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Target_Cost_per_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>BudgetedCost  /  Total_Contacts_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Target Cost per Contact</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Telephone_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Telephone number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Total_Contacts_Target__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Contacts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Responses__c</fullName>
+        <externalId>false</externalId>
+        <formula>Number_of_calls_recieved__c  +  Number_of_coupon_responses__c + Number_of_website_responses__c  +  Other_responses__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Responses</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>URL__c</fullName>
+        <externalId>false</externalId>
+        <label>URL</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>xx__c</fullName>
+        <externalId>false</externalId>
+        <formula>HierarchyNumberOfOpportunities</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>xx</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All_Active_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>Key_Product__c</columns>
+        <columns>IBB_Product__c</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>Audience__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.X2013</value>
+        </filters>
+        <label>All Active Campaigns</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>Key_Product__c</columns>
+        <columns>IBB_Product__c</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>Audience__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>All Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>BTL_Rent_Only_Campaign_Overview</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>Number_of_calls_recieved__c</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>Number_of_coupon_responses__c</columns>
+        <columns>Number_of_website_responses__c</columns>
+        <columns>Other_responses__c</columns>
+        <columns>Total_Responses__c</columns>
+        <columns>Actual_response_rate__c</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>Cost_per_response__c</columns>
+        <columns>Prize_draw__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>Rent Only</value>
+        </filters>
+        <label>BTL Rent Only Campaign Overview</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>CallCentreManager</roleAndSubordinatesInternal>
+            <roleAndSubordinatesInternal>MarketingTeam</roleAndSubordinatesInternal>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Campaign_responses</fullName>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Telephone_number__c</columns>
+        <columns>URL__c</columns>
+        <columns>Number_of_calls_recieved__c</columns>
+        <columns>Number_of_coupon_responses__c</columns>
+        <columns>Number_of_website_responses__c</columns>
+        <columns>Other_responses__c</columns>
+        <columns>CAMPAIGN.NUM_SENT</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.STATUS</field>
+            <operation>equals</operation>
+            <value>Live</value>
+        </filters>
+        <label>Campaign responses - live</label>
+        <sharedTo>
+            <role>MarketingTeam</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Direct_Mail</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.NUM_OPPORTUNITIES</columns>
+        <columns>CAMPAIGN.NUM_LEADS</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.CAMPAIGN_TYPE</field>
+            <operation>equals</operation>
+            <value>Direct Mail</value>
+        </filters>
+        <label>Direct Mail</label>
+    </listViews>
+    <listViews>
+        <fullName>HPP_campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>Key_Product__c</columns>
+        <columns>IBB_Product__c</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <columns>Audience__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Key_Product__c</field>
+            <operation>includes</operation>
+            <value>HPP</value>
+        </filters>
+        <label>HPP campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_campaign_view_2012</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Marketing_Code__c</columns>
+        <columns>Marketing_or_Non_Marketing__c</columns>
+        <columns>CAMPAIGN.RECORDTYPE</columns>
+        <columns>Audience__c</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.NUM_SENT</columns>
+        <columns>Number_of_calls_recieved__c</columns>
+        <columns>Number_of_website_responses__c</columns>
+        <columns>Number_of_coupon_responses__c</columns>
+        <columns>Other_responses__c</columns>
+        <columns>CAMPAIGN.NUM_RESPONSES</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.X2012</value>
+        </filters>
+        <label>Marketing campaign view 2012</label>
+        <sharedTo>
+            <role>HeadofMarketing</role>
+            <role>MarketingTeam</role>
+            <role>ProductManager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Marketing_campaign_view_2013</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Marketing_Code__c</columns>
+        <columns>CAMPAIGN.ACTIVE</columns>
+        <columns>Audience__c</columns>
+        <columns>Total_Contacts_Target__c</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>Expected_response__c</columns>
+        <columns>Number_of_calls_recieved__c</columns>
+        <columns>Number_of_website_responses__c</columns>
+        <columns>Number_of_coupon_responses__c</columns>
+        <columns>Other_responses__c</columns>
+        <columns>CAMPAIGN.NUM_RESPONSES</columns>
+        <columns>Actual_response_rate__c</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.X2013</value>
+        </filters>
+        <filters>
+            <field>Marketing_Code__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>CAMPAIGN.STATUS</field>
+            <operation>notEqual</operation>
+            <value>Completed,Aborted</value>
+        </filters>
+        <label>Marketing campaign view 2013</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>HeadofMarketing</role>
+            <role>MarketingTeam</role>
+            <role>ProductManager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MyActiveCampaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CAMPAIGN.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Active Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>Response_Entry</fullName>
+        <columns>Marketing_Code__c</columns>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Number_of_calls_recieved__c</columns>
+        <columns>Number_of_coupon_responses__c</columns>
+        <columns>Number_of_website_responses__c</columns>
+        <columns>Other_responses__c</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>Telephone_number__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Response Entry</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Campaign</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>CAMPAIGN.START_DATE</columns>
+        <columns>CAMPAIGN.END_DATE</columns>
+        <columns>CAMPAIGN.BUDGETED_COST</columns>
+        <columns>CAMPAIGN.ACTUAL_COST</columns>
+        <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+        <columns>CAMPAIGN.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Campaign.X2013</value>
+        </filters>
+        <label>2013 Campaigns</label>
+    </listViews>
+    <listViews>
+        <fullName>X2013_Campaigns</fullName>
+        <columns>CAMPAIGN.NAME</columns>
+        <columns>Marketing_or_Non_Marketing__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CAMPAIGN.NAME</field>
+            <operation>contains</operation>
+            <value>2013</value>
+        </filters>
+        <label>2013 Campaigns</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypes>
+        <fullName>X2012</fullName>
+        <active>true</active>
+        <description>Current record type</description>
+        <label>2012</label>
+        <picklistValues>
+            <picklist>Audience__c</picklist>
+            <values>
+                <fullName>Customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dormant customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospects%3A external</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospects%3A internal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Key_Product__c</picklist>
+            <values>
+                <fullName>BTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BTL %28 rent only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Savings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Short Term Savngs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_associated_to__c</picklist>
+            <values>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Marketing_or_Non_Marketing__c</picklist>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Objective__c</picklist>
+            <values>
+                <fullName>Awareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead generation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Personal_or_Business__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Prize_draw__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>BDM Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banner Ads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Walk In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sold BDM %2F branches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sold Contact Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Self Gen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Friends and Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Mailing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Calling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Posters%2FLeaflets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statement Insert or Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website - CAA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>X2013</fullName>
+        <active>true</active>
+        <description>New record type for 2013</description>
+        <label>2013</label>
+        <picklistValues>
+            <picklist>Audience__c</picklist>
+            <values>
+                <fullName>Customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dormant customers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospects%3A external</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospects%3A internal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Key_Product__c</picklist>
+            <values>
+                <fullName>BTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BTL %28 rent only%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Savings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Short Term Savngs</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Line_associated_to__c</picklist>
+            <values>
+                <fullName>Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Marketing_or_Non_Marketing__c</picklist>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Marketing</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Objective__c</picklist>
+            <values>
+                <fullName>Awareness</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead generation</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Personal_or_Business__c</picklist>
+            <values>
+                <fullName>Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Personal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Prize_draw__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Aborted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Planned</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>BDM Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Banner Ads</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Walk In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sold BDM %2F branches</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cross Sold Contact Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Self Gen</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Friends and Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IVR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intermediary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Mailing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Calling</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partners</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pay per click</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Posters%2FLeaflets</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Relationship Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statement Insert or Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website - CAA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CAMPAIGN.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CAMPAIGN.START_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Description__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Key_Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PARENT_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.START_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CAMPAIGN.END_DATE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CAMPAIGN.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00ND0000004ciPW</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Marketing_Code__c</searchFilterFields>
+        <searchResultsAdditionalFields>CAMPAIGN.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Marketing_Code__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <webLinks>
+        <fullName>ViewAllCampaignMembers</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View All Campaign Members</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/camp/rptcmpgncalldown.jsp?scope=1&amp;scopeid={!Campaign_Name}</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>ViewCampaignInfluenceReport</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Campaign Influence Report</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O?rt=117&amp;break0=CAN&amp;scope=1&amp;scopeid_lkid={!Campaign.Id}&amp;scopeid={!Campaign_Name}&amp;c=CAN&amp;c=MR&amp;c=PCS&amp;c=CFN&amp;c=RN&amp;c=ON&amp;c=OA&amp;c=OS&amp;c=OCD&amp;c=AN&amp;s=OA&amp;duel0=CAN%2CMR%2CCFN%2CRN%2CAN%2CON%2CPCS%2COS%2COCD%2COA&amp;details=yes&amp;format=t</url>
+        <width>500</width>
+    </webLinks>
+    <webLinks>
+        <fullName>smagicinteract__Run_SMS_Campaign</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Run SMS Campaign</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/14.0/apex.js&quot;)}
+
+var packagePrefix = &quot;smagicinteract__&quot;;
+var recordType = &quot;campaignmember&quot;;
+var idToUpdate = &quot;{! Campaign.Id }&quot;;
+var leadPhoneField = &quot;MobilePhone&quot;;
+var contactPhoneField = &quot;MobilePhone&quot;;
+var optOutDefaultValue = &apos;no&apos;;
+
+
+var queryString = parent.window.location.pathname;
+if (parent.window.location.search){
+queryString = queryString + parent.window.location.search
+}
+var url = &quot;/apex/&quot;+packagePrefix+&quot;CampaignSMSSendPage?retURL=&quot;+queryString + &quot;&amp;objectType=&quot;+recordType+&quot;&amp;recordIds=&quot;+idToUpdate+&quot;&amp;optOutDefaultValue=&quot;+ optOutDefaultValue+&quot;&amp;leadPhoneField=&quot;+leadPhoneField+&quot;&amp;contactPhoneField=&quot;+contactPhoneField ;
+
+parent.window.location = url;</url>
+    </webLinks>
+</CustomObject>

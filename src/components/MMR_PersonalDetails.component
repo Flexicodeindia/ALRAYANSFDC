@@ -1,0 +1,217 @@
+<apex:component >
+<apex:attribute description="Applicant no" name="ApplicantNo" type="String" />
+<apex:attribute description="Applicant no" name="appNo" type="String" required="true"/>
+    <apex:attribute description="Acc" name="Acc" type="Account" required="true"/>
+    <apex:attribute description="" name="Email" type="Boolean" required="true"/>
+        <apex:attribute description="" name="Mail" type="Boolean" required="true"/>
+            <apex:attribute description="" name="SMS" type="Boolean" required="true"/>
+                <apex:attribute description="" name="Phone" type="Boolean" required="true"/>
+    <apex:attribute description="" name="panelClass" type="String"/>
+    
+<!--  CPDR01 -->
+    <style>
+        .panel-info>.panel-heading
+        {
+            background-color:#000;
+        }
+        </style>
+        <!--  CPDR01-->
+    
+    
+    <div class="AppWidth col-md-6">
+            <div class="panel panel-primary applicantPanel">
+            <div class="panel-heading"><h2>Applicant {!appNo} - {!Acc.Name}</h2>  </div>
+            
+            
+  <div class="panel-body">
+    
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Title</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.Salutation}" required="true" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >First Name</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.FirstName}" required="true" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Middle Name</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.Middle_Name__pc}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Last Name</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.LastName}" required="true" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Gender</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.Gender__c}" required="true" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Date of birth</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="true" value="{!Acc.Date_of_Birth__c}" styleClass="form-control"/>
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Primary contact number</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="true" value="{!Acc.Home_Telephone_No__c}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Secondary contact number</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField value="{!Acc.Phone}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Email Address</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="true" value="{!Acc.PersonEmail}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >No. of dependants</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="true" value="{!Acc.No_of_depenents__c}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Planned Retirement Age</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="true" value="{!Acc.Planned_retirement_age__c}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+    <div class="row">
+        <div class="form-group">    
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 hidden-md hidden-lg") }">
+                <label for="" >Premier Status</label>    
+            </div>
+            <div class="{!IF((ApplicantNo =='1' || ApplicantNo =='3'),"col-sm-6","col-sm-6 col-md-offset-3") }">
+                <apex:inputField required="false" value="{!Acc.Premier_Status__c}" styleClass="form-control" />
+            </div>
+        </div>        
+    </div>
+    
+   <div class="row">
+    <div class="panel panel-info">
+        <div class="panel-heading" >Marketing</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label >Please indicate if you 'Do not' wish to be contacted by Al Rayan Bank by any of the following</label>
+                    </div>
+                    <div class="col-sm-6 inputlabel">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label>
+                                      <apex:inputCheckbox value="{!Email}"/> Email
+                                    </label>
+                                  </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label>
+                                      <apex:inputCheckbox value="{!Mail}"/> Mail
+                                    </label>
+                                </div>
+                            </div>
+                               
+                               
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label>
+                                      SMS<apex:inputCheckbox value="{!SMS}"/> 
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="checkbox">
+                                    <label>
+                                      <apex:inputCheckbox value="{!Phone}"/> Phone
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>    
+    </div>
+    
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+</apex:component>

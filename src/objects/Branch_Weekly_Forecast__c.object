@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AHT__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>CC USE ONLY - Team to input forecast AHT for the upcoming week on a friday</inlineHelpText>
+        <label>AHT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appointments__c</fullName>
+        <externalId>false</externalId>
+        <label>Appointments</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appointments_forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Appointments</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Average_Calls_per_Hour__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For Cc to input forecast calls per hour for team for next week</inlineHelpText>
+        <label>Average Calls per Hour</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_App_s_Submitted_Volume_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL App&apos;s Submitted (Volume Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_Applications_Submitted_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Applications Submitted (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Applications_Written_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Applications Written (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Applications_Written_Volume_F_cast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Applications Written (Volume F&apos;cast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_Seller_Leads__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the number of forecast BTL leads</inlineHelpText>
+        <label>BTL Seller Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_Value_AIP_s_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Value AIP&apos;s (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Volume_AIP_s_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Volume AIP&apos;s (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Branch</label>
+        <referenceTo>Branch_Documents__c</referenceTo>
+        <relationshipLabel>Branch Weekly Forecast</relationshipLabel>
+        <relationshipName>Branch_Weekly_Forecast</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Calls_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Calls</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Calls__c</fullName>
+        <externalId>false</externalId>
+        <label>Calls</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Completed_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Completed by</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Branch_Weekly_Forecast</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Completed</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fact_Finds__c</fullName>
+        <externalId>false</externalId>
+        <label>Fact Finds</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fact_Finds_completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Fact Finds</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_AIPs__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP AIPs</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_AIPs_forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP AIPs</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP Opportunities</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Opportunities_forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP Opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_AIP_Value_Forecast__c</fullName>
+        <description>HPP Seller please enter the value (if known) of AIP&apos;s forecast for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller please enter the value (if known) of AIP&apos;s forecast for next week</inlineHelpText>
+        <label>HPP Seller AIP Value Forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_AIP_Volume_Forecast__c</fullName>
+        <description>HPP Seller Please enter the forecast volume fo AIP&apos;s for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller Please enter the forecast volume fo AIP&apos;s for next week</inlineHelpText>
+        <label>HPP Seller AIP Volume Forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_APPS_Written_Value_forecast__c</fullName>
+        <description>HPP Seller please enter the Value of Applications written forecast for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller please enter the Value of Applications written forecast for next week</inlineHelpText>
+        <label>HPP Seller APPS Written Value forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_APPs_Submitted_Value_Forecast__c</fullName>
+        <description>HPP Seller please enter the value of applications submitted forecast for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller please enter the value of applications submitted forecast for next week</inlineHelpText>
+        <label>HPP Seller APPs Submitted Value Forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_APPs_Written_volume_forecast__c</fullName>
+        <description>HPP Seller please enter the volume of Applications written forecast for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller please enter the volume of Applications written forecast for next week</inlineHelpText>
+        <label>HPP Seller APPs Written volume forecast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_Apps_Submitted_Volume__c</fullName>
+        <description>HPP Seller please enter the forecast applications submitted volume for next week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Seller please enter the forecast applications submitted volume for next week</inlineHelpText>
+        <label>HPP Seller Apps Submitted Volume F&apos;cast</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_Opportunities__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the number of forecast leads for the coming week</inlineHelpText>
+        <label>HPP Seller Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTB_App_s_Submitted_Volume_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB App&apos;s Submitted (Volume Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTB_Applications_Submitted_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Applications Submitted (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HTB_Applications_Written_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Applications Written (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HTB_Applications_Written_Volume_F_cast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Applications Written (Volume F&apos;cast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTB_Seller_Leads__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Seller Leads</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTB_Value_AIP_s_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Value AIP&apos;s (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HTB_Volume_AIP_s_Forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB Volume AIP&apos;s (Forecast)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HTB_opportunities__c</fullName>
+        <externalId>false</externalId>
+        <label>HTB opportunities</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IFA_DPS_Lead_Volume__c</fullName>
+        <externalId>false</externalId>
+        <label>IFA/DPS Lead Volume</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LTS_Gross_Sales_value__c</fullName>
+        <externalId>false</externalId>
+        <label>LTS Gross Sales value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>LTS_Opportunity_Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For the Inbound Teams Only</inlineHelpText>
+        <label>LTS Opportunity Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Leaflet_Distribution_this_Week__c</fullName>
+        <description>Enter free format details of the leaflet distribution undertaken by the branch this week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter details of the leaflet distribution undertaken by the branch this week.</inlineHelpText>
+        <label>Leaflet Distribution this Week</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Long_Term_Savings__c</fullName>
+        <externalId>false</externalId>
+        <label>Long Term Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Long_Term_Savings_forecast__c</fullName>
+        <externalId>false</externalId>
+        <label>Long Term Savings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>STS_Gross_Sales_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>STS Gross Sales Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>STS_Opportunity_value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>For CC Inbound Teams only</inlineHelpText>
+        <label>STS Opportunity value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Volume_Leaflets_Distributed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the volumes of leaflets distributed by your outlet this week.</inlineHelpText>
+        <label>Volume Leaflets Distributed</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Branch Weekly Forecast</label>
+    <nameField>
+        <displayFormat>BWF{0000}</displayFormat>
+        <label>Branch Weekly Forecast Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Branch Weekly Forecast</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

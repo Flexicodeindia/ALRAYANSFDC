@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For use with IT &amp; Change Delivery deployments</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Apex_Classes__c</fullName>
+        <description>List apex classes to be deployed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List apex classes to be deployed</inlineHelpText>
+        <label>Apex Classes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Communications_Completed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Business Communications Completed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Deployment_Plans1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Business_Communications_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Communications Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Business_Communications_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Business Communications Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Buttons_and_Links__c</fullName>
+        <description>New buttons and links to be created in Production</description>
+        <externalId>false</externalId>
+        <inlineHelpText>New buttons and links to be created in Production</inlineHelpText>
+        <label>Buttons and Links</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Custom_Settings__c</fullName>
+        <description>Customer setting updated/created in Production</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer setting updated/created in Production</inlineHelpText>
+        <label>Custom Settings</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deployment_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Deployment Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deployment_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Deployment Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deployment_Review_Meeting__c</fullName>
+        <description>Date deployment review meeting scheduled</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date deployment review meeting scheduled</inlineHelpText>
+        <label>Deployment Review Meeting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Docugen_Settings_Templates_Queries__c</fullName>
+        <description>Docugen settings, templates and queries updated in Production</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Docugen settings, templates and queries updated in Production</inlineHelpText>
+        <label>Docugen Settings/Templates/Queries</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Due Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Errors__c</fullName>
+        <externalId>false</externalId>
+        <label>Errors</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IT_Change_Request_CAT_Case_Link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IT Change Request/CAT Case Link</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Deployment Plans</relationshipLabel>
+        <relationshipName>Deployment_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IT_Change_Task_Link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IT &amp; Change Task Link</label>
+        <referenceTo>IT_Change_Task__c</referenceTo>
+        <relationshipLabel>Deployment Plans</relationshipLabel>
+        <relationshipName>Deployment_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_Fields__c</fullName>
+        <description>All new fields created in Production</description>
+        <externalId>false</externalId>
+        <inlineHelpText>All new fields created in Production</inlineHelpText>
+        <label>New Fields</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>New_Permissions_To_Be_Given__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Permissions given for access required</inlineHelpText>
+        <label>New Permissions To Be Given</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Objects__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>List of all new objects to be created in live system</inlineHelpText>
+        <label>Objects</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Page_Layouts__c</fullName>
+        <description>Page Layouts checked and updated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Page Layouts checked and updated</inlineHelpText>
+        <label>Page Layouts</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PoPost_Implementation_Testing_Comp_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Implementation Testing Comp Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Post_Implementation_Testing_Completed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Post Implementation Testing Completed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Deployment_Plans2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Post_Implementation_Testing_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Implementation Testing Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Review_Meeting_Members__c</fullName>
+        <description>List of members attended the review meeting</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List of members attended the review meeting</inlineHelpText>
+        <label>Review Meeting Members</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Static_resources__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Static Resources updated</inlineHelpText>
+        <label>Static resources</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Scheduled</fullName>
+                    <default>false</default>
+                    <label>Scheduled</label>
+                </value>
+                <value>
+                    <fullName>In progress</fullName>
+                    <default>false</default>
+                    <label>In progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Testing_Completed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Testing Completed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Deployment_Plans</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Testing_Completed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Testing Completed Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Testing_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Testing Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Triggers__c</fullName>
+        <description>List all Triggers to be deployed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List all Triggers to be deployed</inlineHelpText>
+        <label>Triggers</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>VF_Pages__c</fullName>
+        <description>List all VF pages to be deployed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>List all VF pages to be deployed</inlineHelpText>
+        <label>VF Pages</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Visual_Force_Components__c</fullName>
+        <description>Visual force components to be deployed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Visual force components to be deployed</inlineHelpText>
+        <label>Visual Force Components</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Workflow_Rules__c</fullName>
+        <description>New workflow rules created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>New workflow rules created</inlineHelpText>
+        <label>Workflow Rules</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <label>Deployment Plan</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>Due_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Deployment Plan Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Deployment Plans</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Cash_Order_API_Field_Label__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used to validate the minimum amount matches what the user has input</inlineHelpText>
+        <label>Cash Order API Field Label</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Denomination__c</fullName>
+        <externalId>false</externalId>
+        <label>Denomination</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Has_Coin_Bag_Delivery_Charge__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Has Coin Bag Delivery Charge</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates the minimum value allows for Cash Order Amount</inlineHelpText>
+        <label>Minimum Value</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>CMS Cash Order Currency Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

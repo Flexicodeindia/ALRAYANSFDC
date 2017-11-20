@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For use by Collections to log any activity relating to Collections matters</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please include root cause analysis</inlineHelpText>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inbound call</fullName>
+                    <default>false</default>
+                    <label>Inbound call</label>
+                </value>
+                <value>
+                    <fullName>Outbound call</fullName>
+                    <default>false</default>
+                    <label>Outbound call</label>
+                </value>
+                <value>
+                    <fullName>Letter from customer</fullName>
+                    <default>false</default>
+                    <label>Letter from customer</label>
+                </value>
+                <value>
+                    <fullName>Letter to customer</fullName>
+                    <default>false</default>
+                    <label>Letter to customer</label>
+                </value>
+                <value>
+                    <fullName>Outbound email</fullName>
+                    <default>false</default>
+                    <label>Outbound email</label>
+                </value>
+                <value>
+                    <fullName>Inbound email</fullName>
+                    <default>false</default>
+                    <label>Inbound email</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Account</label>
+        <referenceTo>Account_with_IBB__c</referenceTo>
+        <relationshipLabel>Collections Notes</relationshipLabel>
+        <relationshipName>Collections_Notes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Collections Notes</relationshipLabel>
+        <relationshipName>Collections_Notes</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Collections Note</label>
+    <nameField>
+        <displayFormat>COL-{0000}</displayFormat>
+        <label>Collections Note Name</label>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Collections Notes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Collections_Letters_Business</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Collections Letters Business</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Docugen
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Collections_Note__c.Id}
+&amp;q1=a5aD0000000GmiC
+&amp;TemplateGroup=BusinessCollections</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Collections_Letters_Personal</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Collections Letters Personal</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Docugen
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Collections_Note__c.Id}
+&amp;q1=a5aD0000000GmiC
+&amp;TemplateGroup=Collections</url>
+    </webLinks>
+</CustomObject>

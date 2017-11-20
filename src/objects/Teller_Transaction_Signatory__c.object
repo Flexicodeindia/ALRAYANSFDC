@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Holder__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account Holder</label>
+        <referenceTo>Asset_Relationship__c</referenceTo>
+        <relationshipLabel>Teller Transaction Signatories</relationshipLabel>
+        <relationshipName>Teller_Transaction_Signatories</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Photo_Image_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Photo Image Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Photo_Image_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;//servlet//servlet.FileDownload?file=&quot; + Photo_Image_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Photo Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prospect_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Prospect Customer</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Teller Transaction Signatories</relationshipLabel>
+        <relationshipName>Teller_Transaction_Signatories</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Signature_Image_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Signature Image Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signature_Image_URL__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;//servlet//servlet.FileDownload?file=&quot; + Signature_Image_Id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Signature Image URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Teller Transaction</label>
+        <referenceTo>Teller_Transaction__c</referenceTo>
+        <relationshipLabel>Teller Transaction Signatories</relationshipLabel>
+        <relationshipName>Teller_Transaction_Signatories</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Teller Transaction Signatory</label>
+    <listViews>
+        <fullName>Account_Holders</fullName>
+        <columns>NAME</columns>
+        <columns>Account_Holder__c</columns>
+        <columns>Prospect_Customer__c</columns>
+        <columns>Teller_Transaction__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Holder__c</field>
+            <operation>equals</operation>
+            <value>1101011292001357475</value>
+        </filters>
+        <label>Account Holders</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>Change_Delivery_Manager</role>
+            <role>Salesforce_Administrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Teller Transaction Signatory Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Teller Transaction Signatories</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

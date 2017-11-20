@@ -1,0 +1,270 @@
+<apex:page controller="General_Enquiry_Controller" action="{!onLoad}" showHeader="false" sidebar="false" standardStylesheets="false">
+<apex:composition template="Web_Template">
+<apex:define name="body">
+<div class="content content-page">
+<div class="col-md-9">
+<section class="contentWide">
+        <div class="content-split">
+            <div class="column-1 contentP">
+              <div class="enquiry-form">
+                <h1>General enquiries</h1>
+                <h4>As the UK's only stand-alone Sharia compliant retail bank, Al Rayan Bank offers a range of ethical savings and property finance products, which don't involve interest. If you have a general enquiry about any of&nbsp;Al Rayan Bank's products and services, or about Al Rayan Bank and the principles of Sharia finance, please complete this form.</h4>
+<p>Please do not share your account information through this form.&nbsp; If you are an existing customer and have a question about your account, please call us on <span class="rTapNumber80141" style="visibility: visible;">0800 408 6407</span> or contact us through your secure online banking email facility.</p>
+<p>Please note that all fields marked with * need to be completed.</p>
+
+                      
+   <script type="text/javascript">
+       var contourDateFormat = "m/d/yy";
+    </script> 
+    <script type="text/javascript">
+        function QueryStringToJSON(pairs) { 
+
+            pairs=pairs.split('&');
+            
+            var result = {};
+            pairs.forEach(function(pair) {
+                pair = pair.split('=');
+                result[pair[0]] = decodeURIComponent(pair[1] || '');
+            });
+        
+            return JSON.parse(JSON.stringify(result));
+        }
+    
+        $(document).ready(function(){
+            $('#enquiry-form').submit(function(form){
+                $(".field-validation-valid").html("");
+                $("#enquiry-form .required").removeClass("error");
+                
+                var isValid=1;
+                
+                $("#enquiry-form .required").each(function(){
+                    if($.trim($(this).val())==''){
+                        $(this).addClass("error");
+                        $("[data-valmsg-for="+$(this).attr("id")+"]").html($(this).attr("data-val-required"));
+                        isValid=0;
+                    }
+                });
+                
+                var productList=[];
+                $("[name=Product]").each(function(){
+                    if($(this).prop("checked"))
+                        productList.push($(this).val());
+                });
+                
+                var noContactList=[];
+                $("[name=NoContact]").each(function(){
+                    if($(this).prop("checked"))
+                        noContactList.push($(this).val());
+                });
+                
+                $("#enq-product-list").val(productList.join(","));
+                $("#enq-no-contact-list").val(noContactList.join(","));
+                
+                if(isValid){
+                    var data=JSON.stringify(QueryStringToJSON($('#enquiry-form').serialize()));
+                    General_Enquiry_Controller.SaveEnquiry(data,function(result, event) {
+                      if(event.type == 'exception') {
+                  
+                          console.log(event.message);
+                      } else {
+                         var  msg = result;
+                          $('.enquiry-form').hide();
+                          $('.thank-you').show();
+                          
+                          $("body").scrollTop(0);
+                          console.log(msg);
+                          $("#case-ref").html(msg);
+                      }
+                    });
+                    
+                }
+            });
+            
+            
+            
+            
+        });
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="/umbraco/plugins/umbracocontour/css/jquery-ui-1.8.18.custom.css" />
+    <link rel="stylesheet" type="text/css" href="/umbraco/plugins/umbracocontour/css/defaultform.css" />
+    <div id="contour" class="generalenquiries">
+    
+<form action="" onsubmit="return false;" enctype="multipart/form-data" method="post" id="enquiry-form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="7jAw5bhmjVNhtld3h8RNC/xIhfOY9Ail/PC7S/SmbVyHity77HYWL89BEVSb+jpbgygdHVRfA8RBFuAFuUbn3gPYKsV20iuk49J55guUg1VrJLccTda+Xt6S4pug6V7CCxcLNwFKxTKxVfeMY5fhCX0wqd197yn/blnTDd4UPPuJ2dJm9Rkze4s6dlJbhspC" /><input data-val="true" data-val-required="The FormId field is required." id="FormId" name="FormId" type="hidden" value="309f1292-0ce7-4587-ba9a-14134aea2934" />            <input type="hidden" name="FormStep" id="FormStep" value="1" />
+            <input type="hidden" name="RecordId" id="RecordId" value="" />
+            <input type="hidden" name="PreviousClicked" id="PreviousClicked" value="" />
+            <div class="contourPage">
+                <h4 class="contourPageName"></h4>
+                    <fieldset class="contourFieldSet">
+                            <div class="contourField title dropdownlist mandatory">
+<label for="enq-title" class="fieldLabel">Title<span class="contourIndicator">*</span></label>                                <div><select name="Title" id="enq-title" class="required" data-val="true" data-val-required="Title is mandatory">
+    <option value=""></option>
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Ms">Ms</option>
+        <option value="Miss">Miss</option>
+        <option value="Dr">Dr</option>
+        <option value="Prof">Prof</option>
+</select>
+
+<span class="field-validation-valid" data-valmsg-for="enq-title" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField firstname textfield mandatory alternating">
+<label for="enq-first-name" class="fieldLabel">First Name<span class="contourIndicator">*</span></label>                                <div><input type="text" name="FirstName" id="enq-first-name" class="text required" value="" maxlength="500" data-val="true" data-val-required="First Name is mandatory" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-first-name" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField surname textfield mandatory">
+<label for="enq-surname" class="fieldLabel">Surname<span class="contourIndicator">*</span></label>                                <div><input type="text" name="Surname" id="enq-surname" class="text required" value="" maxlength="500" data-val="true" data-val-required="Surname is mandatory" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-surname" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField preferredtelephonenumber phonefield mandatory alternating">
+<label for="enq-telephone-number" class="fieldLabel">Preferred telephone number<span class="contourIndicator">*</span></label>                                <div><input type="tel" style="width:300px;" name="TelephoneNumber" id="enq-telephone-number" class="required" value="" data-val="true" data-val-required="Preferred telephone number is mandatory" />
+
+<span class="field-validation-valid" data-valmsg-for="enq-telephone-number" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField preferredemailaddress emailfield mandatory">
+<label for="enq-email" class="fieldLabel">Preferred email address<span class="contourIndicator">*</span></label>                                <div><input type="email" style="width:300px;" name="Email" id="enq-email" class="required" value="" data-val="true" data-val-required="Preferred email address is mandatory" />
+
+<span class="field-validation-valid" data-valmsg-for="enq-email" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField addresslineone textfield alternating">
+<label for="enq-address-line-1" class="fieldLabel">Address line one</label>                                <div><input type="text" name="AddressLine1" id="enq-address-line-1" class="text" value="" maxlength="500" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="93366dca-ea64-4744-8e75-3ad201a953d7" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField addresslinetwo textfield">
+<label for="enq-address-line-2" class="fieldLabel">Address line two</label>                                <div><input type="text" name="AddressLine2" id="enq-address-line-2" class="text" value="" maxlength="500" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-post-code" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField postcode textfield alternating">
+<label for="enq-post-code" class="fieldLabel">Post code</label>                                <div><input type="text" name="PostCode" id="enq-post-code" class="text" value="" maxlength="500" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-message" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField pleaseusethisboxtoregisteryourenquiry textarea">
+<label for="enq-message" class="fieldLabel">Please use this box to register your enquiry</label>                                <div><textarea name="Message" id="enq-message" rows="10" cols="20" style="width:100%"></textarea>
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-message" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField ifyouwouldliketofindoutmoreaboutanyofourshariacompliantproductsandservicespleaseticktherelevantboxesoppositeandwewillcontactyoushortly checkboxlist alternating">
+<label for="5c79ad95-30ca-4e5c-b1e6-81b628e41279" class="fieldLabel">If you would like to find out more about any of our Sharia compliant products and services, please tick the relevant boxes opposite and we will contact you shortly</label>                                <div><span class="checkboxlist" id="Products">
+        <input type="checkbox" name="Product" id="enq-product-1" value="Home Purchase Plan" />
+        <label for="enq-product-1">Home Purchase Plan</label>
+        <br/>
+        <input type="checkbox" name="Product" id="enq-product-2" value="Buy To Let Purchase Plan" />
+        <label for="enq-products-2">Buy To Let Purchase Plan</label>
+        <br/>
+        <input type="checkbox" name="Product" id="enq-product-3" value="Short term savings" />
+        <label for="enq-products-3">Short term savings</label>
+        <br/>
+        <input type="checkbox" name="Product" id="enq-product-4" value="Long term savings" />
+        <label for="enq-products-4">Long term savings</label>
+        <br/>
+        <input type="checkbox" name="Product" id="enq-product-5" value="Pensions and investments" />
+        <label for="enq-products-5">Pensions and investments</label>
+        <br/>
+        <input type="hidden" name="ProductList" id="enq-product-list" />
+</span>
+
+<span class="field-validation-valid" data-valmsg-for="enq-products" data-valmsg-replace="true"></span></div>
+                            </div>
+                    </fieldset>
+                    <fieldset class="contourFieldSet">
+                            <legend>We would like to contact you in the future regarding new products and promotional offers. The information on this form may be used by us for this purpose.</legend>
+                            <div class="contourField pleaseindicateifyoudonotwishtobecontactedby checkboxlist">
+<label for="" class="fieldLabel">Please indicate if you DO NOT wish to be contacted by:</label>                                <div><span class="checkboxlist" id="3bd545b1-898f-4fd1-af27-83816cbf8ede">
+        <input type="checkbox" name="NoContact" id="enq-no-contact-1" value="Phone" />
+        <label for="enq-no-contact-1">Phone</label>
+        <br/>
+        <input type="checkbox" name="NoContact" id="enq-no-contact-2" value="Email" />
+        <label for="enq-no-contact-2">Email</label>
+        <br/>
+        <input type="checkbox" name="NoContact" id="enq-no-contact-3" value="SMS" />
+        <label for="enq-no-contact-3">SMS</label>
+        <br/>
+        <input type="checkbox" name="NoContact" id="enq-no-contact-4" value="Any method" />
+        <label for="enq-no-contact-4">Any method</label>
+        <br/>
+        <input type="hidden" name="NoContactList" id="enq-no-contact-list" />
+</span>
+
+<span class="field-validation-valid" data-valmsg-for="enq-no-contact" data-valmsg-replace="true"></span></div>
+                            </div>
+                            <div class="contourField ifyoureceivedanitemofmarketingandknowthespecificreferencenumberdetailedonthispleaseenterithere textfield alternating">
+<label for="enq-ref-no" class="fieldLabel">If you received an item of marketing and know the specific reference number detailed on this, please enter it here:</label>                                <div><input type="text" name="RefNo" id="enq-ref-no" class="text" value="" maxlength="500" />
+
+
+
+
+<span class="field-validation-valid" data-valmsg-for="enq-ref-no" data-valmsg-replace="true"></span></div>
+                            </div>
+                    </fieldset>
+
+            </div>
+            <div class="contourNavigation">
+                    <input type="submit" value="Submit" class="pull-right" />
+            </div>
+            <div style="clear:both;">&nbsp;</div>                   
+</form>    
+
+
+
+</div>
+
+<p>We will not provide access to your data to any third parties for marketing purposes. In accordance with the Data Protection Act 1998, Al Rayan Bank PLC. is registered as a Data Controller on the public register of data controllers, as maintained by the Information Commissioner. You may request in writing upon payment of a fee, a copy of the details held about you by Al Rayan Bank PLC.</p>
+<p>Incorporate and registered in England and Wales with registration number: 4483430. Registered office:&nbsp;44 Hans Crescent, Knightsbridge, London, SW1X 0LZ.</p>
+<p>Al Rayan Bank PLC. is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority. Our firm reference number is 229148.</p>
+
+</div>
+
+<div class="thank-you" id="thank-you" style="display:none;">
+    <h1>Thank you</h1>
+    <h4>Thanks for completing the enquiry form. Your reference is <span id="case-ref"></span>.</h4>
+    <p>A representive of Al Rayan Bank will contact you to discuss your enquiry, usually this will be within 2 working days.</p>
+</div>
+
+            </div>
+            
+
+</div>
+
+</section>
+
+</div><!-- col-md-9 -->
+<div class="col-md-3 col-sm-12 progressCol" style="padding:0px;">
+        
+    <div class="LoginContainer" ng-hide="Data.AccountId">
+        <div>
+            <p><strong>Existing Al Rayan Bank customers</strong> 
+            should contact us through the secure messaging service in Online Banking.</p>
+        </div>
+        <div>
+            <a class="btn loginbutton" href="https://online.alrayanbank.co.uk/online/aspscripts/Logon.asp" style="color:#fff;">Login</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</apex:define>
+</apex:composition>
+</apex:page>

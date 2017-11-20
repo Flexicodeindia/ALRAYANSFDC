@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For use with strategic plan 2014</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Actions_undertaken_since_last_update__c</fullName>
+        <externalId>false</externalId>
+        <label>Actions undertaken since last update</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Budget_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Budget status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Amber</fullName>
+                    <default>false</default>
+                    <label>Amber</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_of_review__c</fullName>
+        <defaultValue>Today() -15</defaultValue>
+        <externalId>false</externalId>
+        <label>Date of review</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>On_time__c</fullName>
+        <externalId>false</externalId>
+        <label>SI on schedule?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Overall_strategic_initiative_RAG_rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall strategic initiative RAG rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Green</fullName>
+                    <default>false</default>
+                    <label>Green</label>
+                </value>
+                <value>
+                    <fullName>Amber</fullName>
+                    <default>false</default>
+                    <label>Amber</label>
+                </value>
+                <value>
+                    <fullName>Red</fullName>
+                    <default>false</default>
+                    <label>Red</label>
+                </value>
+                <value>
+                    <fullName>Not started</fullName>
+                    <default>false</default>
+                    <label>Not started</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Planned_upcoming_actions__c</fullName>
+        <externalId>false</externalId>
+        <label>Planned upcoming actions</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Risks_or_issues_with_the_SI__c</fullName>
+        <externalId>false</externalId>
+        <label>Risks or issues with the SI</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not started</fullName>
+                    <default>false</default>
+                    <label>Not started</label>
+                </value>
+                <value>
+                    <fullName>On track</fullName>
+                    <default>false</default>
+                    <label>On track</label>
+                </value>
+                <value>
+                    <fullName>Off track</fullName>
+                    <default>false</default>
+                    <label>Off track</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Strategic_Initiative__c</fullName>
+        <externalId>false</externalId>
+        <label>Strategic Initiative</label>
+        <referenceTo>Strategic_Initiative__c</referenceTo>
+        <relationshipLabel>Strategic Initiative Reviews</relationshipLabel>
+        <relationshipName>Strategic_Initiative_Reviews</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Strategic Initiative Review</label>
+    <listViews>
+        <fullName>Last_months</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Strategic_Initiative__c</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Last months</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>SIR{0000}</displayFormat>
+        <label>Strategic Initiative Review Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Strategic Initiative Reviews</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Client_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Key</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Secret__c</fullName>
+        <externalId>false</externalId>
+        <label>Client Secret</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Callout_Timeout__c</fullName>
+        <description>The default timeout is 10000 milliseconds . The maximum values will be 120000 milliseconds (Salesforce limit).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The default timeout is 10000 milliseconds . The maximum values will be 120000 milliseconds (Salesforce limit).</inlineHelpText>
+        <label>Custom Callout Timeout</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Domain_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>Domain URL</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_Reports_Per_Batch__c</fullName>
+        <description>The number of reports processed a the same time, current default value is 100, we can let you configure that parameter also (Between 1 and 200 as Salesforce limit). This value is important because there is a cumulative timeout limit per transaction which means that a small timeout per each report can reach the total cumulative limit.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of reports processed a the same time, current default value is 100, we can let you configure that parameter also (Between 1 and 200 as Salesforce limit). This value is important because there is a cumulative timeout limit per transaction which</inlineHelpText>
+        <label>Number Reports Per Batch</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Password__c</fullName>
+        <externalId>false</externalId>
+        <label>Password</label>
+        <length>60</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>User Name</label>
+        <length>60</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Metric Refresh Service Config</label>
+    <visibility>Public</visibility>
+</CustomObject>

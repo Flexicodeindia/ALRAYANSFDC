@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Allow_Submit_For_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Allow Submit For Approval</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Branch_No__c</fullName>
+        <description>Branch Number e.g. 1100, 1101</description>
+        <externalId>false</externalId>
+        <label>Branch No</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CCY__c</fullName>
+        <description>Currency value, e.g. GBP. USD etc</description>
+        <externalId>false</externalId>
+        <label>CCY</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Default</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Authorisor__c</fullName>
+        <externalId>false</externalId>
+        <label>First Authorisor</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fourth_Authorisor__c</fullName>
+        <externalId>false</externalId>
+        <label>Fourth Authorisor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Function_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Function Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Limit_Type__c</fullName>
+        <description>Distinguishes between different limit types</description>
+        <externalId>false</externalId>
+        <inlineHelpText>T - Transaction Limit Type 
+V - Vault Limit Type</inlineHelpText>
+        <label>Limit Type</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lower_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Lower Limit</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Second_Authorisor__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Authorisor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Third_Authorisor__c</fullName>
+        <externalId>false</externalId>
+        <label>Third Authorisor</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Upper_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Upper Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Teller Limits</label>
+    <visibility>Protected</visibility>
+</CustomObject>

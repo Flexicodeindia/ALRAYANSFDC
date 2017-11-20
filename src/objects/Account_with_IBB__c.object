@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>AccountWithIBBEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <content>AccountIBBList</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>AccountWithIBBTab</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>AccountWithIBBView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Absolute_balance__c</fullName>
+        <externalId>false</externalId>
+        <formula>ABS( Available_Balance__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Absolute balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Blocked__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Blocked</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Closed__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Closed</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Conduct__c</fullName>
+        <description>For use with credit reporting.</description>
+        <externalId>false</externalId>
+        <label>Account Conduct</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Acceptable</fullName>
+                    <default>true</default>
+                    <label>Acceptable</label>
+                </value>
+                <value>
+                    <fullName>Not acceptable</fullName>
+                    <default>false</default>
+                    <label>Not acceptable</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_Currency__c</fullName>
+        <defaultValue>&quot;GBP&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Account Currency</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Inactive__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Inactive</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Is_Joint__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Is Joint</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>false</default>
+                    <label>NO</label>
+                </value>
+                <value>
+                    <fullName>YES</fullName>
+                    <default>false</default>
+                    <label>YES</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Account_Number_Dashes__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(Name, 4) + &quot;-&quot; + MID(Name, 5, 6) + &quot;-&quot; + MID(Name, 11, 3)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Number Dashes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Suffix__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Suffix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+ISNULL(TEXT( IBB_Product__r.Type_of_Product__c)),
+TEXT( IBB_Product__r.Category_of_Product__c),
+TEXT( IBB_Product__r.Type_of_Product__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Available Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Branch__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(  CreatedBy.Branch__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Branch</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch_code__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT(Name  , 4)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Branch code</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch_name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(  Branch_code__c  ), &quot;No branch&quot;,
+IF(CONTAINS(&quot;1100&quot;, Branch_code__c), &quot;Head Office&quot;,
+IF(CONTAINS(&quot;1301&quot;, Branch_code__c), &quot;Manchester&quot;,
+IF(CONTAINS(&quot;1101:1102&quot;, Branch_code__c), &quot;Small Heath&quot;,
+IF(CONTAINS(&quot;1201:1202&quot;, Branch_code__c), &quot;Edgware Road&quot;, 
+IF(CONTAINS(&quot;1210:1215&quot;, Branch_code__c), &quot;Whitechapel&quot;,
+IF(CONTAINS(&quot;1120&quot;, Branch_code__c), &quot;Leicester&quot;,
+IF(CONTAINS(&quot;1199&quot;, Branch_code__c), &quot;Online&quot;,
+IF(CONTAINS(&quot;7261&quot;, Branch_code__c), &quot;Commercial Banking&quot;,
+&quot;Other&quot;)))))))))</formula>
+        <label>Branch name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chequebook_Required__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Primary_SFDC_Account__r.Cheque_book_required__c = TRUE,&quot;Y&quot;,&quot;N&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Chequebook Required</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cleared_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Cleared Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Collections_Log__c</fullName>
+        <externalId>false</externalId>
+        <label>Collections Log</label>
+        <length>10000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Conga_Overdrawn_Letter_TEST__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;&amp;id=&quot;+ Id +
+&quot;&amp;Reportid=00OD0000005nLNp?pv0=&quot; + Id + &quot;~pv1=0&quot;+
+&quot;&amp;templateId=a0PD00000089cb0&quot; +
+&quot;&amp;DefaultPDF=1&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Conga Overdrawn Letter TEST</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_in_EBS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created in EBS</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_entered_collections__c</fullName>
+        <externalId>false</externalId>
+        <label>Date entered collections</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Last_Transaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Last Transaction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Debit_Bank_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Debit Bank Account</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Debit_Sort_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Debit Sort Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_Customer_number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_SFDC_Account__r.EBS_ID__c</formula>
+        <label>EBS Customer number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_Deal_Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IBB_Product__r.EBS_Deal_Account_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>EBS Deal Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>EBS ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Account_Number_Search__c</fullName>
+        <externalId>true</externalId>
+        <label>External Account Number Search</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>External Account Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IBB_Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IBB Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IBB Product</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipName>Accounts_with_IBB1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IsLinkedToOpp__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Id ==  Opportunity__r.Account_with_IBB__c , true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsLinkedToOpp</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ledger_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Ledger Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Maturity_Date__c</fullName>
+        <description>C0315</description>
+        <externalId>false</externalId>
+        <label>Maturity Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Repayment__c</fullName>
+        <externalId>false</externalId>
+        <label>Monthly Repayment</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Next_Repayment_date__c</fullName>
+        <description>C0315</description>
+        <externalId>false</externalId>
+        <label>Next Repayment date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>NoOfMonthsInArrears__c</fullName>
+        <externalId>false</externalId>
+        <label>No of months in arrears</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Primary_account_holders__c</fullName>
+        <externalId>false</externalId>
+        <label>No Primary account holders</label>
+        <summarizedField>Asset_Relationship__c.Primary__c</summarizedField>
+        <summaryForeignKey>Asset_Relationship__c.Account_with_IBB__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_account_holders__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of account holders</label>
+        <summaryForeignKey>Asset_Relationship__c.Account_with_IBB__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Open_account__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( EBS_ID__c = Null, 0, 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is open account</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Accounts_with_IBB1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pool__c</fullName>
+        <externalId>false</externalId>
+        <label>Pool</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pool A</fullName>
+                    <default>false</default>
+                    <label>Pool A</label>
+                </value>
+                <value>
+                    <fullName>Pool X</fullName>
+                    <default>false</default>
+                    <label>Pool X</label>
+                </value>
+                <value>
+                    <fullName>Never Use</fullName>
+                    <default>false</default>
+                    <label>Never Use</label>
+                </value>
+                <value>
+                    <fullName>Redeemed</fullName>
+                    <default>false</default>
+                    <label>Redeemed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pool_entry_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pool entry date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Month_s_Balance__c</fullName>
+        <description>This field is to be used with mapping from EBS previous balance.</description>
+        <externalId>false</externalId>
+        <label>Previous Month&apos;s Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Customer_Default_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Customer Default Branch</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Customer_EBS_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Customer EBS ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_SFDC_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary SFDC Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Accounts_with_IBB1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reference__c</fullName>
+        <description>C0315</description>
+        <externalId>false</externalId>
+        <label>Reference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Accounts_with_IBB</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RepAccountType__c</fullName>
+        <externalId>false</externalId>
+        <label>RepAccountType</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RepDealAccountType__c</fullName>
+        <externalId>false</externalId>
+        <label>RepDealAccountType</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Repayment_due_date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Collections agent to manually enter the agreed repayment due date</inlineHelpText>
+        <label>Repayment due date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Reserved_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Reserved Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Seller1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Opportunity__r.Seller__r.FirstName+ &quot; &quot;+  Related_Opportunity__r.Seller__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Seller1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Seller__c</fullName>
+        <externalId>false</externalId>
+        <label>Seller</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>External User</fullName>
+                    <default>false</default>
+                    <label>External User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shadow_Credit__c</fullName>
+        <externalId>false</externalId>
+        <label>Shadow Credit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shadow_Debit__c</fullName>
+        <externalId>false</externalId>
+        <label>Shadow Debit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status_Balance__c</fullName>
+        <externalId>false</externalId>
+        <label>Status Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status_Code_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Status Code Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Status__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Waiting for submission to DCA</fullName>
+                    <default>false</default>
+                    <label>Waiting for submission to DCA</label>
+                </value>
+                <value>
+                    <fullName>Voluntary charge secured on debtor&apos;s property</fullName>
+                    <default>false</default>
+                    <label>Voluntary charge secured on debtor&apos;s property</label>
+                </value>
+                <value>
+                    <fullName>Undergoing litigation with Drydens solicitors.</fullName>
+                    <default>false</default>
+                    <label>Undergoing litigation with Drydens solicitors.</label>
+                </value>
+                <value>
+                    <fullName>Ready to submit for write-off</fullName>
+                    <default>false</default>
+                    <label>Ready to submit for write-off</label>
+                </value>
+                <value>
+                    <fullName>IVA and need to know if a dividend will be paid.</fullName>
+                    <default>false</default>
+                    <label>IVA and need to know if a dividend will be paid.</label>
+                </value>
+                <value>
+                    <fullName>With external agents (CRS) undergoing debt collection activity</fullName>
+                    <default>false</default>
+                    <label>With external agents (CRS) undergoing debt collection activity</label>
+                </value>
+                <value>
+                    <fullName>Being worked by IBB Collections internally</fullName>
+                    <default>false</default>
+                    <label>Being worked by IBB Collections internally</label>
+                </value>
+                <value>
+                    <fullName>Promise to pay</fullName>
+                    <default>false</default>
+                    <label>Promise to pay</label>
+                </value>
+                <value>
+                    <fullName>Waiting for payment to clear</fullName>
+                    <default>false</default>
+                    <label>Waiting for payment to clear</label>
+                </value>
+                <value>
+                    <fullName>Payment plans</fullName>
+                    <default>false</default>
+                    <label>Payment plans</label>
+                </value>
+                <value>
+                    <fullName>Customers who are making payments to cover NMR and clear arrears</fullName>
+                    <default>false</default>
+                    <label>Customers who are making payments to cover NMR and clear arrears</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>7</controllingFieldValue>
+                <valueName>Customers who are making payments to cover NMR and clear arrears</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>-5</controllingFieldValue>
+                <valueName>Waiting for submission to DCA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>-4</controllingFieldValue>
+                <valueName>Voluntary charge secured on debtor&apos;s property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>-3</controllingFieldValue>
+                <valueName>Undergoing litigation with Drydens solicitors.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>-2</controllingFieldValue>
+                <valueName>Ready to submit for write-off</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>-1</controllingFieldValue>
+                <valueName>IVA and need to know if a dividend will be paid.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>0</controllingFieldValue>
+                <valueName>With external agents (CRS) undergoing debt collection activity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1</controllingFieldValue>
+                <valueName>Being worked by IBB Collections internally</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>2</controllingFieldValue>
+                <valueName>Promise to pay</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>3</controllingFieldValue>
+                <valueName>Waiting for payment to clear</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>6</controllingFieldValue>
+                <valueName>Payment plans</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>-5</fullName>
+                    <default>false</default>
+                    <label>-5</label>
+                </value>
+                <value>
+                    <fullName>-4</fullName>
+                    <default>false</default>
+                    <label>-4</label>
+                </value>
+                <value>
+                    <fullName>-3</fullName>
+                    <default>false</default>
+                    <label>-3</label>
+                </value>
+                <value>
+                    <fullName>-2</fullName>
+                    <default>false</default>
+                    <label>-2</label>
+                </value>
+                <value>
+                    <fullName>-1</fullName>
+                    <default>false</default>
+                    <label>-1</label>
+                </value>
+                <value>
+                    <fullName>0</fullName>
+                    <default>false</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SumOfBalanceInArrears__c</fullName>
+        <externalId>false</externalId>
+        <label>Sum of balance in arrears</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Customer Account</label>
+    <listViews>
+        <fullName>Collections_PF</fullName>
+        <columns>NAME</columns>
+        <columns>Pool__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IBB_Product_Name__c</field>
+            <operation>contains</operation>
+            <value>Personal finance,Home</value>
+        </filters>
+        <filters>
+            <field>SumOfBalanceInArrears__c</field>
+            <operation>lessThan</operation>
+            <value>0</value>
+        </filters>
+        <label>Collections: PF</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>No_Account_Holders</fullName>
+        <columns>NAME</columns>
+        <columns>EBS_ID__c</columns>
+        <columns>No_Primary_account_holders__c</columns>
+        <columns>Number_of_account_holders__c</columns>
+        <columns>Account_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>EBS_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Number_of_account_holders__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Primary_SFDC_Account__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>No Account Holders (exlude orphaned)</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Orphaned_Accounts_No</fullName>
+        <columns>NAME</columns>
+        <columns>EBS_ID__c</columns>
+        <columns>No_Primary_account_holders__c</columns>
+        <columns>Number_of_account_holders__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_SFDC_Account__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>EBS_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Number_of_account_holders__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Orphaned Accounts No Jar</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Orphaned_Accounts_With_Jar</fullName>
+        <columns>NAME</columns>
+        <columns>EBS_ID__c</columns>
+        <columns>No_Primary_account_holders__c</columns>
+        <columns>Number_of_account_holders__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_SFDC_Account__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>EBS_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Number_of_account_holders__c</field>
+            <operation>greaterThan</operation>
+            <value>0</value>
+        </filters>
+        <label>Orphaned Accounts With Jar</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_internal_users</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Too_many_primary_applicants</fullName>
+        <columns>NAME</columns>
+        <columns>EBS_ID__c</columns>
+        <columns>No_Primary_account_holders__c</columns>
+        <columns>Number_of_account_holders__c</columns>
+        <columns>Account_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>No_Primary_account_holders__c</field>
+            <operation>greaterThan</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>EBS_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Number_of_account_holders__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>Too many primary applicants</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>All_internal_users</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Account Number</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Customer Accounts</pluralLabel>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Forward</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>External_Account_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Available_Balance__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>IBB_Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATEDBY_USER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CREATED_DATE</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>External_Account_Number__c</lookupFilterFields>
+        <lookupFilterFields>EBS_ID__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>External_Account_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>External_Account_Number__c</searchFilterFields>
+        <searchResultsAdditionalFields>Available_Balance__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Branch__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>IBB_Product_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CREATED_DATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Collections_Letters_DocuGen</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Collections Letters</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Docugen
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Account_with_IBB__c.Id}
+&amp;q1=a5aD0000000Gmez
+&amp;TemplateGroup=Collections</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DSX_Record</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>DSX Record</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://dsxlive1/DSXSearchDisplay/Default.aspx?template=All Docs by Account&amp;Account Number={!Account_with_IBB__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Engage</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Engage</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/teller_core</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Transaction_History</fullName>
+        <availability>online</availability>
+        <description>Display Transaction History for an IBB Account</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Transaction History</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/TransactionHistory?id={!Account_with_IBB__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Unable_To_Contact_Customer_Letter_DocuGen</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Customer Contact Letters</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Docugen
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!Account_with_IBB__c.Id}
+&amp;q1=a5aD0000000Gmez
+&amp;TemplateGroup=Contact</url>
+    </webLinks>
+</CustomObject>

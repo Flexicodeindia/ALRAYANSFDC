@@ -1,0 +1,4294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Administration_fee_value__c</fullName>
+        <externalId>false</externalId>
+        <label>Administration fee value %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Administration_fee_value_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Administration fee value %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Affordability_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Affordability Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agency_fee_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Agency fee - Percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Agency_fees_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Agency fees - Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Allow_CCJs__c</fullName>
+        <externalId>false</externalId>
+        <label>Allow CCJs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Amount_of_application_fee_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount of application fee paid on app</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AssetorLiability__c</fullName>
+        <externalId>false</externalId>
+        <label>AssetorLiability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Asset</fullName>
+                    <default>false</default>
+                    <label>Asset</label>
+                </value>
+                <value>
+                    <fullName>Liability</fullName>
+                    <default>false</default>
+                    <label>Liability</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bank_legal_cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Bank legal cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bonus_condition_rate_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Bonus condition rate percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Bonus_period_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Bonus period duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Bonus_period_end_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Bonus period end date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cap_bench_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Cap %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cap_revert_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Cap %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cash_back_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash back amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cash_back_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash back percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Cash_card_Available_to_have__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cash card (Available to have)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cheque_book_Available_to_have__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Cheque book (Available to have)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Clause_6__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For use with HPP CAA offer letter</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ONLY APPLICABLE FOR BTL. Select 6 from the lookup.</inlineHelpText>
+        <label>Clause 6</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Standard_Clause__c.Type__c</field>
+                <operation>equals</operation>
+                <value>BTL</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Standard_Clause__c</referenceTo>
+        <relationshipName>IBB_Product_Sets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Clause_at_the_end_of_5_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For use with HPP CAA offer letter.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FOR HPP PRODUCTS ONLY. Select 5.2 from the lookup.</inlineHelpText>
+        <label>Clause at the end of 5.2</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Standard_Clause__c.Type__c</field>
+                <operation>equals</operation>
+                <value>HPP</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Standard_Clause__c</referenceTo>
+        <relationshipName>IBB_Product_Sets1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collar_bench_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Collar %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Collar_revert_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Collar %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Conga_AIP_Letter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DocuGen AIP Letter</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipLabel>Product Sets (Conga AIP Letter)</relationshipLabel>
+        <relationshipName>IBB_Product_Sets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conga_AIP_MMR__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For MMR doc</description>
+        <externalId>false</externalId>
+        <label>DocuGen AIP MMR</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipLabel>Product Sets (Conga AIP MMR)</relationshipLabel>
+        <relationshipName>IBB_Product_Sets3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conga_Application_Form__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DocuGen Application Form</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipLabel>Product Sets (Conga Application Form)</relationshipLabel>
+        <relationshipName>IBB_Product_Sets1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conga_Welcome_Letter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>DocuGen Welcome Letter</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipLabel>Product Sets (Conga Welcome Letter)</relationshipLabel>
+        <relationshipName>IBB_Product_Sets2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Channel</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New customer</fullName>
+                    <default>false</default>
+                    <label>New customer</label>
+                </value>
+                <value>
+                    <fullName>Existing customer</fullName>
+                    <default>false</default>
+                    <label>Existing customer</label>
+                </value>
+                <value>
+                    <fullName>Current account holder</fullName>
+                    <default>false</default>
+                    <label>Current account holder</label>
+                </value>
+                <value>
+                    <fullName>Building insurance customer</fullName>
+                    <default>false</default>
+                    <label>Building insurance customer</label>
+                </value>
+                <value>
+                    <fullName>Internet</fullName>
+                    <default>false</default>
+                    <label>Internet</label>
+                </value>
+                <value>
+                    <fullName>Branch customer</fullName>
+                    <default>false</default>
+                    <label>Branch customer</label>
+                </value>
+                <value>
+                    <fullName>Phone Customer</fullName>
+                    <default>false</default>
+                    <label>Phone Customer</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_legal_cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer legal cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Debit_card_Available_to_have__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Debit card (Available to have)</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_products_portability__c</fullName>
+        <externalId>false</externalId>
+        <label>Details of products portability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Distribution_access_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Distribution/access type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bank</fullName>
+                    <default>false</default>
+                    <label>Bank</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Online</fullName>
+                    <default>false</default>
+                    <label>Online</label>
+                </value>
+                <value>
+                    <fullName>Postal</fullName>
+                    <default>false</default>
+                    <label>Postal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_1_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment 1 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_2_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment 2 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_3_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment 3 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_4_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment 4 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_5_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment 5 type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charge_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charge 1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charge_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charge 2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charge_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charge 3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charge_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charge 4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charge_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charge 5</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Early_repayment_charges__c</fullName>
+        <externalId>false</externalId>
+        <label>Early repayment charges</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Type_Error__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Type Error</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EventDirector__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>EventDirector</label>
+        <referenceTo>ProductEventDirector__c</referenceTo>
+        <relationshipName>IBB_Product_Sets</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Execution_only_letter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For MMR docs</description>
+        <externalId>false</externalId>
+        <label>Execution only letter</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipName>IBB_Product_Sets4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>External_ProductEventDirector__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>External ProductEventDirector</label>
+        <referenceTo>ProductEventDirector__c</referenceTo>
+        <relationshipName>IBB_Product_Sets1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Featured_product__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Featured_product</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fees_assistance_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Fees assistance percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Fees_assistance_value__c</fullName>
+        <externalId>false</externalId>
+        <label>Fees assistance value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Type_Error__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Type Error</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fixed_product_rate_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed product rate duration (months)</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fixed_product_rate_until__c</fullName>
+        <externalId>false</externalId>
+        <label>Fixed product rate until</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IDD_Document__c</fullName>
+        <externalId>false</externalId>
+        <label>IDD Document</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IDD_NonF2F_Document__c</fullName>
+        <description>MMR IDD</description>
+        <externalId>false</externalId>
+        <label>IDD NonF2F Document</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inbound_payment_types_available__c</fullName>
+        <externalId>false</externalId>
+        <label>Inbound payment types available</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BACS</fullName>
+                    <default>false</default>
+                    <label>BACS</label>
+                </value>
+                <value>
+                    <fullName>Chaps</fullName>
+                    <default>false</default>
+                    <label>Chaps</label>
+                </value>
+                <value>
+                    <fullName>Transfer</fullName>
+                    <default>false</default>
+                    <label>Transfer</label>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Income_Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Income Multiplier</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_1_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 1 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_1_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 1 duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_2_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 2 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_2_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 2 duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_3_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 3 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_3_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 3 duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_4_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 4 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_4_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 4 duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 5</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_5_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 5 date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Initial_rate_5_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Initial rate 5 duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Interested_in__c</fullName>
+        <externalId>false</externalId>
+        <label>Interested in</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>Buy to let</fullName>
+                    <default>false</default>
+                    <label>Buy to let</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Is_product_portable__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is product portable?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MMR_App_Form_Test__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>MMR Test</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Only to be used for testing, when live the Conga Setting needs to be linked to the Application Form field. Code look at this existing field so it can&apos;t be changed in advance.</inlineHelpText>
+        <label>MMR App Form Test</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipName>IBB_Product_Sets7</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Management_fees_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Management fees - Percentage</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Management_fees_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Management fees - Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Margin_bench_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Margin_cap__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin cap %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Margin_duration__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin duration</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>Term of product</fullName>
+                    <default>false</default>
+                    <label>Term of product</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Margin_duration_fixed_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin duration fixed date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Margin_duration_term_years__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin duration term (years)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Margin_revert_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Max_Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_FTV__c</fullName>
+        <externalId>false</externalId>
+        <label>Max FTV</label>
+        <precision>15</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Max_Finance_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Finance Amount</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Max_No_of_Applicants__c</fullName>
+        <externalId>false</externalId>
+        <label>Max No of Applicants</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_No_of_BTL_Prop__c</fullName>
+        <externalId>false</externalId>
+        <label>Max No of BTL Prop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_No_of_Incomes__c</fullName>
+        <externalId>false</externalId>
+        <label>Max No of Incomes</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Purchase_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Purchase Price</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Max_Term_of_Finance__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Term of Finance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_amount_IBB_will_pay_toward_legal_fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Max amount IBB will pay toward legal fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Max_finance_to_value_FTV__c</fullName>
+        <externalId>false</externalId>
+        <label>Max finance to value FTV</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Max_valuation_fee_bank_will_pay__c</fullName>
+        <externalId>false</externalId>
+        <label>Max valuation fee bank will pay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Min_Age__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Age</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Min_FTV_BTL__c</fullName>
+        <description>Minimum FTV compared between monthly repayment and monthly rental amount</description>
+        <externalId>false</externalId>
+        <label>Min FTV BTL</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Min_Finance_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Finance Amount</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Min_Purchase_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Purchase Price</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Min_Term_of_Finance__c</fullName>
+        <externalId>false</externalId>
+        <label>Min Term of Finance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notice_required_for_capital_withdrawl__c</fullName>
+        <externalId>false</externalId>
+        <label>Notice required for capital withdrawl</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outbound_payment_types_available__c</fullName>
+        <externalId>false</externalId>
+        <label>Outbound payment types available</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BACS</fullName>
+                    <default>false</default>
+                    <label>BACS</label>
+                </value>
+                <value>
+                    <fullName>Chaps</fullName>
+                    <default>false</default>
+                    <label>Chaps</label>
+                </value>
+                <value>
+                    <fullName>Transfer</fullName>
+                    <default>false</default>
+                    <label>Transfer</label>
+                </value>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Penalty_charge_amount_currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty charge amount £</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Penalty_charge_no_of_days_interest_lost__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty charge: no of days interest lost</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Penalty_charge_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty charge %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Penalty_charge_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty charge type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed value</fullName>
+                    <default>false</default>
+                    <label>Fixed value</label>
+                </value>
+                <value>
+                    <fullName>Percentage of withdrawl</fullName>
+                    <default>false</default>
+                    <label>Percentage of withdrawl</label>
+                </value>
+                <value>
+                    <fullName>Loss of all interest</fullName>
+                    <default>false</default>
+                    <label>Loss of all interest</label>
+                </value>
+                <value>
+                    <fullName>Loss of fixed days interest</fullName>
+                    <default>false</default>
+                    <label>Loss of fixed days interest</label>
+                </value>
+                <value>
+                    <fullName>Penalty interest rates</fullName>
+                    <default>false</default>
+                    <label>Penalty interest rates</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Penalty_charges__c</fullName>
+        <externalId>false</externalId>
+        <label>Penalty charges</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Percentage_of_application_fee_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>% of application fee paid on application</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>ProductSetType__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Set Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>HPS</fullName>
+                    <default>false</default>
+                    <label>HPS</label>
+                </value>
+                <value>
+                    <fullName>BTL</fullName>
+                    <default>false</default>
+                    <label>BTL</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+                <value>
+                    <fullName>HTB</fullName>
+                    <default>false</default>
+                    <label>HTB</label>
+                </value>
+                <value>
+                    <fullName>CDM</fullName>
+                    <default>false</default>
+                    <label>CDM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Product_Switch_Advice_Director__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Switch Advice Director</label>
+        <referenceTo>ProductEventDirector__c</referenceTo>
+        <relationshipLabel>Product Sets (Product Switch Advice Director)</relationshipLabel>
+        <relationshipName>Product_Sets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Switch_Director__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product Switch Director</label>
+        <referenceTo>ProductEventDirector__c</referenceTo>
+        <relationshipName>IBB_Product_Sets2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Demand</fullName>
+                    <default>false</default>
+                    <label>On Demand</label>
+                </value>
+                <value>
+                    <fullName>Fixed Term Deposit</fullName>
+                    <default>false</default>
+                    <label>Fixed Term Deposit</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product_expiry_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Product expiry date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Product_live_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Product live date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Product_recommendation_letter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For MMR docs</description>
+        <externalId>false</externalId>
+        <label>Product recommendation letter</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipName>IBB_Product_Sets5</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_recommendation_rejected_letter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For MMR docs</description>
+        <externalId>false</externalId>
+        <label>Product recommendation rejected letter</label>
+        <referenceTo>CongaSettings__c</referenceTo>
+        <relationshipName>IBB_Product_Sets6</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_withdraw_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Product withdraw date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Profit_accrued__c</fullName>
+        <externalId>false</externalId>
+        <label>Profit accrued</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Profit_calculated__c</fullName>
+        <externalId>false</externalId>
+        <label>Profit calculated</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>monthly</fullName>
+                    <default>false</default>
+                    <label>monthly</label>
+                </value>
+                <value>
+                    <fullName>quarterly</fullName>
+                    <default>false</default>
+                    <label>quarterly</label>
+                </value>
+                <value>
+                    <fullName>annually</fullName>
+                    <default>false</default>
+                    <label>annually</label>
+                </value>
+                <value>
+                    <fullName>maturity</fullName>
+                    <default>false</default>
+                    <label>maturity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Profit_of_income__c</fullName>
+        <externalId>false</externalId>
+        <label>Profit of income</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Profit_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Profit paid</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>monthly</fullName>
+                    <default>false</default>
+                    <label>monthly</label>
+                </value>
+                <value>
+                    <fullName>quarterly</fullName>
+                    <default>false</default>
+                    <label>quarterly</label>
+                </value>
+                <value>
+                    <fullName>annually</fullName>
+                    <default>false</default>
+                    <label>annually</label>
+                </value>
+                <value>
+                    <fullName>maturity</fullName>
+                    <default>false</default>
+                    <label>maturity</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Profit_paid_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Profit paid to</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>External account</fullName>
+                    <default>false</default>
+                    <label>External account</label>
+                </value>
+                <value>
+                    <fullName>Internal IBB account</fullName>
+                    <default>false</default>
+                    <label>Internal IBB account</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Type_Error__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Type Error</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_date_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration date 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_duration_date_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate duration date 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Rate_percentage_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate percentage 1</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rate_percentage_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate percentage 2</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rate_percentage_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate percentage 3</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rate_percentage_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate percentage 4</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rate_percentage_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Rate percentage 5</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_given__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption given</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No redemption</fullName>
+                    <default>false</default>
+                    <label>No redemption</label>
+                </value>
+                <value>
+                    <fullName>Partial redemption</fullName>
+                    <default>false</default>
+                    <label>Partial redemption</label>
+                </value>
+                <value>
+                    <fullName>Full redemption</fullName>
+                    <default>false</default>
+                    <label>Full redemption</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Redemption_type__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Percentage of the amount paid</fullName>
+                    <default>false</default>
+                    <label>Percentage of the amount paid</label>
+                </value>
+                <value>
+                    <fullName>Fixed fee</fullName>
+                    <default>false</default>
+                    <label>Fixed fee</label>
+                </value>
+                <value>
+                    <fullName>Refund of solicitors contribution</fullName>
+                    <default>false</default>
+                    <label>Refund of solicitors contribution</label>
+                </value>
+                <value>
+                    <fullName>Refund of valuations</fullName>
+                    <default>false</default>
+                    <label>Refund of valuations</label>
+                </value>
+                <value>
+                    <fullName>Refund of legal</fullName>
+                    <default>false</default>
+                    <label>Refund of legal</label>
+                </value>
+                <value>
+                    <fullName>Cash back</fullName>
+                    <default>false</default>
+                    <label>Cash back</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Redemption_value_currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption value £</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_value_percentage__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption value %</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Repayment_duration_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment duration 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repayment_duration_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment duration 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repayment_duration_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment duration 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repayment_duration_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment duration 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repayment_duration_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment duration 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed date</fullName>
+                    <default>false</default>
+                    <label>Fixed date</label>
+                </value>
+                <value>
+                    <fullName>12 months</fullName>
+                    <default>false</default>
+                    <label>12 months</label>
+                </value>
+                <value>
+                    <fullName>18 months</fullName>
+                    <default>false</default>
+                    <label>18 months</label>
+                </value>
+                <value>
+                    <fullName>24 months</fullName>
+                    <default>false</default>
+                    <label>24 months</label>
+                </value>
+                <value>
+                    <fullName>36 months</fullName>
+                    <default>false</default>
+                    <label>36 months</label>
+                </value>
+                <value>
+                    <fullName>48 months</fullName>
+                    <default>false</default>
+                    <label>48 months</label>
+                </value>
+                <value>
+                    <fullName>60 months</fullName>
+                    <default>false</default>
+                    <label>60 months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Repayment_end_date_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment end date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Repayment_end_date_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment end date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Repayment_end_date_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment end date 3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Repayment_end_date_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment end date 4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Repayment_end_date_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Repayment end date 5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ShortProductType__c</fullName>
+        <externalId>false</externalId>
+        <label>ShortProductType</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Statement_frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Statement frequency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Bi-annually</fullName>
+                    <default>false</default>
+                    <label>Bi-annually</label>
+                </value>
+                <value>
+                    <fullName>Annually</fullName>
+                    <default>false</default>
+                    <label>Annually</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Suitable_Employment_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Suitable Employment Types</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Suitable_Property_Types__c</fullName>
+        <externalId>false</externalId>
+        <label>Suitable Property Types</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Finance__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Finance</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_account__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fixed term</fullName>
+                    <default>false</default>
+                    <label>Fixed term</label>
+                </value>
+                <value>
+                    <fullName>On demand notice account</fullName>
+                    <default>false</default>
+                    <label>On demand notice account</label>
+                </value>
+                <value>
+                    <fullName>Young savers</fullName>
+                    <default>false</default>
+                    <label>Young savers</label>
+                </value>
+                <value>
+                    <fullName>Current account</fullName>
+                    <default>false</default>
+                    <label>Current account</label>
+                </value>
+                <value>
+                    <fullName>Wakala treasury</fullName>
+                    <default>false</default>
+                    <label>Wakala treasury</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Valuation_fee_amount_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation fee amount paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_fee_paid_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation fee paid by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>Bank</fullName>
+                    <default>false</default>
+                    <label>Bank</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Value_of_IBB_legal_fees__c</fullName>
+        <externalId>false</externalId>
+        <label>Value of IBB legal fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Value_of_customer_legal_fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Value of customer legal fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Variable_product_benchmark__c</fullName>
+        <externalId>false</externalId>
+        <label>Variable product benchmark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BBR</fullName>
+                    <default>false</default>
+                    <label>BBR</label>
+                </value>
+                <value>
+                    <fullName>Liable</fullName>
+                    <default>false</default>
+                    <label>Liable</label>
+                </value>
+                <value>
+                    <fullName>Variable rate</fullName>
+                    <default>false</default>
+                    <label>Variable rate</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Where_does_product_revert_to__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Where does product revert to</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipName>IBB_Product_Sets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Product Set</label>
+    <listViews>
+        <fullName>HPP_CAA</fullName>
+        <columns>NAME</columns>
+        <columns>EventDirector__c</columns>
+        <columns>External_ProductEventDirector__c</columns>
+        <columns>Conga_Application_Form__c</columns>
+        <columns>IDD_Document__c</columns>
+        <columns>Property_Type_Error__c</columns>
+        <columns>Employment_Type_Error__c</columns>
+        <columns>Finance_Type_Error__c</columns>
+        <columns>Product_Switch_Director__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Max_No_of_Applicants__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+        </filters>
+        <label>HPP CAA</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Liabilities</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>Liabilities</label>
+        <language>en_US</language>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Product Set Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Product Sets</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>HPP</fullName>
+        <active>true</active>
+        <description>For use with HPP eligibility</description>
+        <label>HPP</label>
+        <picklistValues>
+            <picklist>Allow_CCJs__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>AssetorLiability__c</picklist>
+            <values>
+                <fullName>Asset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liability</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Bonus_period_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Channel__c</picklist>
+            <values>
+                <fullName>Branch customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Building insurance customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current account holder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Distribution_access_type__c</picklist>
+            <values>
+                <fullName>Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Online</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_repayment_1_type__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_repayment_2_type__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_repayment_3_type__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_repayment_4_type__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Early_repayment_5_type__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Inbound_payment_types_available__c</picklist>
+            <values>
+                <fullName>BACS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chaps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initial_rate_1_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initial_rate_2_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initial_rate_3_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initial_rate_4_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initial_rate_5_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Interested_in__c</picklist>
+            <values>
+                <fullName>Buy to let</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Margin_duration__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Term of product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Outbound_payment_types_available__c</picklist>
+            <values>
+                <fullName>BACS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cash</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chaps</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Penalty_charge_type__c</picklist>
+            <values>
+                <fullName>Fixed value</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loss of all interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loss of fixed days interest</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penalty interest rates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percentage of withdrawl</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Penalty_charges__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ProductSetType__c</picklist>
+            <values>
+                <fullName>BTL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CDM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product_Type__c</picklist>
+            <values>
+                <fullName>Fixed Term Deposit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profit_accrued__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profit_calculated__c</picklist>
+            <values>
+                <fullName>annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>maturity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>quarterly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profit_of_income__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profit_paid__c</picklist>
+            <values>
+                <fullName>annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>maturity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>quarterly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Profit_paid_to__c</picklist>
+            <values>
+                <fullName>External account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal IBB account</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rate_duration_1__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rate_duration_2__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rate_duration_3__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rate_duration_4__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Rate_duration_5__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Redemption_given__c</picklist>
+            <values>
+                <fullName>Full redemption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No redemption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial redemption</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Redemption_type__c</picklist>
+            <values>
+                <fullName>Cash back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Percentage of the amount paid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund of legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund of solicitors contribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund of valuations</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repayment_duration_1__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repayment_duration_2__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repayment_duration_3__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repayment_duration_4__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Repayment_duration_5__c</picklist>
+            <values>
+                <fullName>12 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>18 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>24 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>36 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>48 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 months</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed date</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Statement_frequency__c</picklist>
+            <values>
+                <fullName>Annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bi-annually</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_account__c</picklist>
+            <values>
+                <fullName>Current account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed term</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On demand notice account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wakala treasury</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Young savers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Valuation_fee_paid_by__c</picklist>
+            <values>
+                <fullName>Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Variable_product_benchmark__c</picklist>
+            <values>
+                <fullName>BBR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Liable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Variable rate</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+</CustomObject>

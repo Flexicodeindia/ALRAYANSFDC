@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Call centre Inbound Coaching Form - Perfect Call</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Accurately_Update_Systems__c</fullName>
+        <description>Do case, call wrap etc. match the customers call request and is the request accurately recorded.  NB If the customer has expressed disatisfaction has this been recorded as a complaint</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Do case, call wrap etc. match the customers call request and is the request accurately recorded.  Has the agent identified through questioning the correct CAMPAIGN CODE and entered this correctly</inlineHelpText>
+        <label>Accurately Update Systems</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <color>#33FF33</color>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <color>#FF0000</color>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <color>#FF6600</color>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Appropriate_use_of_Customer_Name__c</fullName>
+        <description>Did the consultant use the customers name appropriately throughout the call to control their attention? (suggested around signposting)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant use the customers name appropriately throughout the call to control their attention? (suggested around signposting)</inlineHelpText>
+        <label>Appropriate use of Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Benefits_of_SMART_Banking__c</fullName>
+        <description>Did we outline to the customer the benefits of IVR verification i.e. we can handle their call more quickly as well as facilities offered via on-line banking if appropriate?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did we outline to the customer the benefits of IVR verification i.e. we can handle their call more quickly as well as facilities offered via on-line banking if appropriate?</inlineHelpText>
+        <label>Benefits of SMART Banking</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>true</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_Centre_KPI_s_Link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link of Call centre KPI&apos;s to call coaching inbound</description>
+        <externalId>false</externalId>
+        <label>Call Centre KPI&apos;s Link</label>
+        <referenceTo>Call_Centre_KPI_s__c</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Call_Centre_Sales_Coaching_Record_link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Call centre sales coaching records</description>
+        <externalId>false</externalId>
+        <label>Call Centre Sales Coaching Record link</label>
+        <referenceTo>Call_Centre_Sales_Coaching_Record__c</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Call_Transaction_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select what the main purpose of the customer call was?</inlineHelpText>
+        <label>Call Transaction Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BACS</fullName>
+                    <default>false</default>
+                    <label>BACS</label>
+                </value>
+                <value>
+                    <fullName>CHAPS</fullName>
+                    <default>false</default>
+                    <label>CHAPS</label>
+                </value>
+                <value>
+                    <fullName>Internal transfers</fullName>
+                    <default>false</default>
+                    <label>Internal transfers</label>
+                </value>
+                <value>
+                    <fullName>DD Cancellation</fullName>
+                    <default>false</default>
+                    <label>DD Cancellation</label>
+                </value>
+                <value>
+                    <fullName>Standing Order Amendment</fullName>
+                    <default>false</default>
+                    <label>Standing Order Amendment</label>
+                </value>
+                <value>
+                    <fullName>Standing Order cancellation</fullName>
+                    <default>false</default>
+                    <label>Standing Order cancellation</label>
+                </value>
+                <value>
+                    <fullName>Standing Order set up</fullName>
+                    <default>false</default>
+                    <label>Standing Order set up</label>
+                </value>
+                <value>
+                    <fullName>Card query/Cancellation request</fullName>
+                    <default>false</default>
+                    <label>Card query/Cancellation request</label>
+                </value>
+                <value>
+                    <fullName>PIN request</fullName>
+                    <default>false</default>
+                    <label>PIN request</label>
+                </value>
+                <value>
+                    <fullName>Account Closure request</fullName>
+                    <default>false</default>
+                    <label>Account Closure request</label>
+                </value>
+                <value>
+                    <fullName>PIB/Cheque Book request</fullName>
+                    <default>false</default>
+                    <label>PIB/Cheque Book request</label>
+                </value>
+                <value>
+                    <fullName>OB password/memorable info re-set</fullName>
+                    <default>false</default>
+                    <label>OB password/memorable info re-set</label>
+                </value>
+                <value>
+                    <fullName>Securecode</fullName>
+                    <default>false</default>
+                    <label>Securecode</label>
+                </value>
+                <value>
+                    <fullName>Account Enquiry</fullName>
+                    <default>false</default>
+                    <label>Account Enquiry</label>
+                </value>
+                <value>
+                    <fullName>60 Day notice withdrawal request</fullName>
+                    <default>false</default>
+                    <label>60 Day notice withdrawal request</label>
+                </value>
+                <value>
+                    <fullName>TD withdrawal request</fullName>
+                    <default>false</default>
+                    <label>TD withdrawal request</label>
+                </value>
+                <value>
+                    <fullName>Incoming payment issue</fullName>
+                    <default>false</default>
+                    <label>Incoming payment issue</label>
+                </value>
+                <value>
+                    <fullName>Change of Information</fullName>
+                    <default>false</default>
+                    <label>Change of Information</label>
+                </value>
+                <value>
+                    <fullName>Transaction disputes</fullName>
+                    <default>false</default>
+                    <label>Transaction disputes</label>
+                </value>
+                <value>
+                    <fullName>Online re-set</fullName>
+                    <default>false</default>
+                    <label>Online re-set</label>
+                </value>
+                <value>
+                    <fullName>Complaint Call</fullName>
+                    <default>false</default>
+                    <label>Complaint Call</label>
+                </value>
+                <value>
+                    <fullName>HPP Apppointments</fullName>
+                    <default>false</default>
+                    <label>HPP Apppointments</label>
+                </value>
+                <value>
+                    <fullName>HPP -not eligible</fullName>
+                    <default>false</default>
+                    <label>HPP -not eligible</label>
+                </value>
+                <value>
+                    <fullName>Sales lead</fullName>
+                    <default>false</default>
+                    <label>Sales lead</label>
+                </value>
+                <value>
+                    <fullName>Branch Enquiry</fullName>
+                    <default>false</default>
+                    <label>Branch Enquiry</label>
+                </value>
+                <value>
+                    <fullName>Other (please specify)</fullName>
+                    <default>false</default>
+                    <label>Other (please specify)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Coachee_s_Line_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Coachee&apos;s Line Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Colleagues_Signature__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Colleague to Sign Here</inlineHelpText>
+        <label>Colleagues Signature</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Comments10__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments11__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments12__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments13__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments14__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments15__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments16__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments17__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments19__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments20__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments21__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments23__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments24__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments25__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments26__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments27__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments2__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments3__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments4__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments5__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments6__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments7__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments8__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments9__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <description>Free format commentary on section of call</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Free format commentary on section of call</inlineHelpText>
+        <label>Comments</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Compliant__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR(TEXT( Correct_ID_V__c )=&quot;No&quot;, 
+TEXT( Provide_Accurate_not_misleading_infor__c )=&quot;No&quot;,
+TEXT( Accurately_Update_Systems__c )=&quot;No&quot;), 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOk&quot;, &quot;Non-Compliant&quot;),  
+IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOf&quot;, &quot;Compliant&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Compliant?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Confirm_Customer_Satisfaction__c</fullName>
+        <description>Did the consultant during the call close confirm the customers satisfaction with the service received? e.g. Are you happy with everything we&apos;ve discussed today?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant during the call close confirm the customers satisfaction with the service received? e.g. Are you happy with everything we&apos;ve discussed today?</inlineHelpText>
+        <label>Confirm Customer Satisfaction</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Correct_Contact_Details__c</fullName>
+        <description>Did we confirm and update the customers contact details on the call?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did we confirm and update the customers contact details on the call?</inlineHelpText>
+        <label>Correct Contact Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Correct_ID_V__c</fullName>
+        <description>Did the customer come through verified.  If not did we complete manual verfication in line with agreed process.  Was this handled in an empathetic way for the customer?  If we could not verify the customer did we explain clearly why and this was for the customers own protection and what actions/alternatives are required/available to them</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the customer come through verified.  If not did we complete manual verfication in line with agreed process.  Was this handled in an empathetic way for the customer?  If we could not verify the customer did we explain clearly why?</inlineHelpText>
+        <label>Correct ID &amp; V</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Courteous_professional__c</fullName>
+        <description>Did the consultant confirm with the customer that they understood the cover discussed whilst mirroring the customers pace of understanding?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant confirm with the customer that they understood the cover discussed whilst mirroring the customers pace of understanding?</inlineHelpText>
+        <label>Courteous &amp; professional</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Customer Account details</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer Account details</inlineHelpText>
+        <label>Customer Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Call_Centre_Coaching_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Number__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Please Enter the customer EBA Number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please Enter the customer EBA Number</inlineHelpText>
+        <label>Customer Number</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_name_Active_listening__c</fullName>
+        <description>Did the consultant gather and use the customers name in the call opening.  Was this doen in a friendly and enthusiastic way</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant gather and use the customers name in the call opening.  Was this doen in a friendly and enthusiastic way</inlineHelpText>
+        <label>Customer name &amp; Active listening</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_ownership__c</fullName>
+        <description>Did the consultant re-cap the customer requirements with them, confirm understanding, clearly outline next steps and timescales involved and take personal ownership (where appropriate) for reolsution</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant re-cap the customer requirements with them, confirm understanding, clearly outline next steps and timescales involved and take personal ownership (where appropriate) for reolsution</inlineHelpText>
+        <label>Customer ownership</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customers_name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please neter the customers name</inlineHelpText>
+        <label>Customers name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Observation__c</fullName>
+        <description>Date Coaching record completed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Coaching record completed</inlineHelpText>
+        <label>Date of Observation</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Date_time_of_Call__c</fullName>
+        <description>Date and time of customer call observed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and time of customer call observed</inlineHelpText>
+        <label>Date &amp; time of Call</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EBS_Account_Number__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter EBS account number</inlineHelpText>
+        <label>EBS Account Number</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound (EBS Account Number)</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EBS_Customer_No__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter EBS Number for the customer (Maximum 6 digit nmemonic)</inlineHelpText>
+        <label>EBS Customer No.</label>
+        <precision>6</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS_Customer_Number__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter EBS number</inlineHelpText>
+        <label>EBS Customer Number</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound (EBS Customer Number)</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Empathy__c</fullName>
+        <description>Did the consultant actively listen to the customers request and clearly understand the customers requirements?  Did they use appropriate questionining and positive phrases e.g. rest assured I will get this resolved for you, I do understand your inconvenience?  I will be more than happy to get that sorted for you? I completeley understand your situation?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant actively listen to the customers request and clearly understand the customers requirements?  Did they use appropriate questionining and positive phrases?</inlineHelpText>
+        <label>Empathy</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Greet_the_Customer__c</fullName>
+        <description>Did they use the standard call opening adopting a warm and friendly tone, allowing the customer to respond where applicable?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did they use the standard call opening adopting a warm and friendly tone, allowing the customer to respond where applicable?</inlineHelpText>
+        <label>Greet the Customer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Identifying_Other_Needs__c</fullName>
+        <description>Did the consultant listen attentively during the call and confidently present any potential other suitable products to the customer e.g. notice account fixed term deposits, HPP</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant listen attentively during the call and confidently present any potential other suitable products to the customer e.g. notice account fixed term deposits, HPP.  Did the agent create the opportunity/lead with correct CAMPAIGN CODE</inlineHelpText>
+        <label>Identifying Other Needs</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key_learning_next_call_Maximum_3__c</fullName>
+        <description>Enter three development areas to be implemented before next call coaching observation</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter three development areas to be implemented before next call coaching observation
+1
+2
+3</inlineHelpText>
+        <label>Key learning next call (Maximum 3)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Line_Manager_Signature__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Line Manager Signature</inlineHelpText>
+        <label>Line Manager Signature</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Missed_Alerts__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant miss any alerts on the customers profile</inlineHelpText>
+        <label>Missed Alerts</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name_of_Coach__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Name of Coach</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Coach</inlineHelpText>
+        <label>Name of Coach</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Call_Centre_Coaching_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Offer_further_Assistance__c</fullName>
+        <description>Did the consultant during the call close ask the customer if they could be of further assistance? e.g. Is there anything else I can help you with today?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant during the call close ask the customer if they could be of further assistance? e.g. Is there anything else I can help you with today?</inlineHelpText>
+        <label>Offer further Assistance?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Open_Call_Verification_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT( Greet_the_Customer__c )=&quot;Yes&quot;, TEXT( Greet_the_Customer__c )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT(  Reason_for_calling__c  )=&quot;Yes&quot;, TEXT( Reason_for_calling__c  )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT(  Correct_ID_V__c )=&quot;Yes&quot;, TEXT( Correct_ID_V__c )=&quot;N/A&quot;), 10, 0) +
+IF(OR(TEXT( Benefits_of_SMART_Banking__c  )=&quot;Yes&quot;, TEXT(Benefits_of_SMART_Banking__c  )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT(  Correct_Contact_Details__c  )=&quot;Yes&quot;, TEXT(  Correct_Contact_Details__c  )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT( Customer_name_Active_listening__c  )=&quot;Yes&quot;, TEXT(Customer_name_Active_listening__c   )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT( Placing_Customers_on_Hold__c  )=&quot;Yes&quot;, TEXT(Placing_Customers_on_Hold__c   )=&quot;N/A&quot;), 2.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Open Call &amp; Verification Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Link__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Link between opportunity and Call centre Inbound Coaching scores</description>
+        <externalId>false</externalId>
+        <label>Opportunity Link</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Spotting_and_Close_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(  Recap_Call__c  )=&quot;Yes&quot;, TEXT( Recap_Call__c   )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Identifying_Other_Needs__c  )=&quot;Yes&quot;, TEXT( Identifying_Other_Needs__c   )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Sharia_a_Compliance__c  )=&quot;Yes&quot;, TEXT(Sharia_a_Compliance__c    )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Confirm_Customer_Satisfaction__c  )=&quot;Yes&quot;, TEXT(  Confirm_Customer_Satisfaction__c  )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT( Offer_further_Assistance__c   )=&quot;Yes&quot;, TEXT(Offer_further_Assistance__c     )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT( Standard_Call_Close__c   )=&quot;Yes&quot;, TEXT( Standard_Call_Close__c    )=&quot;N/A&quot;), 2.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Spotting and Close Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_Call_Rating__c</fullName>
+        <description>Scoring of call based upon overall % (i.e.95-100% Outstanding, 85-95% Good, 75-85% Development required, &lt;75% Unacceptable)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>based upon % Call rating</inlineHelpText>
+        <label>Overall Call Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Outstanding</fullName>
+                    <default>false</default>
+                    <label>Outstanding</label>
+                </value>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                    <label>Good</label>
+                </value>
+                <value>
+                    <fullName>Development required</fullName>
+                    <default>false</default>
+                    <label>Development required</label>
+                </value>
+                <value>
+                    <fullName>Unacceptable - ROC required</fullName>
+                    <default>false</default>
+                    <label>Unacceptable - ROC required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Overall_Commentary__c</fullName>
+        <description>Commentary on call</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Commentary on call</inlineHelpText>
+        <label>Overall Commentary</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Overall_Pace_Tone_Pitch__c</fullName>
+        <description>Did the consultant adopt an appropriate tone, pace and pitch to suit the customer throughout the whole call</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant adopt an appropriate tone, pace and pitch to suit the customer throughout the whole call</inlineHelpText>
+        <label>Overall Pace, Tone &amp; Pitch</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Person_Record__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person Record</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipLabel>Call Centre Coaching Inbound</relationshipLabel>
+        <relationshipName>Call_Centre_Coaching_Inbound</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Placing_Customers_on_Hold__c</fullName>
+        <description>If the customer is placed on hold is the reason clearly explained and customer returned to every 30 seconds to ask if still o.k. to hold.  If appropriate was a customer call back offered?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the customer is placed on hold is the reason clearly explained and customer returned to every 30 seconds to ask if still o.k. to hold.  If appropriate was a customer call back offered?</inlineHelpText>
+        <label>Placing Customers on Hold</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Previous_Development_Max_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Development (Max 3)</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Process_Procedural_Knowledge_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(  Provide_Accurate_not_misleading_infor__c  )=&quot;Yes&quot;, TEXT(Provide_Accurate_not_misleading_infor__c )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Product_process_Knowledge__c  )=&quot;Yes&quot;, TEXT(Product_process_Knowledge__c   )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Technical_Knowledge__c  )=&quot;Yes&quot;, TEXT(Technical_Knowledge__c  )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Accurately_Update_Systems__c  )=&quot;Yes&quot;, TEXT(Accurately_Update_Systems__c   )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Signpost_Next_Steps__c  )=&quot;Yes&quot;, TEXT(Signpost_Next_Steps__c   )=&quot;N/A&quot;), 2.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Process / Procedural Knowledge Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_process_Knowledge__c</fullName>
+        <description>Did the consultant confidently portray up to date and accurate product/technical information to the customer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant confidently portray up to date and accurate product/technical information to the customer</inlineHelpText>
+        <label>Product/process Knowledge</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provide_Accurate_not_misleading_infor__c</fullName>
+        <description>Did the consultant provide accurate process and product information to the customer and was this done in a timely and friendly manner in response to the customer request</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant provide accurate process and product information to the customer and was this done in a timely and friendly manner in response to the customer request</inlineHelpText>
+        <label>Provide Accurate &amp; not misleading infor</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quality_and_Behaviours_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(  Overall_Pace_Tone_Pitch__c  )=&quot;Yes&quot;, TEXT(Overall_Pace_Tone_Pitch__c   )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT( Appropriate_use_of_Customer_Name__c   )=&quot;Yes&quot;, TEXT(Appropriate_use_of_Customer_Name__c )=&quot;N/A&quot;), 2.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quality and Behaviours Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_for_calling__c</fullName>
+        <description>Did the consultant (establish the customers/inform the customer the) reason for calling (asking open &amp; probing questions/adopting a style to suit the customer) allowing them time to respond?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant (establish the customers/inform the customer the) reason for calling (asking open &amp; probing questions/adopting a style to suit the customer) allowing them time to respond?</inlineHelpText>
+        <label>Reason for calling</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Recap_Call__c</fullName>
+        <description>Did the consultant recap the call and confirm back the main points covered e.g. what has been agreed, actions whilst mirroring the customers pace?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant recap the call and confirm back the main points covered e.g. what has been agreed, actions whilst mirroring the customers pace?</inlineHelpText>
+        <label>Recap Call</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Sharia_a_Compliance__c</fullName>
+        <description>Did the consultant clearly outline the key features and benefits of Ibb product discussed and our USP of &apos;Sharia Compliant banking?  Was this accurate and confidently presented</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant clearly outline the key features and benefits of Ibb product discussed and our USP of &apos;Sharia Compliant banking?  Was this accurate and confidently presented</inlineHelpText>
+        <label>Sharia&apos;a Compliance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Signpost_Next_Steps__c</fullName>
+        <description>Did the consultant signpost the next step of the call so the customer was clear with and furthe action who and when they would be responded to!</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant signpost the next step of the call so the customer was clear with and furthe action who and when they would be responded to!</inlineHelpText>
+        <label>Signpost Next Steps</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Soft_Skills_Service_Excellence_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(TEXT(  Empathy__c  )=&quot;Yes&quot;, TEXT( Empathy__c   )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  friendly_helpful__c  )=&quot;Yes&quot;, TEXT(friendly_helpful__c    )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT( Courteous_professional__c   )=&quot;Yes&quot;, TEXT( Courteous_professional__c    )=&quot;N/A&quot;), 5, 0) +
+IF(OR(TEXT(  Tone_Pace_Clarity__c  )=&quot;Yes&quot;, TEXT(Tone_Pace_Clarity__c    )=&quot;N/A&quot;), 2.5, 0) +
+IF(OR(TEXT( Customer_ownership__c   )=&quot;Yes&quot;, TEXT( Customer_ownership__c )=&quot;N/A&quot;), 2.5, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Soft Skills Service Excellence Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Standard_Call_Close__c</fullName>
+        <description>Did the consultant during the call close give their name and end the call with the brand? e.g. You&apos;ve been speaking to Mohammed today and thank you for calling the Islamic Bank of Britain</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant during the call close give their name and end the call with the brand? e.g. You&apos;ve been speaking to Mohammed today and thank you for calling the Islamic Bank of Britain</inlineHelpText>
+        <label>Standard Call Close</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Technical_Knowledge__c</fullName>
+        <description>In providing a response to the customer would the customer have felt impressed and confident with the knowledge of the consultant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>In providing a response to the customer would the customer have felt impressed and confident with the knowledge of the consultant</inlineHelpText>
+        <label>Technical Knowledge</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Tone_Pace_Clarity__c</fullName>
+        <description>Did the consultant confidently and appropriately ask for the business using natural conversational selling techniques?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the consultant confidently and appropriately ask for the business using natural conversational selling techniques?</inlineHelpText>
+        <label>Tone, Pace &amp; Clarity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Points__c</fullName>
+        <externalId>false</externalId>
+        <formula>Open_Call_Verification_Points__c + Soft_Skills_Service_Excellence_Points__c + Process_Procedural_Knowledge_Points__c + Opportunity_Spotting_and_Close_Points__c + Quality_and_Behaviours_Points__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Type_other__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the main purpose of the call if other selected on call type?</inlineHelpText>
+        <label>Transaction Type (other)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>friendly_helpful__c</fullName>
+        <description>Was the consultants tone, pace and clarity warm and friendly towards the customer.  Did they use the customers name appropriately throughout the call, build customer rapport, match and mirror custoemr pace and tone (if appropriate).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the consultants tone, pace and clarity warm and friendly towards the customer.  Did they use the customers name appropriately throughout the call, build customer rapport, match and mirror custoemr pace and tone (if appropriate).</inlineHelpText>
+        <label>Friendly &amp; helpful</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Call Centre Coaching Inbound</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CCInbound-{000}</displayFormat>
+        <label>Call Centre Coaching Inbound</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Call Centre Coaching Inbound</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Date_of_Observation__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Name__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Date_of_Observation__c</lookupFilterFields>
+        <lookupFilterFields>OBJECT_ID</lookupFilterFields>
+        <lookupFilterFields>Customers_name__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Date_of_Observation__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OBJECT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Customer_Name__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

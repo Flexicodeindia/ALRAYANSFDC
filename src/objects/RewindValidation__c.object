@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>C00094: validation for rewind event.
+List of rules to test Opportunity or Extended Opportunity field values to see if rewind should be permitted.
+
+e.g. Rule to prevent rewind if the application has been declined
+Object = HPP_extended_opportunity__c, Field = Pre_Val_Dec_1__c, DataType = string , Operator = =, Value = Declined, ErrorMessage = This application has been declined.
+
+This rule will check the value in the Pre_Val_Dec_1__c field from the application being rewound and if that value is equal to Declined it will fail the validation. The rewind screen will display the error message in ErrorMessage</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DataType__c</fullName>
+        <description>Double, integer, string, date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Double, integer, string, date</inlineHelpText>
+        <label>DataType</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ErrorMessage__c</fullName>
+        <description>Text to appear on the screen on validation failure. May be useful to include the Business Name of the field being validated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text to appear on the screen on validation failure. May be useful to include the Business Name of the field being validated</inlineHelpText>
+        <label>ErrorMessage</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field__c</fullName>
+        <description>API Field name not label, must be accurate and must be filled in</description>
+        <externalId>false</externalId>
+        <inlineHelpText>API Field name not label, must be accurate and must be filled in</inlineHelpText>
+        <label>Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object__c</fullName>
+        <description>opportunity or HPP_extended_opportunity__c only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>opportunity or HPP_extended_opportunity__c only</inlineHelpText>
+        <label>Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operator__c</fullName>
+        <description>Logical operator to perform against source (Opportunity data) and target (Custom setting) value. Comparison will be performed that way round, i.e. Opportunity.Name &gt; RewindValidation__c.Value</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Values of &quot;=&quot;, &quot;&lt;&quot;, &quot;&lt;=&quot;, &quot;&gt;&quot; , &quot;&gt;=&quot; , &quot;&lt;&gt;&quot; only, any other or blank will assume &quot;=&quot;</inlineHelpText>
+        <label>Operator</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <description>The value in the field to be compared, if to be compared with empty or null vales, set as 
+ &apos;-BLANK-&apos;  e.g. If can&apos;t rewind if Opportunity stage is empty then set Value to -BLANK-</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The value in the field to be compared, if to be compared with empty or null vales, set as 
+ &apos;-BLANK-&apos;</inlineHelpText>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RewindValidation</label>
+    <visibility>Protected</visibility>
+</CustomObject>

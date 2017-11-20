@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AverageDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Average Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPPStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP Status</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LargestDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Largest Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MaximumStatusDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum Status Duration (Days)</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SmallestDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Smallest Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ToleranceDuration__c</fullName>
+        <externalId>false</externalId>
+        <label>Tolerance Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tolerance__c</fullName>
+        <externalId>false</externalId>
+        <label>Tolerance %</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <label>HPP Status Tolerances</label>
+    <visibility>Protected</visibility>
+</CustomObject>

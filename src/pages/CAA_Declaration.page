@@ -1,0 +1,206 @@
+<apex:page showHeader="false" sidebar="false"  docType="html-5.0" standardStylesheets="false" controller="CAA_Core_Controller" action="{!Declaration_Init}">
+
+
+
+<apex:composition template="CAA_Template">
+    <apex:define name="include">
+        <apex:includeScript value="{!URLFOR($Resource.CAA_Includes, '/js/controller/controller_declaration.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.CAA_Includes, '/js/service/service_declaration.js')}"/>
+        <apex:includeScript value="{!URLFOR($Resource.CAA_Includes, '/js/service/service_ebs.js')}"/>
+    </apex:define>
+        <apex:define name="body">
+        
+        <div ng-controller="controllerDeclaration" ng-init="EventLogId = '{!EventLogId}';Decision='{!DeResponse}';SessionId='{!SessionId}'"> <!--ctl -->
+         
+        <div class="row">
+<div class="col-md-9">
+        
+
+<div class="SectionHeader" style="margin-bottom:18px;">
+    <div class="numberCircleReverse">3</div>
+    <div>Declaration</div>
+</div>
+
+<div class=""/>
+
+
+<div ng-show="Decision == 'DECLINE'" class="PanelContents">
+<div>
+Thank you for your application for an Al Rayan Bank {!productType}
+</div>
+<br/>
+<div>
+We have reviewed your application and we must advise you that regretfully, in this instance, we are unable to offer the facility you have requested.
+</div>
+<br/>
+<div>
+Al Rayan Bank, like most financial organisations, assesses applications using information supplied by credit bureau.  Unfortunately, in this case we have been supplied with information by Equifax Ltd that means we are unable to accept your application at this moment. If you would like more information please either go to www.equifax.co.uk or write to:-<br/>
+</div>
+<br/>
+<div>
+Equifax plc
+</div>
+<div>
+Credit File Advice Centre
+</div>
+<div>
+Po Box 1140
+</div>
+<div>
+Bradford
+</div>
+<div>
+BD1 5US
+</div>
+<br/>
+<div>
+A fee of £2.00 will be payable to Equifax Plc if you wish to use either of these methods.
+</div>
+<br/>
+<div>
+If you require any further information about your account application please contact us on 0800 4080 786.
+</div>
+
+<c:CAA_Next_Steps_Footer ></c:CAA_Next_Steps_Footer>
+
+</div>
+
+<!--
+<div ng-show="Decision == 'REFER' || Decision == 'ADDRESSMISMATCH'">
+    It was refered - contact message
+</div>
+-->
+
+
+<div ng-show="!Error">
+
+<div class="SectionSubHeader">
+    Prevention of fraud and money laundering        
+</div>
+ 
+<div class="PanelContents">
+    <c:CAA_Declaration_YPSA_ML rendered="{!(showYPSATC || showYPNATC)}" ></c:CAA_Declaration_YPSA_ML>
+    <c:CAA_Declaration_Saving_ML rendered="{!showSavingText}" ></c:CAA_Declaration_Saving_ML>
+    <c:CAA_Declaration_Current_ML rendered="{!showCurrentText}" ></c:CAA_Declaration_Current_ML>
+    
+    <div>    
+    <button class="btn" ng-click="i_agree1_clicked = true;"  ng-class="i_agree1_clicked ? 'goldbutton' : 'blackbutton'">I agree</button>
+</div>
+</div>
+
+
+<div ng-show="i_agree1_clicked">
+<div class="SectionSubHeader">
+    Declaration       
+</div>
+<div style="padding:20px;" class="PanelContents" >
+    <!--<apex:include pageName="CAA_DeclarationText"/>-->
+    
+    <c:CAA_Declaration_YP rendered="{!(showYPSATC || showYPNATC)}" prod="{!ibbproductname}"></c:CAA_Declaration_YP>
+    <c:CAA_Declaration_Saving rendered="{!showSavingText}" prod="{!ibbproductname}"></c:CAA_Declaration_Saving>
+    <c:CAA_Declaration_Current rendered="{!showCurrentText}" prod="{!ibbproductname}"></c:CAA_Declaration_Current>    
+    
+    <hr/>
+    
+    
+    <div>    
+    <button class="btn"  ng-click="i_agree2_clicked = true;" ng-class="i_agree2_clicked ? 'goldbutton' : 'blackbutton'">I agree</button>
+</div>
+<hr/>
+<button class="btn btnArb" ng-show="i_agree1_clicked && i_agree2_clicked" ng-click="CallDe()" >
+                       <span> <strong>Continue</strong> to Section 4
+                           <span class="fa-stack fa" >
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-chevron-right fa-stack-1x"></i>
+                    </span>
+                    </span>
+                       
+                       
+                       
+                    </button>
+                    
+                    
+                    
+
+</div>
+</div>
+
+</div>
+
+<apex:outputPanel rendered="{!Not(IsGuest)}">
+<div ng-show="Error" class="PanelContents">
+    <div class="SectionTitle">
+        System Error
+    </div>
+    <div>
+        
+        
+        
+        <table class="table">
+        <thead>
+            <tr>
+                <th>Applicant</th>
+                <th>Decision</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in Data.Reasons">
+            <td>
+                {{item.ThisApplicant.Applicant_Number__c}}
+            </td>
+            <td>
+                {{item.ThisDecision}}
+            </td>
+            <td>
+                {{item.ReasonDescription}}
+            </td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    
+    <button class="btn btnArb" ng-show="i_agree1_clicked && i_agree2_clicked" ng-click="CallDe()" >
+                       <span> <strong>Continue</strong> to Section 4
+                           <span class="fa-stack fa" >
+                      <i class="fa fa-circle-thin fa-stack-2x"></i>
+                      <i class="fa fa-chevron-right fa-stack-1x"></i>
+                    </span>
+                    </span>
+                       
+                       
+                       
+                    </button>    
+</div>
+</apex:outputPanel>
+<apex:outputPanel rendered="{!IsGuest}">
+<div ng-show="Error" class="PanelContents">
+    Thank you for your application. 
+    
+    Your application is being processed and we will contact you to discuss further.
+</div>
+</apex:outputPanel>
+
+
+
+</div>
+
+
+
+<div class="col-md-3">
+<div class="rightcol visible-md visible-lg" id="sidebar" >
+     <c:CAA_Progress Stage="3" rendered="{!IsGuest}"></c:CAA_Progress>  
+     <c:CAA_Event_Menu rendered="{!Not(IsGuest)}" />
+     
+     
+     
+</div>
+
+</div>
+</div> <!-- row -->
+</div> <!-- ctl -->
+
+
+</apex:define>
+</apex:composition>
+</apex:page>

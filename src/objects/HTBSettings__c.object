@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Contains settings for HTB process, such as URN prefixes and length.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>BrandCode__c</fullName>
+        <description>The three character Brand code supplied by UKARcs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The three character Brand code supplied by UKARcs.</inlineHelpText>
+        <label>Brand Code</label>
+        <length>3</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Environment__c</fullName>
+        <defaultValue>&quot;dv&quot;</defaultValue>
+        <description>To indicate which environment the data is destined for:
+pd      Production
+pp      pre-prod
+dv      Dev 
+UAT(n)  UAT 1-99 (proposed)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To indicate which environment the data is destined for:
+pd      Production
+pp      pre-prod
+dv      Dev 
+UAT(n)  UAT 1-99 (proposed)</inlineHelpText>
+        <label>Environment</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FilenameFormat__c</fullName>
+        <defaultValue>&quot;MGS_[LENDERCODE]_[BRANDCODE]_MORTGAGES_[MONTH]&quot;</defaultValue>
+        <description>The format of the filenames which are produced by the system.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The format of the filenames which are produced by the system.</inlineHelpText>
+        <label>Filename Format</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LenderCode__c</fullName>
+        <description>The three character Lender code supplied by UKARcs.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The three character Lender code supplied by UKARcs.</inlineHelpText>
+        <label>Lender Code</label>
+        <length>3</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mode__c</fullName>
+        <defaultValue>&quot;VERIFY&quot;</defaultValue>
+        <description>To indicate which mode the data is intended to represent:
+VERIFY  Lender onboarding / XSD change
+LIVE	Lender data treated as LIVE</description>
+        <externalId>false</externalId>
+        <inlineHelpText>To indicate which mode the data is intended to represent:
+VERIFY  Lender onboarding / XSD change
+LIVE	Lender data treated as LIVE</inlineHelpText>
+        <label>Mode</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Receiver__c</fullName>
+        <defaultValue>&quot;UKARCS&quot;</defaultValue>
+        <description>ID/Code/Name of the Receiver organisation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID/Code/Name of the Receiver organisation.</inlineHelpText>
+        <label>Receiver</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sender__c</fullName>
+        <defaultValue>&quot;ARB&quot;</defaultValue>
+        <description>ID/Code/Name of the sender organisation.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>ID/Code/Name of the sender organisation.</inlineHelpText>
+        <label>Sender</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URNLength__c</fullName>
+        <defaultValue>6</defaultValue>
+        <description>The length of the number section of the generated URNs. e.g. 3 = 001, 4 = 0001, 5 = 00001, etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The length of the number section of the generated URNs. e.g. 3 = 001, 4 = 0001, 5 = 00001, etc.</inlineHelpText>
+        <label>URN Length</label>
+        <precision>1</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>URNPrefix__c</fullName>
+        <defaultValue>&quot;&quot;</defaultValue>
+        <description>Text which will be prefixed to the beginning of generated URNS.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Text which will be prefixed to the beginning of generated URNS.</inlineHelpText>
+        <label>URN Prefix</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>HTB Settings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

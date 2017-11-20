@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Business_Supplier__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Company who supplies the contact and/or service.</description>
+        <externalId>false</externalId>
+        <label>Business Supplier</label>
+        <referenceTo>Business_Supplier__c</referenceTo>
+        <relationshipLabel>Contacts for Suppliers</relationshipLabel>
+        <relationshipName>Contacts_for_Suppliers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Please enter the contacts email address</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <description>Please enter a brief description on what service the contact provides.</description>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Telephone_Mobile__c</fullName>
+        <description>Please enter the mobile phone nunber for this contact.</description>
+        <externalId>false</externalId>
+        <label>Telephone Mobile</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Telephone_Office__c</fullName>
+        <description>Please enter the office telephone number for this contact.</description>
+        <externalId>false</externalId>
+        <label>Telephone Office</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Contacts for Suppliers</label>
+    <nameField>
+        <label>Contacts for Suppliers Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Contacts for Suppliers</pluralLabel>
+    <recordTypes>
+        <fullName>Contacts_for_suppliers</fullName>
+        <active>true</active>
+        <label>Contacts for suppliers</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

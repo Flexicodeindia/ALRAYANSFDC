@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>For use with the fast surveyors integration for HPP CAA build.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Building_reinstatement_value__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Building reinstatement value</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CaseReference__c</fullName>
+        <externalId>false</externalId>
+        <label>CaseReference</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Inspection__c</fullName>
+        <description>This field is used for incoming date from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Date of Inspection</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Instruction__c</fullName>
+        <description>This field is used for incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Date of Instruction</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Report__c</fullName>
+        <description>This field is used for incoming date from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Date of Report</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_between_creation_and_valuation__c</fullName>
+        <externalId>false</externalId>
+        <formula>today()-DATEVALUE(CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days between creation and valuation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_until_valuation_report_expires__c</fullName>
+        <externalId>false</externalId>
+        <formula>Report_expiry_date__c - TODAY()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days until valuation report expires</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fair_Market_Rental_pcm__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Fair Market Rental (pcm)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Floor_Number__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Floor Number</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Garage__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Garage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ground_Rent__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Ground Rent P.A</inlineHelpText>
+        <label>Ground Rent</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>How_Many_Parking_Spaces__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>How Many Parking Spaces</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LenderReference__c</fullName>
+        <externalId>false</externalId>
+        <label>LenderReference</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Market_Value_After_Repairs_Completion__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Market Value (after essential repairs, or on completion for new properties)</inlineHelpText>
+        <label>Market Value After Repairs/Completion</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Market_Value_Present_Condition__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Market Value Present Condition</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_property_street__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.New_property_street__c</formula>
+        <label>New property street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Bedrooms__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Number of Bedrooms</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Floors__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Number of Floors</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Valuation Reports</relationshipLabel>
+        <relationshipName>Valuation_Reports</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parking__c</fullName>
+        <externalId>false</externalId>
+        <label>Parking</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Location Type</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Property_Postcode__c</fullName>
+        <description>This field is used for incoming date from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Property Postcode</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Tenure__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Property Tenure</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Freehold</fullName>
+                    <default>false</default>
+                    <label>Freehold</label>
+                </value>
+                <value>
+                    <fullName>Leasehold</fullName>
+                    <default>false</default>
+                    <label>Leasehold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Property_Type__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Property Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>House</fullName>
+                    <default>false</default>
+                    <label>House</label>
+                </value>
+                <value>
+                    <fullName>Bungalow</fullName>
+                    <default>false</default>
+                    <label>Bungalow</label>
+                </value>
+                <value>
+                    <fullName>Detached</fullName>
+                    <default>false</default>
+                    <label>Detached</label>
+                </value>
+                <value>
+                    <fullName>Semi-detached</fullName>
+                    <default>false</default>
+                    <label>Semi-detached</label>
+                </value>
+                <value>
+                    <fullName>End Terrace</fullName>
+                    <default>false</default>
+                    <label>End Terrace</label>
+                </value>
+                <value>
+                    <fullName>Mid Terrace</fullName>
+                    <default>false</default>
+                    <label>Mid Terrace</label>
+                </value>
+                <value>
+                    <fullName>Flat</fullName>
+                    <default>false</default>
+                    <label>Flat</label>
+                </value>
+                <value>
+                    <fullName>Maisonette</fullName>
+                    <default>false</default>
+                    <label>Maisonette</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rate_Market_Demand_for_Property__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>How would you rate the market demand for the property in it&apos;s current condition?</inlineHelpText>
+        <label>Rate Market Demand for Property</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                    <label>Good</label>
+                </value>
+                <value>
+                    <fullName>Reasonable</fullName>
+                    <default>false</default>
+                    <label>Reasonable</label>
+                </value>
+                <value>
+                    <fullName>Poor</fullName>
+                    <default>false</default>
+                    <label>Poor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ReportStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>ReportStatus</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>InstructionCreated</fullName>
+                    <default>false</default>
+                    <label>InstructionCreated</label>
+                </value>
+                <value>
+                    <fullName>InstructionInProgress</fullName>
+                    <default>false</default>
+                    <label>InstructionInProgress</label>
+                </value>
+                <value>
+                    <fullName>ReportReceived</fullName>
+                    <default>false</default>
+                    <label>ReportReceived</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Report_expiry_date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Date_of_Report__c + 180</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Report expiry date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Residential_Dwelling__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the property being used solely as a residential dwelling?</inlineHelpText>
+        <label>Residential Dwelling</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Roof__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Roof</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Maintenance_Charges__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Service/Maintenance Charges</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Instruction Sent to Fast Surveyors</fullName>
+                    <default>false</default>
+                    <label>Instruction Sent to Fast Surveyors</label>
+                </value>
+                <value>
+                    <fullName>Confirmation of instruction from Fast Surveyors received</fullName>
+                    <default>false</default>
+                    <label>Confirmation of instruction from Fast Surveyors received</label>
+                </value>
+                <value>
+                    <fullName>error</fullName>
+                    <default>false</default>
+                    <label>error</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Surveyor_Firm__c</fullName>
+        <description>This field is used for incoming date from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Surveyor Firm</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unexpired_Term__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Unexpired Term</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Walls__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Walls</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X90_day_Restricted_Value__c</fullName>
+        <description>For use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>90-day (Restricted Value)</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Year_Built__c</fullName>
+        <description>This field is for use with incoming data from Quest/Valuation Report</description>
+        <externalId>false</externalId>
+        <label>Year Built</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Valuation Report</label>
+    <nameField>
+        <displayFormat>VR{0000}</displayFormat>
+        <label>Valuation Report Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Valuation Reports</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

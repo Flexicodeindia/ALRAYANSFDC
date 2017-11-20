@@ -1,0 +1,109 @@
+<apex:component controller="HPPUnderwritterAssetController" >
+
+<apex:attribute name="res" type="AffordabilityResults__c" description="{!Affordability}"   />
+<apex:attribute name="gross" type="Decimal" description=""   />
+<apex:attribute name="net" type="Decimal" description=""   />
+<apex:attribute name="total" type="Decimal" description=""   />
+<!-- C0586 UW Start -->
+<apex:attribute name="minimumRentalIncome" type="Decimal" description="" />
+<apex:attribute name="minimumRentalIncomeDeficit" type="Decimal" description="" />
+<apex:attribute name="PRARentalIncome" type="Decimal" description="" />
+<apex:attribute name="PRARentalIncomeDeficit" type="Decimal" description="" />
+<apex:attribute name="PRACoverage" type="Decimal" description="" />
+<apex:attribute name="TotalCharges" type="Decimal" description="" />
+<apex:attribute name="FailsBP" type="Boolean" description=""/>
+<apex:attribute name="isIAA" type="Boolean" description="" />
+<!-- C0586 UW End -->
+
+
+<table width="100%">
+<tr>
+<td valign="top" width="33%">
+    <!-- C0586 UW Start-->
+    <table width="100%">
+        <tr>
+            <td class="valtitle"> Rental income</td><td><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.AdditionalRentalIncome__c}" /></apex:outputText> </td>
+            <td>
+                <a class="redBtn" target="_blank" href="/{!res.id}">
+                    <apex:outputtext value="{!res.AffordabilityResult__c}" rendered="{!res.AffordabilityResult__c!='Pass'}"/>
+                    <apex:outputtext value="Test 1 / Test 2 Pass" rendered="{!res.AffordabilityResult__c=='Pass'}" />
+                </a>
+                <apex:outputPanel rendered="{!isIAA && FailsBP}">
+                    <span class="redBtn">IAA - Fails BP</span>
+                </apex:outputPanel>
+                <apex:outputpanel rendered="{!isIAA && !FailsBP}">
+                    <span class="redBtn">IAA - Passes BP</span>
+                </apex:outputpanel>
+            </td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 1 - Payment</td><td><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!minimumRentalIncome}" /></apex:outputText></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 1 - Charges</td>
+            <td><apex:outputtext value="{0,number,£#,###,###0.00}"><apex:param value="{!TotalCharges}" /></apex:outputtext></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 1 - Surplus/Deficit</td><td><apex:outputtext value="{0,number,£#,###,##0.00}"><apex:param value="{!minimumRentalIncomeDeficit}" /></apex:outputtext></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 2 - Payment</td><td><apex:outputtext value="{0,number,£#,###,##0.00}"><apex:param value="{!res.StressedHPPRepayment__c}" /></apex:outputtext></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 2 - Surplus/Deficit</td><td><apex:outputtext value="{0,number,£#,###,##0.00}"><apex:param value="{!PRARentalIncomeDeficit}" /></apex:outputtext></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle">Test 2 - Coverage</td><td><apex:outputText value="{0,number,0}%"><apex:param value="{!PRACoverage}" /></apex:outputText></td><td></td>
+        </tr>
+        <tr>
+            <td class="valtitle"> Total Aggregation</td><td><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!total}" /></apex:outputText></td>
+        </tr>
+    </table>
+    <!-- C0586 UW End-->
+</td>
+<td valign="top" width="66%">
+    <table width="100%">
+        <tr>
+            <td></td><td class="valtitle">Gross Annual<br/>Income</td>
+            <td></td><td class="valtitle">Net Monthly<br/>Income</td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 1</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant1__c}" /></apex:outputText></td>
+            <td class="valtitle">App 1</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant1__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 2</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant2__c}" /></apex:outputText></td>
+            <td class="valtitle">App 2</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant2__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 3</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant3__c}" /></apex:outputText></td>
+            <td class="valtitle">App 3</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant3__c}" /></apex:outputText></td>
+           <td></td><td></td>            
+        </tr>
+        <tr>
+            <td class="valtitle">App 4</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.GrossAnnualIncomeApplicant4__c}" /></apex:outputText></td>
+            <td class="valtitle">App 4</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!res.NetMonthlyIncomeApplicant4__c}" /></apex:outputText></td>
+            <td></td><td></td>          
+        </tr>
+        <tr>
+            <td class="valtitle">Sum</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!Gross}" /></apex:outputText></td>
+            <td class="valtitle">Sum</td><td class="numberVal"><apex:outputText value="{0,number,£#,###,##0.00}"><apex:param value="{!Net}" /></apex:outputText></td>
+            <td class="valtitle">Total Monthly <br/>Expenditure</td><td class="numberVal">£0.00</td>     
+        </tr>        
+        
+        
+         
+    </table>
+</td>
+
+
+</tr>
+</table>
+
+
+
+</apex:component>

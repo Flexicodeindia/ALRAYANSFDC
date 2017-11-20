@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>List of all Suppliers along with contract length, contract numbers and brief description</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Alternative_Vendor__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If there is an alternative vendor who we use for the service, please fill this in.</inlineHelpText>
+        <label>Alternative Vendor</label>
+        <length>35</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annual_cost_for_services__c</fullName>
+        <description>Please enter the contract costs for the usage of service per annum if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the contract costs for the usage of service per annum if applicable.</inlineHelpText>
+        <label>Annual cost for services</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Brief_Description__c</fullName>
+        <description>Please enter a brief description of what the company services.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter a brief description of what the company services.</inlineHelpText>
+        <label>Brief Description</label>
+        <length>2000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Business_Critical__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Please check this if the following suppliers are:</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please check this if the following suppliers are:</inlineHelpText>
+        <label>Business Critical?</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>C__c</fullName>
+        <description>Please enter a contract number if applicable. This maybe necessary to log a call or speak to someone with regards to an issue.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter a contract number if applicable. This maybe necessary to log a call or speak to someone with regards to an issue.</inlineHelpText>
+        <label>Contract Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Address__c</fullName>
+        <description>Please enter the suppliers address</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the suppliers address</inlineHelpText>
+        <label>Company Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Company_Phone_No_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Phone No 2</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Phone_No__c</fullName>
+        <description>Please enter the company main phone number</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the company main phone number</inlineHelpText>
+        <label>Company Phone No</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Website__c</fullName>
+        <description>Please select to go to the suppliers home page.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select to go to the suppliers home page.</inlineHelpText>
+        <label>Company Website</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Contract_Renewal_Date__c</fullName>
+        <description>Please enter the renewal date of the contract for the services if applicable.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the renewal date of the contract for the services if applicable.</inlineHelpText>
+        <label>Contract Renewal Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Department_Owner_s__c</fullName>
+        <description>Please select the department(s) relating to this supplier.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the department(s) relating to this supplier.</inlineHelpText>
+        <label>Department Owner(s)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Call Centre</fullName>
+                    <default>false</default>
+                    <label>Call Centre</label>
+                </value>
+                <value>
+                    <fullName>Collections</fullName>
+                    <default>false</default>
+                    <label>Collections</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Credit Risk</fullName>
+                    <default>false</default>
+                    <label>Credit Risk</label>
+                </value>
+                <value>
+                    <fullName>Executive Management</fullName>
+                    <default>false</default>
+                    <label>Executive Management</label>
+                </value>
+                <value>
+                    <fullName>FCU</fullName>
+                    <default>false</default>
+                    <label>FCU</label>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                    <label>Finance</label>
+                </value>
+                <value>
+                    <fullName>HR</fullName>
+                    <default>false</default>
+                    <label>HR</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Operations</fullName>
+                    <default>false</default>
+                    <label>Operations</label>
+                </value>
+                <value>
+                    <fullName>Treasury</fullName>
+                    <default>false</default>
+                    <label>Treasury</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Next_Scheduled_Service__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the date when the next scheduled service is due. Please leave blank if not applicable.</inlineHelpText>
+        <label>Next Scheduled Service</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Paid_in_Arrears__c</fullName>
+        <externalId>false</externalId>
+        <label>Paid in Arrears</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>true</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_method__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the method of payment. e.g. BACS Invoice.</inlineHelpText>
+        <label>Payment method</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_Status__c</fullName>
+        <description>Please select the status of the supplier. Dormant - No activity for more than 12 months.
+Inactive - Do not use (If you have selected this, please enter in the description why this shouldn&apos;t be used.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the status of the supplier. Dormant - No activity for more than 12 months.
+Inactive - Do not use (If you have selected this, please enter in the description why this shouldn&apos;t be used.</inlineHelpText>
+        <label>Relationship_Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Dormant</fullName>
+                    <default>false</default>
+                    <label>Dormant</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Inactive - Do not use!</fullName>
+                    <default>false</default>
+                    <label>Inactive - Do not use!</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_who_manages_this_account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Please select the staff member who manages this supplier/account from IBB.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the staff member who manages this supplier/account from IBB.</inlineHelpText>
+        <label>User who manages this account</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Business_Suppliers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Business Supplier</label>
+    <nameField>
+        <label>Business Suppliers Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Business Suppliers</pluralLabel>
+    <recordTypes>
+        <fullName>IT_Supplier</fullName>
+        <active>true</active>
+        <label>IT Supplier</label>
+        <picklistValues>
+            <picklist>Department_Owner_s__c</picklist>
+            <values>
+                <fullName>Call Centre</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Collections</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FCU</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasury</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Paid_in_Arrears__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Relationship_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Dormant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inactive - Do not use%21</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

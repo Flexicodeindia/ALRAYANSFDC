@@ -1,0 +1,2762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The HPP Compliance Observation aid for use by T&amp;C Scheme Managers and Compliance</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AIP_Date_Time_of_call__c</fullName>
+        <description>Enter the date and time the Agreement in principle was completed</description>
+        <externalId>false</externalId>
+        <label>AIP Date &amp; Time of call</label>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>AIP_Eligibility_Personal_Finance_info__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>AIP in two parts - Eligibility/ Personal Finance info</inlineHelpText>
+        <label>AIP - Eligibility/ Personal Finance info</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AIP_Reference_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the Customers AIP number</inlineHelpText>
+        <label>AIP Reference Number</label>
+        <length>10</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AIP_decision_show_understanding__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Generates AIP decision - show understanding where the request is declined or confirm the customer is happy to proceed to application if appropriate.</inlineHelpText>
+        <label>AIP decision - show understanding</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Affordability__c</fullName>
+        <description>Confirm affordability with customer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm affordability with customer</inlineHelpText>
+        <label>Affordability</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agree_E_mail_notification_If_applicable__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Agree with the customer that e-mail notification is acceptable (If appropriate)</inlineHelpText>
+        <label>Agree E-mail notification  If applicable</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>All_relevant_information_recorded__c</fullName>
+        <description>Has all the relevant information for the HPP Application been recorded?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Has all the relevant information for the HPP Application been recorded?</inlineHelpText>
+        <label>All relevant information recorded</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Any_questions_on_product_please_contact__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If there are any questions on the product please do not hesitate to contact me?</inlineHelpText>
+        <label>Any questions on product please contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With learning points</fullName>
+                    <default>false</default>
+                    <label>Yes - With learning points</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Application_Date_time_of_call__c</fullName>
+        <description>Please enter the date and time of the application call observed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the date and time of the application call observed (if applicable)</inlineHelpText>
+        <label>Application Date &amp; time of call</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Application_Reference_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter the HPp Application reference number</inlineHelpText>
+        <label>Application Reference Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application_form_Posted__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Print off application form and confirm with the customer that this will be posted to them to sign and return along with any other documentation required for the Application e.g. bank Statements, Passport etc.</inlineHelpText>
+        <label>Application form Posted</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Application_form_completed_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirmation that the HPP Application form has been completed correctly from the information supplied by the customer</inlineHelpText>
+        <label>Application form completed correctly</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ask_all_qualifying_questions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ask all qualifying questions</inlineHelpText>
+        <label>Ask all qualifying questions</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Benefits_fully_explained__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller fully explain the benefits of the product to the customer?</inlineHelpText>
+        <label>Benefits fully explained?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Business_Card_Personalise_Sale__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller personalise the close of the interview and go through contact details for any questions throughout the application process.  Customer to confirm that business card is held?</inlineHelpText>
+        <label>Business Card/Personalise Sale</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_Recorded_Disclaimer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller clearly explain that the call would be recorded for training and monitoring purposes</inlineHelpText>
+        <label>Call Recorded Disclaimer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_greeting__c</fullName>
+        <description>Customer given the option of booking for a face to face at branch or continue.  Confirmation received that customer is happy with interview elements and time and is O.K. to proceed?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Appropriate greeting, including that call will be monitored &amp; recorded:  Interview elements/time discussed: ok to proceed?</inlineHelpText>
+        <label>Call Greeting &amp; Call Monitored</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Clear_and_confident_on_the_call__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller sound clear and confident during the call with the customer?</inlineHelpText>
+        <label>Clear and confident on the call?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Closing_wording__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Closing wording, explain the next steps i.e.credit search, underwriting, survey, offer and completion</inlineHelpText>
+        <label>Closing wording</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comments1__c</fullName>
+        <description>Comments field</description>
+        <externalId>false</externalId>
+        <label>Comments1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments2__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_10__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 10</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_11__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 11</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_12__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 12</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_13__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 13</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_14__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 14</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_15__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 15</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_16__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 16</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_17__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 17</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_18__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 18</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_19__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 19</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_20__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 20</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_21__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 21</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_22__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 22</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_23__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 23</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_24__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 24</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_25__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 25</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_26__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 26</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_27__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 27</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_28__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 28</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_29__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 29</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_30__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 30</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_31__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 31</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_32__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 32</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_33__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 33</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_34__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 34</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_35__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 35</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_37__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 37</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 3</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 4</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_50__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 50</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_51__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 51</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_52__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 52</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_5__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 5</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_6__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 6</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_7__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 7</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_8__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 8</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments_9__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments 9</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Copmments_36__c</fullName>
+        <externalId>false</externalId>
+        <label>Copmments 36</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Scoring_Further_undewriting__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Stress to the customer that this agreement is subject to credit scoring and further underwriting</inlineHelpText>
+        <label>Credit Scoring/Further undewriting</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Criteria_Met__c</fullName>
+        <description>Seller establishes if the customer meets the criteria for the HPP product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller establishes if the customer meets the criteria for the HPP product</inlineHelpText>
+        <label>Criteria Met?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_Understanding_IDD__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Check Customer understanding of the Inituial Disclosure Document</inlineHelpText>
+        <label>Customer Understanding - IDD</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Customer_name__c</fullName>
+        <description>Enter the HPP Applicants name</description>
+        <externalId>false</externalId>
+        <label>HPP Applicant name</label>
+        <length>100</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_understanding_Risk_Features__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Clarified customer understanding by use of examples - Risks &amp; features document</inlineHelpText>
+        <label>Customer understanding Risk &amp; Features</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_the_seller_ask_for_referral_business__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller ask the customer for any potential referral business?</inlineHelpText>
+        <label>Did the seller ask for referral business</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_the_seller_close_the_sale__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller close the sales correctly?</inlineHelpText>
+        <label>Did the seller close the sale?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_the_seller_interrupt_or_talk_over__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller interrupt the customer of talk over them during the call?</inlineHelpText>
+        <label>Did the seller interrupt or talk over?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_the_seller_overcome_any_objections__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller overcome any of the customers objections?</inlineHelpText>
+        <label>Did the seller overcome any objections?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Did_the_seller_overcome_objections__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller overcome the customers objections?</inlineHelpText>
+        <label>Did the seller overcome objections?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Documentation_requirements_explained__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Seller explain the documentation requirements correctly to the customer?</inlineHelpText>
+        <label>Documentation requirements explained?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Ensure_IDD_R_F_IS_etc__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Ensure that the IDD, risks and features, proof of ID/address (KYC) &amp; tarfiif checklists and HPP information booklet prepared</inlineHelpText>
+        <label>Ensure IDD R &amp; F IS etc.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explain_Ijara_Diminishing_Musharaka__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains concept of Ijara &amp; Diminishing Musharaka, rental and acquisition payment</inlineHelpText>
+        <label>Explain Ijara &amp; Diminishing Musharaka</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explain_Use_of_Base_rate_and_rental__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains use of Base rate and how rental (Occupancy)is calculated</inlineHelpText>
+        <label>Explain Use of Base rate and rental</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explained_how_the_Product_works__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller explain clearly to the customer how the product works?</inlineHelpText>
+        <label>Explained how the Product works?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explains_Buildings_Insurance__c</fullName>
+        <description>Explains Buiildings Insurance relationship</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Explains need for Buiildings Insurance</inlineHelpText>
+        <label>Explains Buildings Insurance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explains_Product_Options_Standard_Fixed__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Explains Product /rate Options Standard/Fixed Has the seller discussed whether the deposit can be increased?</inlineHelpText>
+        <label>Explains Product Options Standard/Fixed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explains_fees_from_Tariff_List__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Explains the administration fee, valuation fee applicable, SDLT, legal fees (Bank &amp; Customers), CHAPS using reference to the current Tariff list</inlineHelpText>
+        <label>Explains fees from Tariff List</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explanation_of_products_Sharia_complianc__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller clearly explain the Sharia aspect of the the product to the customer and the difference between conventional mortgages?</inlineHelpText>
+        <label>Explanation- products Sharia compliance?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explicit_Consent_to_hold_Data__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer gives explicit consent to hold data</inlineHelpText>
+        <label>Explicit Consent to hold Data</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Friendly_Polite_and_welcoming__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the seller friendly, polite and welcoming during the call?</inlineHelpText>
+        <label>Friendly, Polite and welcoming?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HPP_BTL_Process_explained_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the whole HPP/BTL process explained correctly?</inlineHelpText>
+        <label>HPP/BTL Process explained correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HPP_Customer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Please select the opportunity that is linked to this record</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the opportunity that is linked to this record</inlineHelpText>
+        <label>HPP Opportunity Name</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>HPP_T_C_Observation_Phone</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Observation_Number__c</fullName>
+        <displayFormat>{YY}{MM}-{0}</displayFormat>
+        <externalId>false</externalId>
+        <label>HPP Observation Number</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Seller_name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HPP Seller name</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipName>HPP_T_C_Observation_Phone</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Sharia_Compliant__c</fullName>
+        <externalId>false</externalId>
+        <label>HPP Sharia Compliant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With learning points</fullName>
+                    <default>false</default>
+                    <label>Yes - With learning points</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Identify_all_sales_opportunities__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller identify all sales opportunities?</inlineHelpText>
+        <label>Identify all sales opportunities?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Identify_all_selling_opportunities__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Seller identify all sales opportunities on the call i.e.cross sales for LTS/savings etc</inlineHelpText>
+        <label>Identify all selling opportunities</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Indicative_Quote__c</fullName>
+        <description>HPP Website, complete calculator and inform customer of outcomes - indicative quote only</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HPP Website, complete calculator and inform customer of outcomes - indicative quote only</inlineHelpText>
+        <label>Indicative Quote</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Initial_Disclosure_Document__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Initial Disclosure Document</inlineHelpText>
+        <label>Initial Disclosure Document</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location_of_Seller__c</fullName>
+        <description>This Is the location of the salesperson doing the HPp Application</description>
+        <externalId>false</externalId>
+        <label>Location of Seller</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BDM</fullName>
+                    <default>false</default>
+                    <label>BDM</label>
+                </value>
+                <value>
+                    <fullName>Head Office Seller</fullName>
+                    <default>false</default>
+                    <label>Head Office Seller</label>
+                </value>
+                <value>
+                    <fullName>Premier</fullName>
+                    <default>false</default>
+                    <label>Premier</label>
+                </value>
+                <value>
+                    <fullName>Intermediary</fullName>
+                    <default>false</default>
+                    <label>Intermediary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lump_Sum_ERC_Options__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains availability of lump sum payments and ERC (where applicable for Fixed Product) and options to reduce term or payments</inlineHelpText>
+        <label>Lump Sum / ERC Options</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Lumpsum_options__c</fullName>
+        <description>Lump sum</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Explain Lump Sum Payments, ERC, options to reduce term and payments</inlineHelpText>
+        <label>Lumpsum options</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marketing_Consent_confirmation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Confirm with the customer their consent for Marketing by IBB and ensure that the online form is completed correctly as part of the application process</inlineHelpText>
+        <label>Marketing Consent confirmation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NO_inaccurate_information_given_to_cust__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>No inaccurate information was given to the customer during the interview</inlineHelpText>
+        <label>No inaccurate information given to cust</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Name_of_Seller_observed__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Name of Seller observed</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>HPP_T_C_Observation_Phone</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Next_Steps_Product_guide__c</fullName>
+        <description>Full Process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains to the customer the next steps &amp; timescales involved using theHPP Information Booklet as a reference, i.e. Credit search/underwriting/survey/offer/completion!</inlineHelpText>
+        <label>Next Steps - Product guide</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Advice_Given_Disclaimer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Seller clearly outline that no advice would be given during the call?</inlineHelpText>
+        <label>No Advice Given Disclaimer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Advice_Recommendation_made__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>During the call did the seller clearly explain to the customer that no advice or recommendations would be made?</inlineHelpText>
+        <label>No Advice/Recommendation made?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Advice__c</fullName>
+        <description>Stress no Advice/guidance offered, confirmation the customer is clear it is their decision (note the decision)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Stress no Advice/guidance offered only, note which product to be discussed.</inlineHelpText>
+        <label>No Advice</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Advice_recommendations_made__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller did not give advice or make a recommendation</inlineHelpText>
+        <label>No Advice/recommendations made?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Observation_Completed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Observation Completed By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>HPP_T_C_Observation_Phone1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Commentary__c</fullName>
+        <description>Overall coimmentary on quality of call</description>
+        <externalId>false</externalId>
+        <label>Overall Commentary</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Overall_Rating_New__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(  Rating__c , &quot;Compliant&quot;) ,  IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOf&quot;, &quot;Compliant&quot;),
+
+IF( ISPICKVAL( Rating__c , &quot;Compliant with development&quot;), IMAGE(&quot;/servlet/servlet.FileDownload?file=015D0000001r7x7&quot;, &quot;Compliant with development&quot;),
+
+IF( ISPICKVAL( Rating__c , &quot;Non-compliant&quot;),  IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOk&quot;, &quot;Non-Compliant&quot;), null)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_rating__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( 
+OR(TEXT(   Call_greeting__c )=&quot;No&quot;, 
+TEXT(   Any_questions_on_product_please_contact__c  )=&quot;No&quot;,
+TEXT(   Explains_Product_Options_Standard_Fixed__c )=&quot;No&quot;, TEXT(   Ask_all_qualifying_questions__c )=&quot;No&quot;, TEXT(   Explicit_Consent_to_hold_Data__c )=&quot;No&quot;, TEXT(   NO_inaccurate_information_given_to_cust__c )=&quot;No&quot;,  TEXT(  Initial_Disclosure_Document__c  )=&quot;No&quot;, TEXT(  Risks_features_Document__c  )=&quot;No&quot;, TEXT(  Steps_1_6_completed_using_info_from_cust__c  )=&quot;No&quot;, TEXT(  Credit_Scoring_Further_undewriting__c )=&quot;No&quot;, TEXT(  Provides_FIS_confirms_importance__c )=&quot;No&quot;, TEXT(  Explains_fees_from_Tariff_List__c )=&quot;No&quot;, TEXT(  Warning_Liability_fees_if_withdraw__c  )=&quot;No&quot;, TEXT(  Source_of_Deposit_clarified__c  )=&quot;No&quot;, TEXT(  No_Advice_recommendations_made__c  )=&quot;No&quot;, TEXT(   All_relevant_information_recorded__c  )=&quot;No&quot;, 
+TEXT(  NO_inaccurate_information_given_to_cust__c )=&quot;No&quot;),  
+IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOk&quot;, &quot;Non-Compliant&quot;),  
+IMAGE(&quot;/servlet/servlet.FileDownload?file=01520000000fuOf&quot;, &quot;Compliant&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overall rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Instruction_form__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller should advise the customer that either a cheque or debit card payment instruction form MUST be returned with the application form in order for us to progress the application.  Aslo confirm that they will be contacted for their CVC code once rec&apos;d.</inlineHelpText>
+        <label>Payment Instruction form</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_rent_acquisition__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment rent &amp; acquisition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With learning points</fullName>
+                    <default>false</default>
+                    <label>Yes - With learning points</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_paid_envelope_provided__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Prepaid envelope will be provided &amp; instructions to return</inlineHelpText>
+        <label>Pre-paid envelope provided</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Professional_manner_throughout_call__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller display a professional manner throughout the call?</inlineHelpText>
+        <label>Professional manner throughout call?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provides_FIS_confirms_importance__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller  provides FIS, reviews information shown with customer, confirms the importance and that this will be sent out to the customer</inlineHelpText>
+        <label>Provides FIS &amp; confirms importance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>R_F_and_IDD_read_our_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the product risk and features and the Initial disclosure document read out correctly to the customer?</inlineHelpText>
+        <label>R&amp;F and IDD read our correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rating__c</fullName>
+        <externalId>false</externalId>
+        <label>Rating</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Compliant</fullName>
+                    <default>false</default>
+                    <label>Compliant</label>
+                </value>
+                <value>
+                    <fullName>Compliant with development</fullName>
+                    <default>false</default>
+                    <label>Compliant with development</label>
+                </value>
+                <value>
+                    <fullName>Non-compliant</fullName>
+                    <default>false</default>
+                    <label>Non-compliant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rental_Charge_Acquisition_Payment_exp__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains how rental(occupancy) charge and acquisition payments are calculated</inlineHelpText>
+        <label>Rental Charge/Acquisition Payment exp.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Risks_features_Document__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains the risks &amp; features document</inlineHelpText>
+        <label>Risks &amp; features Document</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Source_of_Deposit_clarified__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>has seller clarified the Source of deposit for the HPP Application and confirmed that this is satisfactory for IBB Purposes</inlineHelpText>
+        <label>Source of Deposit - clarified</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Steps_1_6_completed_using_info_from_cust__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Steps 1-6 completed by using information provided by the customer</inlineHelpText>
+        <label>Steps 1-6 completed using info from cust</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Use_of_Solicitors_No_recommendation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Seller explains that we have list of Panel solicitors that are experinced in islamic finance without making a recommendation but enabling the customer to make an informed choice</inlineHelpText>
+        <label>Use of Solicitors - No recommendation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Warning_Liability_fees_if_withdraw__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Give the customer the appropriate warning that if they decide to withdraw what their laibility to expenses will be if they withdraw from sale</inlineHelpText>
+        <label>Warning - Liability fees if withdraw</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With Learning Points</fullName>
+                    <default>false</default>
+                    <label>Yes - With Learning Points</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_Eligibility_Done_Correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was eligibility for the product completed correctly by the seller?</inlineHelpText>
+        <label>Was Eligibility Done Correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>NO</fullName>
+                    <default>false</default>
+                    <label>NO</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_the_App_form_completed_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the application form completed correctly?</inlineHelpText>
+        <label>Was the App form completed correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_the_FIS_Explained_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the FIS explained correctly to the customer?</inlineHelpText>
+        <label>Was the FIS Explained correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_the_Seller_friendly_and_helpful__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the seller friendly and helpful throughout the call</inlineHelpText>
+        <label>Was the Seller friendly and helpful?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_the_information_recorded_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Was the information from the customer recorded accurately and correctly on the IBB Systems?</inlineHelpText>
+        <label>Was the information recorded correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Was_the_script_read_out_correctly__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller clearly and accurately read out the full script to the customer</inlineHelpText>
+        <label>Was the script read out correctly?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Were_the_different_products_explained__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Seller clearly explain the different products to the customer?</inlineHelpText>
+        <label>Were the different products explained?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Were_there_long_silences_during_call__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the seller avoid long silences during the call with the customer?</inlineHelpText>
+        <label>Did seller avoid long silences on call?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>refer_to_Risk_Features_sent_to_you__c</fullName>
+        <externalId>false</externalId>
+        <label>refer to Risk &amp; Features sent to you</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>Yes - With learning points</fullName>
+                    <default>false</default>
+                    <label>Yes - With learning points</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>HPP T&amp;C Observation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Observation_Completed_By__c</columns>
+        <columns>HPP_Seller_name__c</columns>
+        <columns>HPP_Customer_Name__c</columns>
+        <columns>Customer_name__c</columns>
+        <columns>Application_Reference_Number__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>AIP_Date_Time_of_call__c</columns>
+        <columns>HPP_Seller_name__c</columns>
+        <columns>NAME</columns>
+        <columns>HPP_Customer_Name__c</columns>
+        <columns>Customer_name__c</columns>
+        <columns>Observation_Completed_By__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Observation_Completed_By__c</field>
+            <operation>equals</operation>
+            <value>Saquib Ismail</value>
+        </filters>
+        <label>Sales HPP T&amp;C Observations</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>HPP# {YYYY}{MM}-{0}</displayFormat>
+        <label>HPP T&amp;C Observation Phone Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>HPP T&amp;C Observation</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

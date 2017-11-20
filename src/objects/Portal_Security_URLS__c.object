@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>This is used to configure a list of urls that are either trusted or reported as IT Incident on the Partner Portal.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Trusted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Trusted</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Portal Security URLS</label>
+    <visibility>Public</visibility>
+</CustomObject>

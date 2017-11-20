@@ -1,0 +1,71 @@
+<apex:page showHeader="false" sidebar="false" controller="MMR_FF_PersonalDetails" docType="html-5.0">
+<head>
+    <c:MMR_PageHeader ></c:MMR_PageHeader>
+    <apex:include pageName="pca__Component"/>
+    <script>
+        pca_Settings.DisableFieldRearrange = true;
+</script>    
+</head>
+<body style="background-color:#ededed;">
+  
+  <style> .q1show{display:none;}.q2show{display:none;}  .hideLabel{display:none;} </style>
+  
+  <c:MMR_Header title="Personal Details" numapps="{!numapplying}" opp="{!bopp}" hide="{!IsCredit}"/>
+
+      <div class="container">
+              <c:MMR_FF_Nav EventId="{!eventid}" active="1" activesection="B" rendered="{!!IsCredit && !IsCompleted}"/>
+              <c:MMR_FF_Nav_Links EventId="{!eventid}" active="1" activesection="B" rendered="{!!IsCredit && IsCompleted}"/>
+              
+              <c:MMR_Credit_Nav EventId="{!eventid}" active="1" activesection="B" rendered="{!IsCredit}"/>
+    
+        <apex:form id="aForm" styleClass="form-horizontal">
+        <apex:pagemessages ></apex:pagemessages>
+        <div class="row">
+  
+    <c:MMR_PersonalDetails panelClass="panel-warning" applicantno="1" appNo="1" Acc="{!Accs[0]}" Email="{!Email1}" Phone="{!Phone1}" SMS="{!SMS1}" Mail="{!Mail1}"  rendered="{!NumApplying >0}"/>
+ 
+    <c:MMR_PersonalDetails panelClass="panel-success" applicantno="1" appNo="2" Acc="{!Accs[1]}" Email="{!Email2}" Phone="{!Phone2}" SMS="{!SMS2}" Mail="{!Mail2}"  rendered="{!NumApplying >1}"/>
+
+ <div class="clearfix"/>
+
+   <c:MMR_PersonalDetails panelClass="panel-info" applicantno="1"  appNo="3" Acc="{!Accs[2]}" Email="{!Email3}" Phone="{!Phone3}" SMS="{!SMS3}" Mail="{!Mail3}"  rendered="{!NumApplying >2}"/>
+
+
+
+    <c:MMR_PersonalDetails panelClass="panel-danger" applicantno="1"  appNo="4" Acc="{!Accs[3]}" Email="{!Email4}" Phone="{!Phone4}" SMS="{!SMS4}" Mail="{!Mail4}"  rendered="{!NumApplying >3}"/>
+
+         <div class="clearfix"/>
+        
+        
+    
+                </div>      
+        
+ 
+    
+    <apex:commandButton styleClass="btn-primary" value="Pevious" action="{!GoProperty}" rendered="{!!IsCredit && !IsCompleted}"/> 
+ <!-- CPDR01 apex:commandButton styleClass="btn btn-success"  value="Save" action="{!Save}" rendered="{!!IsCompleted || IsCredit }"/-->
+	<apex:commandButton styleClass="btn btn-danger"  value="Save" action="{!Save}" rendered="{!!IsCompleted || IsCredit }"/>
+<apex:commandButton styleClass="btn-danger" value="Next" action="{!GoAddresses}" rendered="{!!IsCredit && !IsCompleted}"/>     
+     
+     
+     
+ 
+     
+     
+     
+     
+     
+     
+     
+     
+        </apex:form>        
+    </div>
+    
+    <c:MMR_PageFooter ></c:MMR_PageFooter>
+
+<span id="pca_status" style="display:none;" />
+
+    
+</body>
+
+</apex:page>

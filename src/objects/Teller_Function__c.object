@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_No_Passed_In_Applies_to__c</fullName>
+        <externalId>false</externalId>
+        <label>Account No Passed In Applies to</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Debit Account</fullName>
+                    <default>true</default>
+                    <label>Debit Account</label>
+                </value>
+                <value>
+                    <fullName>Credit Account</fullName>
+                    <default>false</default>
+                    <label>Credit Account</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Charge_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Amount</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charge_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Charge Code</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cheque_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cheque Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Credit_Account_CCY_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Account CCY Label</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Account_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Account Label</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_System_Parameter__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit System Parameter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Account_CCY_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Account CCY Label</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_Account_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit Account Label</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debit_System_Parameter__c</fullName>
+        <externalId>false</externalId>
+        <label>Debit System Parameter</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Credit_Account_Basic_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Credit Account Basic Number</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Credit_Account_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Credit Account Branch</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Credit_Account_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Credit Account Currency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>false</default>
+                    <label>EUR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Default_Credit_Account_Suffix__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Credit Account Suffix</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Debit_Account_Basic_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Debit Account Basic Number</label>
+        <length>6</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Debit_Account_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Debit Account Branch</label>
+        <length>4</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_Debit_Account_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Debit Account Currency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>GBP</fullName>
+                    <default>false</default>
+                    <label>GBP</label>
+                </value>
+                <value>
+                    <fullName>USD</fullName>
+                    <default>false</default>
+                    <label>USD</label>
+                </value>
+                <value>
+                    <fullName>EUR</fullName>
+                    <default>false</default>
+                    <label>EUR</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Default_Debit_Account_Suffix__c</fullName>
+        <externalId>false</externalId>
+        <label>Default Debit Account Suffix</label>
+        <length>3</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Depository_Type_Affected__c</fullName>
+        <externalId>false</externalId>
+        <label>Depository Type Affected</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Till</fullName>
+                    <default>false</default>
+                    <label>Till</label>
+                </value>
+                <value>
+                    <fullName>Vault</fullName>
+                    <default>false</default>
+                    <label>Vault</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enable_Credit_Account_No__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable Credit Account No</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_Debit_Account_No__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable Debit Account No</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enable_My_Credit_Accounts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Enable My Credit Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Account_Function__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Account Function</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Menu_Group__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Menu Group</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Teller_Function__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Teller Function</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Vault_Function__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Vault Function</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Large_Logo_CSS__c</fullName>
+        <externalId>false</externalId>
+        <label>Large Logo CSS</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mandate_Checked_Against__c</fullName>
+        <externalId>false</externalId>
+        <label>Mandate Checked Against</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Credit Account</fullName>
+                    <default>false</default>
+                    <label>Credit Account</label>
+                </value>
+                <value>
+                    <fullName>Debit Account</fullName>
+                    <default>false</default>
+                    <label>Debit Account</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Menu_Display_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Menu Display Order</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>My_Credit_Accounts_Label__c</fullName>
+        <externalId>false</externalId>
+        <label>My Credit Accounts Label</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Page__c</fullName>
+        <externalId>false</externalId>
+        <label>Page</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Template__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Template</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OFCTEMPL</fullName>
+                    <default>false</default>
+                    <label>OFCTEMPL</label>
+                </value>
+                <value>
+                    <fullName>CHAPSOCH</fullName>
+                    <default>false</default>
+                    <label>CHAPSOCH</label>
+                </value>
+                <value>
+                    <fullName>OFETEMPL</fullName>
+                    <default>false</default>
+                    <label>OFETEMPL</label>
+                </value>
+                <value>
+                    <fullName>OCETEMPL</fullName>
+                    <default>false</default>
+                    <label>OCETEMPL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>OFH</fullName>
+                    <default>false</default>
+                    <label>OFH</label>
+                </value>
+                <value>
+                    <fullName>OFC</fullName>
+                    <default>false</default>
+                    <label>OFC</label>
+                </value>
+                <value>
+                    <fullName>OFE</fullName>
+                    <default>false</default>
+                    <label>OFE</label>
+                </value>
+                <value>
+                    <fullName>OCE</fullName>
+                    <default>false</default>
+                    <label>OCE</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PermissionCategory__c</fullName>
+        <externalId>false</externalId>
+        <label>PermissionCategory</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Permission__c</fullName>
+        <externalId>false</externalId>
+        <label>Permission</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Credit_Account_CCY__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show Credit Account CCY</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Credit_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show Credit Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Debit_Account_CCY__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show Debit Account CCY</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Debit_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show Debit Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_My_Credit_Accounts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show a drop down of all my own accounts that can be credited from the current selected account</description>
+        <externalId>false</externalId>
+        <label>Show My Credit Accounts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_on_Menu__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Show on Menu</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Small_Logo_CSS__c</fullName>
+        <externalId>false</externalId>
+        <label>Small Logo CSS</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Teller_Function_Root__c</fullName>
+        <externalId>false</externalId>
+        <label>Teller_Function_Root</label>
+        <referenceTo>Teller_Function_Root__c</referenceTo>
+        <relationshipLabel>Teller Functions</relationshipLabel>
+        <relationshipName>Teller_Functions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Teller_Group__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Teller Group</label>
+        <referenceTo>Teller_Group__c</referenceTo>
+        <relationshipLabel>Teller Functions</relationshipLabel>
+        <relationshipName>Teller_Functions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Till_Required__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Till Required</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Transaction_Type__c</fullName>
+        <description>Type of Transaction. Basically if a till needs to be assigned to the user using the function e.g 
+Balance Till - Till 
+Cash Deposit - Till 
+Account Transfer - Electronic 
+Vault Transfer Out - Electronic (User does not need to be assigned to a till/vault) 
+Balance Vault - Electronic (User does not need to be assigned to a till/vault) 
+Vault Transfer Acceptance - Electronic (User does not need to be assigned to a till/vault)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of Transaction. Basically if a till needs to be assigned to the user using the function e.g
+Balance Till - Till
+Cash Deposit - Till
+Account Transfer - Electronic 
+Vault Transfer Out - Electronic (User does not need to be assigned to a till/vault)</inlineHelpText>
+        <label>Transaction Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Till</fullName>
+                    <default>false</default>
+                    <label>Till</label>
+                </value>
+                <value>
+                    <fullName>Electronic</fullName>
+                    <default>false</default>
+                    <label>Electronic</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Teller Function</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Teller_Function_Root__c</columns>
+        <columns>NAME</columns>
+        <columns>Teller_Group__c</columns>
+        <columns>Credit_System_Parameter__c</columns>
+        <columns>Debit_System_Parameter__c</columns>
+        <columns>Permission__c</columns>
+        <columns>Is_Account_Function__c</columns>
+        <columns>Is_Teller_Function__c</columns>
+        <columns>Page__c</columns>
+        <columns>Show_on_Menu__c</columns>
+        <columns>Depository_Type_Affected__c</columns>
+        <columns>Till_Required__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Teller Function Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Teller Functions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

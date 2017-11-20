@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Aqua_Global__c</fullName>
+        <externalId>false</externalId>
+        <label>Aqua Global</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BACS__c</fullName>
+        <externalId>false</externalId>
+        <label>BACS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Call_Recording__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Recording</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Datastore__c</fullName>
+        <externalId>false</externalId>
+        <label>Datastore</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBA_Template__c</fullName>
+        <externalId>false</externalId>
+        <label>EBA Template</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBA__c</fullName>
+        <externalId>false</externalId>
+        <label>EBA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>EBS_Template__c</fullName>
+        <externalId>false</externalId>
+        <label>EBS Template</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EBS__c</fullName>
+        <externalId>false</externalId>
+        <label>EBS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FIS__c</fullName>
+        <externalId>false</externalId>
+        <label>FIS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IFM_Admin__c</fullName>
+        <externalId>false</externalId>
+        <label>IFM Admin</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Internet__c</fullName>
+        <externalId>false</externalId>
+        <label>Internet</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NT__c</fullName>
+        <externalId>false</externalId>
+        <label>NT</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NVM_ContactWorld__c</fullName>
+        <externalId>false</externalId>
+        <label>NVM ContactWorld</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Profile__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Profile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Account Reconciliations (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Account Reconciliations (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Account Services Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Account Services Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Account Services Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Account Services Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Account Service Team Leader (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Account Service Team Leader (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Agency Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Agency Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>BDM (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>BDM (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Branch HPP Sellers (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Branch HPP Sellers (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Branch Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Branch Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Branch Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Call Centre Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Call Centre Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Call Centre Team Leader (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Call Centre Team Leader (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Change Delivery Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Change Delivery Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Change Delivery Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Change Delivery Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Commercial Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Commercial Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Commercial Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Commercial Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Compliance Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Compliance Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Credit Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Credit Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Credit Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Credit Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Customer Care Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Customer Care Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Developer (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Developer (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Executive (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Executive (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Facilities Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Facilities Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Facilities Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Facilities Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>FCU Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>FCU Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>FCU Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>FCU Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Finance Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Finance Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Finance Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Finance Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Head of Operations (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Head of Operations (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Head of Sales and Service (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Head of Sales and Service (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales Support Team (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>HPP Sales Support Team (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>HR Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>HR Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>HR Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>HR Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>IT Infrastructure (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>IT Infrastructure (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>IT Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>IT Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>IT Security Officer (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>IT Security Officer (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>IT Service desk (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>IT Service desk (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Marketing Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Marketing Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>MI Specialist (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>MI Specialist (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Payment Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Payment Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Payment Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Payment Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Premier Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Premier Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>REAT Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>REAT Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>REAT Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>REAT Staff (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Risk Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Risk Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Senior BDM (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Senior BDM (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Senior Branch Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Senior Branch Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>SFDC Code Deployment (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>SFDC Code Deployment (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Sharia (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Sharia (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Standard (BASE PROFILE)</fullName>
+                    <default>false</default>
+                    <label>Standard (BASE PROFILE)</label>
+                </value>
+                <value>
+                    <fullName>System Administrator</fullName>
+                    <default>false</default>
+                    <label>System Administrator</label>
+                </value>
+                <value>
+                    <fullName>Training Manager (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Training Manager (POST PROFILE REVIEW)</label>
+                </value>
+                <value>
+                    <fullName>Treasury Staff (POST PROFILE REVIEW)</fullName>
+                    <default>false</default>
+                    <label>Treasury Staff (POST PROFILE REVIEW)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Account Services Manager</fullName>
+                    <default>false</default>
+                    <label>Account Services Manager</label>
+                </value>
+                <value>
+                    <fullName>Account Services Staff</fullName>
+                    <default>false</default>
+                    <label>Account Services Staff</label>
+                </value>
+                <value>
+                    <fullName>Account Services Team Leader</fullName>
+                    <default>false</default>
+                    <label>Account Services Team Leader</label>
+                </value>
+                <value>
+                    <fullName>Agency Manager</fullName>
+                    <default>false</default>
+                    <label>Agency Manager</label>
+                </value>
+                <value>
+                    <fullName>Audit Manager</fullName>
+                    <default>false</default>
+                    <label>Audit Manager</label>
+                </value>
+                <value>
+                    <fullName>BCA (Name of Branch)</fullName>
+                    <default>false</default>
+                    <label>BCA (Name of Branch)</label>
+                </value>
+                <value>
+                    <fullName>BCA Edgware Road</fullName>
+                    <default>false</default>
+                    <label>BCA Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>BCA Leicester</fullName>
+                    <default>false</default>
+                    <label>BCA Leicester</label>
+                </value>
+                <value>
+                    <fullName>BCA Manchester</fullName>
+                    <default>false</default>
+                    <label>BCA Manchester</label>
+                </value>
+                <value>
+                    <fullName>BCA Small Heath</fullName>
+                    <default>false</default>
+                    <label>BCA Small Heath</label>
+                </value>
+                <value>
+                    <fullName>BCA under DBM Small Heath</fullName>
+                    <default>false</default>
+                    <label>BCA under DBM Small Heath</label>
+                </value>
+                <value>
+                    <fullName>BCA Whitechapel</fullName>
+                    <default>false</default>
+                    <label>BCA Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>BDM</fullName>
+                    <default>false</default>
+                    <label>BDM</label>
+                </value>
+                <value>
+                    <fullName>BDM Leicester</fullName>
+                    <default>false</default>
+                    <label>BDM Leicester</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager (Branch Name)</fullName>
+                    <default>false</default>
+                    <label>Branch Manager (Branch Name)</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Branch Manager Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager Leicester</fullName>
+                    <default>false</default>
+                    <label>Branch Manager Leicester</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager Manchester</fullName>
+                    <default>false</default>
+                    <label>Branch Manager Manchester</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager Small Heath</fullName>
+                    <default>false</default>
+                    <label>Branch Manager Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Branch Manager Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Branch Manager Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Business Analyst</fullName>
+                    <default>false</default>
+                    <label>Business Analyst</label>
+                </value>
+                <value>
+                    <fullName>Call Centre Agent</fullName>
+                    <default>false</default>
+                    <label>Call Centre Agent</label>
+                </value>
+                <value>
+                    <fullName>Call Centre Team Leader</fullName>
+                    <default>false</default>
+                    <label>Call Centre Team Leader</label>
+                </value>
+                <value>
+                    <fullName>Change Delivery Manager</fullName>
+                    <default>false</default>
+                    <label>Change Delivery Manager</label>
+                </value>
+                <value>
+                    <fullName>Chief Executive Officer</fullName>
+                    <default>false</default>
+                    <label>Chief Executive Officer</label>
+                </value>
+                <value>
+                    <fullName>Chief Financial Officer</fullName>
+                    <default>false</default>
+                    <label>Chief Financial Officer</label>
+                </value>
+                <value>
+                    <fullName>Chief Operating Officer</fullName>
+                    <default>false</default>
+                    <label>Chief Operating Officer</label>
+                </value>
+                <value>
+                    <fullName>Collections</fullName>
+                    <default>false</default>
+                    <label>Collections</label>
+                </value>
+                <value>
+                    <fullName>Commercial Assistant/ Resi Underwriter</fullName>
+                    <default>false</default>
+                    <label>Commercial Assistant/ Resi Underwriter</label>
+                </value>
+                <value>
+                    <fullName>Commercial BDM</fullName>
+                    <default>false</default>
+                    <label>Commercial BDM</label>
+                </value>
+                <value>
+                    <fullName>Commercial Underwriter</fullName>
+                    <default>false</default>
+                    <label>Commercial Underwriter</label>
+                </value>
+                <value>
+                    <fullName>Compliance</fullName>
+                    <default>false</default>
+                    <label>Compliance</label>
+                </value>
+                <value>
+                    <fullName>Customer Care</fullName>
+                    <default>false</default>
+                    <label>Customer Care</label>
+                </value>
+                <value>
+                    <fullName>Customer Services Manager</fullName>
+                    <default>false</default>
+                    <label>Customer Services Manager</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager Leicester</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager Leicester</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager Manchester</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager Manchester</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager Small Heath</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Deputy Branch Manager Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Deputy Branch Manager Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Deputy Contact Centre Manager</fullName>
+                    <default>false</default>
+                    <label>Deputy Contact Centre Manager</label>
+                </value>
+                <value>
+                    <fullName>External User</fullName>
+                    <default>false</default>
+                    <label>External User</label>
+                </value>
+                <value>
+                    <fullName>Facilities Manager</fullName>
+                    <default>false</default>
+                    <label>Facilities Manager</label>
+                </value>
+                <value>
+                    <fullName>FCU</fullName>
+                    <default>false</default>
+                    <label>FCU</label>
+                </value>
+                <value>
+                    <fullName>FCU Manager</fullName>
+                    <default>false</default>
+                    <label>FCU Manager</label>
+                </value>
+                <value>
+                    <fullName>Finance Staff</fullName>
+                    <default>false</default>
+                    <label>Finance Staff</label>
+                </value>
+                <value>
+                    <fullName>Head of Commercial</fullName>
+                    <default>false</default>
+                    <label>Head of Commercial</label>
+                </value>
+                <value>
+                    <fullName>Head of Credit</fullName>
+                    <default>false</default>
+                    <label>Head of Credit</label>
+                </value>
+                <value>
+                    <fullName>Head of HR</fullName>
+                    <default>false</default>
+                    <label>Head of HR</label>
+                </value>
+                <value>
+                    <fullName>Head of IT &amp; Change</fullName>
+                    <default>false</default>
+                    <label>Head of IT &amp; Change</label>
+                </value>
+                <value>
+                    <fullName>Head of Marketing</fullName>
+                    <default>false</default>
+                    <label>Head of Marketing</label>
+                </value>
+                <value>
+                    <fullName>Head of Operations</fullName>
+                    <default>false</default>
+                    <label>Head of Operations</label>
+                </value>
+                <value>
+                    <fullName>Head of Premier Banking</fullName>
+                    <default>false</default>
+                    <label>Head of Premier Banking</label>
+                </value>
+                <value>
+                    <fullName>Head of Risk &amp; Compliance</fullName>
+                    <default>false</default>
+                    <label>Head of Risk &amp; Compliance</label>
+                </value>
+                <value>
+                    <fullName>Head of Sales &amp; Service</fullName>
+                    <default>false</default>
+                    <label>Head of Sales &amp; Service</label>
+                </value>
+                <value>
+                    <fullName>Head of Sharia and Product Development</fullName>
+                    <default>false</default>
+                    <label>Head of Sharia and Product Development</label>
+                </value>
+                <value>
+                    <fullName>HPP Branch Seller</fullName>
+                    <default>false</default>
+                    <label>HPP Branch Seller</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales &amp; Service Manager</fullName>
+                    <default>false</default>
+                    <label>HPP Sales &amp; Service Manager</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales Support</fullName>
+                    <default>false</default>
+                    <label>HPP Sales Support</label>
+                </value>
+                <value>
+                    <fullName>HPP Specialist</fullName>
+                    <default>false</default>
+                    <label>HPP Specialist</label>
+                </value>
+                <value>
+                    <fullName>HR Staff</fullName>
+                    <default>false</default>
+                    <label>HR Staff</label>
+                </value>
+                <value>
+                    <fullName>IFA</fullName>
+                    <default>false</default>
+                    <label>IFA</label>
+                </value>
+                <value>
+                    <fullName>Infrastructure Engineer</fullName>
+                    <default>false</default>
+                    <label>Infrastructure Engineer</label>
+                </value>
+                <value>
+                    <fullName>Infrastructure Manager</fullName>
+                    <default>false</default>
+                    <label>Infrastructure Manager</label>
+                </value>
+                <value>
+                    <fullName>Intermediary &amp; HPP Direct Manager</fullName>
+                    <default>false</default>
+                    <label>Intermediary &amp; HPP Direct Manager</label>
+                </value>
+                <value>
+                    <fullName>IT Helpdesk</fullName>
+                    <default>false</default>
+                    <label>IT Helpdesk</label>
+                </value>
+                <value>
+                    <fullName>IT Operations Manager</fullName>
+                    <default>false</default>
+                    <label>IT Operations Manager</label>
+                </value>
+                <value>
+                    <fullName>Manchester BDM</fullName>
+                    <default>false</default>
+                    <label>Manchester BDM</label>
+                </value>
+                <value>
+                    <fullName>Marketing Team</fullName>
+                    <default>false</default>
+                    <label>Marketing Team</label>
+                </value>
+                <value>
+                    <fullName>MI and Resource Specialist</fullName>
+                    <default>false</default>
+                    <label>MI and Resource Specialist</label>
+                </value>
+                <value>
+                    <fullName>MI Specialist</fullName>
+                    <default>false</default>
+                    <label>MI Specialist</label>
+                </value>
+                <value>
+                    <fullName>Ops Admin Staff</fullName>
+                    <default>false</default>
+                    <label>Ops Admin Staff</label>
+                </value>
+                <value>
+                    <fullName>Outbound Sales Advisor</fullName>
+                    <default>false</default>
+                    <label>Outbound Sales Advisor</label>
+                </value>
+                <value>
+                    <fullName>Payments Manager</fullName>
+                    <default>false</default>
+                    <label>Payments Manager</label>
+                </value>
+                <value>
+                    <fullName>Payments Staff</fullName>
+                    <default>false</default>
+                    <label>Payments Staff</label>
+                </value>
+                <value>
+                    <fullName>Premier Banking Customer Service Officer</fullName>
+                    <default>false</default>
+                    <label>Premier Banking Customer Service Officer</label>
+                </value>
+                <value>
+                    <fullName>Premier Banking Relationship Manager</fullName>
+                    <default>false</default>
+                    <label>Premier Banking Relationship Manager</label>
+                </value>
+                <value>
+                    <fullName>Product Manager</fullName>
+                    <default>false</default>
+                    <label>Product Manager</label>
+                </value>
+                <value>
+                    <fullName>Project Manager</fullName>
+                    <default>false</default>
+                    <label>Project Manager</label>
+                </value>
+                <value>
+                    <fullName>Project Staff</fullName>
+                    <default>false</default>
+                    <label>Project Staff</label>
+                </value>
+                <value>
+                    <fullName>Real Estate Admin Team Member</fullName>
+                    <default>false</default>
+                    <label>Real Estate Admin Team Member</label>
+                </value>
+                <value>
+                    <fullName>REAT Team Leader</fullName>
+                    <default>false</default>
+                    <label>REAT Team Leader</label>
+                </value>
+                <value>
+                    <fullName>Residential Underwriter</fullName>
+                    <default>false</default>
+                    <label>Residential Underwriter</label>
+                </value>
+                <value>
+                    <fullName>Risk Manager</fullName>
+                    <default>false</default>
+                    <label>Risk Manager</label>
+                </value>
+                <value>
+                    <fullName>Sales Advisor Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Sales Advisor Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Sales Advisor Leicester</fullName>
+                    <default>false</default>
+                    <label>Sales Advisor Leicester</label>
+                </value>
+                <value>
+                    <fullName>Sales Advisor Manchester</fullName>
+                    <default>false</default>
+                    <label>Sales Advisor Manchester</label>
+                </value>
+                <value>
+                    <fullName>Sales Advisor Small Heath</fullName>
+                    <default>false</default>
+                    <label>Sales Advisor Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Sales Advisor Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Sales Advisor Whitechapel</label>
+                </value>
+                <value>
+                    <fullName>Senior Branch Manager</fullName>
+                    <default>false</default>
+                    <label>Senior Branch Manager</label>
+                </value>
+                <value>
+                    <fullName>Senior CSA Call Centre</fullName>
+                    <default>false</default>
+                    <label>Senior CSA Call Centre</label>
+                </value>
+                <value>
+                    <fullName>Senior Developer</fullName>
+                    <default>false</default>
+                    <label>Senior Developer</label>
+                </value>
+                <value>
+                    <fullName>Senior Manager GCC Corporate</fullName>
+                    <default>false</default>
+                    <label>Senior Manager GCC Corporate</label>
+                </value>
+                <value>
+                    <fullName>Senior Sales Manager</fullName>
+                    <default>false</default>
+                    <label>Senior Sales Manager</label>
+                </value>
+                <value>
+                    <fullName>SGH Martineau</fullName>
+                    <default>false</default>
+                    <label>SGH Martineau</label>
+                </value>
+                <value>
+                    <fullName>Support Services</fullName>
+                    <default>false</default>
+                    <label>Support Services</label>
+                </value>
+                <value>
+                    <fullName>System Administrator</fullName>
+                    <default>false</default>
+                    <label>System Administrator</label>
+                </value>
+                <value>
+                    <fullName>Tester</fullName>
+                    <default>false</default>
+                    <label>Tester</label>
+                </value>
+                <value>
+                    <fullName>Trainer</fullName>
+                    <default>false</default>
+                    <label>Trainer</label>
+                </value>
+                <value>
+                    <fullName>Training Manager</fullName>
+                    <default>false</default>
+                    <label>Training Manager</label>
+                </value>
+                <value>
+                    <fullName>Treasury</fullName>
+                    <default>false</default>
+                    <label>Treasury</label>
+                </value>
+                <value>
+                    <fullName>Underwriter</fullName>
+                    <default>false</default>
+                    <label>Underwriter</label>
+                </value>
+                <value>
+                    <fullName>Web Developer</fullName>
+                    <default>false</default>
+                    <label>Web Developer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Salesforce__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VPN__c</fullName>
+        <externalId>false</externalId>
+        <label>VPN</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Webform__c</fullName>
+        <externalId>false</externalId>
+        <label>Webform</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>IT Template</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Description__c</columns>
+        <columns>Salesforce_Profile__c</columns>
+        <columns>Salesforce_Role__c</columns>
+        <columns>EBS_Template__c</columns>
+        <columns>EBA_Template__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>I.T Templates Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>IT Templates</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>EBA_Template__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>EBS_Template__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Salesforce_Profile__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Salesforce_Role__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>EBA_Template__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>EBS_Template__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Salesforce_Profile__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Salesforce_Role__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Contact_world_and_call_recording</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( NVM_ContactWorld__c ,&quot;Yes&quot;)  
+&amp;&amp;
+NOT(ISPICKVAL( Call_Recording__c ,&quot;No&quot;))</errorConditionFormula>
+        <errorDisplayField>Call_Recording__c</errorDisplayField>
+        <errorMessage>If NVM contact world access has been given to this template, call recording is not  required. Please select no.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Age_of_equipment__c</fullName>
+        <externalId>false</externalId>
+        <formula>FLOOR((TODAY()- Date_of_purchase__c )/365.2425)</formula>
+        <label>Age of equipment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Condition__c</fullName>
+        <externalId>false</externalId>
+        <label>Condition</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Used</fullName>
+                    <default>false</default>
+                    <label>Used</label>
+                </value>
+                <value>
+                    <fullName>Damaged</fullName>
+                    <default>false</default>
+                    <label>Damaged</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>IT_Equipment</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_purchase__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of purchase</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Blackburn</fullName>
+                    <default>false</default>
+                    <label>Blackburn</label>
+                </value>
+                <value>
+                    <fullName>Commercial Office</fullName>
+                    <default>false</default>
+                    <label>Commercial Office</label>
+                </value>
+                <value>
+                    <fullName>Contact Centre</fullName>
+                    <default>false</default>
+                    <label>Contact Centre</label>
+                </value>
+                <value>
+                    <fullName>Edgware Road</fullName>
+                    <default>false</default>
+                    <label>Edgware Road</label>
+                </value>
+                <value>
+                    <fullName>Head office</fullName>
+                    <default>false</default>
+                    <label>Head office</label>
+                </value>
+                <value>
+                    <fullName>HPP Sales</fullName>
+                    <default>false</default>
+                    <label>HPP Sales</label>
+                </value>
+                <value>
+                    <fullName>Ilford</fullName>
+                    <default>false</default>
+                    <label>Ilford</label>
+                </value>
+                <value>
+                    <fullName>Leicester</fullName>
+                    <default>false</default>
+                    <label>Leicester</label>
+                </value>
+                <value>
+                    <fullName>Manchester</fullName>
+                    <default>false</default>
+                    <label>Manchester</label>
+                </value>
+                <value>
+                    <fullName>Premier Branch</fullName>
+                    <default>false</default>
+                    <label>Premier Branch</label>
+                </value>
+                <value>
+                    <fullName>Premier Office</fullName>
+                    <default>false</default>
+                    <label>Premier Office</label>
+                </value>
+                <value>
+                    <fullName>Small Heath</fullName>
+                    <default>false</default>
+                    <label>Small Heath</label>
+                </value>
+                <value>
+                    <fullName>Tooting</fullName>
+                    <default>false</default>
+                    <label>Tooting</label>
+                </value>
+                <value>
+                    <fullName>Whitechapel</fullName>
+                    <default>false</default>
+                    <label>Whitechapel</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <label>Manufacturer</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Type_of_equipment__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of equipment</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>Cashier printer</fullName>
+                    <default>false</default>
+                    <label>Cashier printer</label>
+                </value>
+                <value>
+                    <fullName>Cheque Scanner</fullName>
+                    <default>false</default>
+                    <label>Cheque Scanner</label>
+                </value>
+                <value>
+                    <fullName>Desktop</fullName>
+                    <default>false</default>
+                    <label>Desktop</label>
+                </value>
+                <value>
+                    <fullName>Inkjet Printer</fullName>
+                    <default>false</default>
+                    <label>Inkjet Printer</label>
+                </value>
+                <value>
+                    <fullName>Laptop</fullName>
+                    <default>false</default>
+                    <label>Laptop</label>
+                </value>
+                <value>
+                    <fullName>Laser Printer</fullName>
+                    <default>false</default>
+                    <label>Laser Printer</label>
+                </value>
+                <value>
+                    <fullName>Multi function device</fullName>
+                    <default>false</default>
+                    <label>Multi function device</label>
+                </value>
+                <value>
+                    <fullName>Scanner</fullName>
+                    <default>false</default>
+                    <label>Scanner</label>
+                </value>
+                <value>
+                    <fullName>Tablet</fullName>
+                    <default>false</default>
+                    <label>Tablet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Working__c</fullName>
+        <externalId>false</externalId>
+        <label>Working?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>IT Equipment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>ITE{0000}</displayFormat>
+        <label>IT Equipment Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>IT Equipment</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Desktop_Laptop</fullName>
+        <active>true</active>
+        <description>To be used to log all existing and new PCs.</description>
+        <label>Desktop/Laptop</label>
+        <picklistValues>
+            <picklist>Condition__c</picklist>
+            <values>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Blackburn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edgware Road</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leicester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manchester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Heath</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tooting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Whitechapel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_equipment__c</picklist>
+            <values>
+                <fullName>Desktop</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laptop</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Working__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Other_Equipment</fullName>
+        <active>true</active>
+        <description>To be used to log all other IT equipment</description>
+        <label>Other Equipment</label>
+        <picklistValues>
+            <picklist>Condition__c</picklist>
+            <values>
+                <fullName>Damaged</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location__c</picklist>
+            <values>
+                <fullName>Blackburn</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Centre</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Edgware Road</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HPP Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Head office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ilford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leicester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manchester</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier Branch</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Premier Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small Heath</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tooting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Whitechapel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_equipment__c</picklist>
+            <values>
+                <fullName>Cashier printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cheque Scanner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inkjet Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laser Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Multi function device</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Scanner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tablet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Working__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Home Purchase Plan</fullName>
+                    <default>false</default>
+                    <label>Home Purchase Plan</label>
+                </value>
+                <value>
+                    <fullName>Buy to Let Purchase Plan</fullName>
+                    <default>false</default>
+                    <label>Buy to Let Purchase Plan</label>
+                </value>
+                <value>
+                    <fullName>Home Purchase Plan Premier</fullName>
+                    <default>false</default>
+                    <label>Home Purchase Plan Premier</label>
+                </value>
+                <value>
+                    <fullName>Home Purchase Scotland</fullName>
+                    <default>false</default>
+                    <label>Home Purchase Scotland</label>
+                </value>
+                <value>
+                    <fullName>Help to Buy Home Purchase Plan</fullName>
+                    <default>false</default>
+                    <label>Help to Buy Home Purchase Plan</label>
+                </value>
+                <value>
+                    <fullName>Buy to Let Purchase Plan Scotland</fullName>
+                    <default>false</default>
+                    <label>Buy to Let Purchase Plan Scotland</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HPP_extended_opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HPP extended opportunity</label>
+        <referenceTo>HPP_extended_opportunity__c</referenceTo>
+        <relationshipLabel>Valuation Tables</relationshipLabel>
+        <relationshipName>Valuation_Tables</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Minimum_property_value__c</fullName>
+        <externalId>false</externalId>
+        <label>Minimum property value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Price_of_valuation__c</fullName>
+        <externalId>false</externalId>
+        <label>Price of valuation</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Property_up_to_the_value_of__c</fullName>
+        <externalId>false</externalId>
+        <label>Maximum property value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_valuation__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of valuation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>MV Plus Homebuyers</fullName>
+                    <default>false</default>
+                    <label>MV Plus Homebuyers</label>
+                </value>
+                <value>
+                    <fullName>Refinance</fullName>
+                    <default>false</default>
+                    <label>Refinance</label>
+                </value>
+                <value>
+                    <fullName>Buy to Let</fullName>
+                    <default>false</default>
+                    <label>Buy to Let</label>
+                </value>
+                <value>
+                    <fullName>Buy to Let and Home Buyers</fullName>
+                    <default>false</default>
+                    <label>Buy to Let and Home Buyers</label>
+                </value>
+                <value>
+                    <fullName>HPP Premier: 24hr Valuation</fullName>
+                    <default>false</default>
+                    <label>HPP Premier: 24hr Valuation</label>
+                </value>
+                <value>
+                    <fullName>HPP Premier: 48hr Valuation</fullName>
+                    <default>false</default>
+                    <label>HPP Premier: 48hr Valuation</label>
+                </value>
+                <value>
+                    <fullName>Valuation already instructed</fullName>
+                    <default>false</default>
+                    <label>Valuation already instructed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Valuation Table</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>CREATED_DATE</columns>
+        <columns>NAME</columns>
+        <columns>Type_of_valuation__c</columns>
+        <columns>Category__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Minimum_property_value__c</columns>
+        <columns>Property_up_to_the_value_of__c</columns>
+        <columns>Price_of_valuation__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Premier_Valuation</fullName>
+        <columns>NAME</columns>
+        <columns>Minimum_property_value__c</columns>
+        <columns>Property_up_to_the_value_of__c</columns>
+        <columns>Type_of_valuation__c</columns>
+        <columns>Price_of_valuation__c</columns>
+        <columns>Category__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Category__c</field>
+            <operation>equals</operation>
+            <value>Home Purchase Plan Premier</value>
+        </filters>
+        <label>Premier Valuation</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>matt</fullName>
+        <columns>NAME</columns>
+        <columns>Minimum_property_value__c</columns>
+        <columns>Property_up_to_the_value_of__c</columns>
+        <columns>Type_of_valuation__c</columns>
+        <columns>Price_of_valuation__c</columns>
+        <columns>Category__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>matt</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>V{0000}</displayFormat>
+        <label>Valuation Table Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Valuation Tables</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Minimum_property_value__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Property_up_to_the_value_of__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Price_of_valuation__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Type_of_valuation__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Minimum_property_value__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Property_up_to_the_value_of__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Type_of_valuation__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Price_of_valuation__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Property_up_to_the_value_of__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,4118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>Existing_Address</fullName>
+        <description>This pushbutton is used to pull through the customers existing address details</description>
+        <displayedFields>
+            <field>Address_Line_1__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Address_Line_2__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Address_Line_3__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Address_Line_4__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Postcode__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Existing Address</label>
+    </fieldSets>
+    <fields>
+        <fullName>AHT__c</fullName>
+        <externalId>false</externalId>
+        <formula>Valuation_Instructed__c - Submitted_to_Credit__c</formula>
+        <label>AHT</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountWithIBBID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account_with_IBB__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AccountWithIBBID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_with_IBB__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account with IBB</label>
+        <referenceTo>Account_with_IBB__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Achieved__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPP_Balance__c  /  Target_Value__c  * 100</formula>
+        <label>% Achieved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Completion_Date_v1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Actual_Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Actual Completion Date v1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Address1and2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Address_Line_1__c+&quot;, &quot;+ Address_Line_2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Address1and2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 3</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address_Line_4__c</fullName>
+        <externalId>false</externalId>
+        <label>Address Line 4</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Central London</fullName>
+                    <default>false</default>
+                    <label>Central London</label>
+                </value>
+                <value>
+                    <fullName>East England</fullName>
+                    <default>false</default>
+                    <label>East England</label>
+                </value>
+                <value>
+                    <fullName>East London</fullName>
+                    <default>false</default>
+                    <label>East London</label>
+                </value>
+                <value>
+                    <fullName>East Midlands</fullName>
+                    <default>false</default>
+                    <label>East Midlands</label>
+                </value>
+                <value>
+                    <fullName>North</fullName>
+                    <default>false</default>
+                    <label>North</label>
+                </value>
+                <value>
+                    <fullName>North London</fullName>
+                    <default>false</default>
+                    <label>North London</label>
+                </value>
+                <value>
+                    <fullName>North West</fullName>
+                    <default>false</default>
+                    <label>North West</label>
+                </value>
+                <value>
+                    <fullName>Scotland</fullName>
+                    <default>false</default>
+                    <label>Scotland</label>
+                </value>
+                <value>
+                    <fullName>South East</fullName>
+                    <default>false</default>
+                    <label>South East</label>
+                </value>
+                <value>
+                    <fullName>South London</fullName>
+                    <default>false</default>
+                    <label>South London</label>
+                </value>
+                <value>
+                    <fullName>Wales</fullName>
+                    <default>false</default>
+                    <label>Wales</label>
+                </value>
+                <value>
+                    <fullName>West England</fullName>
+                    <default>false</default>
+                    <label>West England</label>
+                </value>
+                <value>
+                    <fullName>West London</fullName>
+                    <default>false</default>
+                    <label>West London</label>
+                </value>
+                <value>
+                    <fullName>West Midlands</fullName>
+                    <default>false</default>
+                    <label>West Midlands</label>
+                </value>
+                <value>
+                    <fullName>Yorks &amp; HSide</fullName>
+                    <default>false</default>
+                    <label>Yorks &amp; HSide</label>
+                </value>
+                <value>
+                    <fullName>London</fullName>
+                    <default>false</default>
+                    <label>London</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Admin_Fee_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Admin Fee Amount</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Admin_Fee_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Admin Fee Paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Administrator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>This field is used to record which member of REAT the application owner is.</inlineHelpText>
+        <label>Administrator</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Advance_to_Solicitors__c</fullName>
+        <externalId>false</externalId>
+        <label>Advance to Solicitors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Advised_Sale__c</fullName>
+        <defaultValue>&quot;N&quot;</defaultValue>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>N: No</inlineHelpText>
+        <label>Advised Sale</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Anticipated_Monthly_Rental_Income__c</fullName>
+        <externalId>false</externalId>
+        <label>Anticipated Monthly Rental Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>App_Received_to_Valuation_Instructed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Valuation_Instructed__c  - Submitted_to_Credit__c</formula>
+        <label>App Received to Valuation Instructed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Archived__c</fullName>
+        <externalId>false</externalId>
+        <label>Archived</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <description>FOR SALES USE ONLY TO DETERMINE THE CHANNEL THE LEAD ORIGINATED FROM THAT RESULTED IN A DRAWDOWN</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SALES USE ONLY</inlineHelpText>
+        <label>Asset Sale Channel</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact Centre</fullName>
+                    <default>false</default>
+                    <label>Contact Centre</label>
+                </value>
+                <value>
+                    <fullName>Branch</fullName>
+                    <default>false</default>
+                    <label>Branch</label>
+                </value>
+                <value>
+                    <fullName>Online Direct</fullName>
+                    <default>false</default>
+                    <label>Online Direct</label>
+                </value>
+                <value>
+                    <fullName>BDM</fullName>
+                    <default>false</default>
+                    <label>BDM</label>
+                </value>
+                <value>
+                    <fullName>Intermediary</fullName>
+                    <default>false</default>
+                    <label>Intermediary</label>
+                </value>
+                <value>
+                    <fullName>Agencies</fullName>
+                    <default>false</default>
+                    <label>Agencies</label>
+                </value>
+                <value>
+                    <fullName>GCC</fullName>
+                    <default>false</default>
+                    <label>GCC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BDMID__c</fullName>
+        <externalId>false</externalId>
+        <formula>BDM_for_letters__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BDMID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BDM__c</fullName>
+        <externalId>false</externalId>
+        <label>BDM</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ali Chami</fullName>
+                    <default>false</default>
+                    <label>Ali Chami</label>
+                </value>
+                <value>
+                    <fullName>Ali Vania</fullName>
+                    <default>false</default>
+                    <label>Ali Vania</label>
+                </value>
+                <value>
+                    <fullName>Esmail Jesset</fullName>
+                    <default>false</default>
+                    <label>Esmail Jesset</label>
+                </value>
+                <value>
+                    <fullName>Fezal Boodhoo</fullName>
+                    <default>false</default>
+                    <label>Fezal Boodhoo</label>
+                </value>
+                <value>
+                    <fullName>Haydor Ali</fullName>
+                    <default>false</default>
+                    <label>Haydor Ali</label>
+                </value>
+                <value>
+                    <fullName>Ihab Al-Derzi</fullName>
+                    <default>false</default>
+                    <label>Ihab Al-Derzi</label>
+                </value>
+                <value>
+                    <fullName>Imbraz Uddin</fullName>
+                    <default>false</default>
+                    <label>Imbraz Uddin</label>
+                </value>
+                <value>
+                    <fullName>Imran Mustafa</fullName>
+                    <default>false</default>
+                    <label>Imran Mustafa</label>
+                </value>
+                <value>
+                    <fullName>Junaid Sarwar</fullName>
+                    <default>false</default>
+                    <label>Junaid Sarwar</label>
+                </value>
+                <value>
+                    <fullName>Mehwish Mirza</fullName>
+                    <default>false</default>
+                    <label>Mehwish Mirza</label>
+                </value>
+                <value>
+                    <fullName>Mohammed Kola</fullName>
+                    <default>false</default>
+                    <label>Mohammed Kola</label>
+                </value>
+                <value>
+                    <fullName>MU</fullName>
+                    <default>false</default>
+                    <label>MU</label>
+                </value>
+                <value>
+                    <fullName>Muhammad Shaikh</fullName>
+                    <default>false</default>
+                    <label>Muhammad Shaikh</label>
+                </value>
+                <value>
+                    <fullName>Naveed Muzaffar</fullName>
+                    <default>false</default>
+                    <label>Naveed Muzaffar</label>
+                </value>
+                <value>
+                    <fullName>Omar Nadhmi</fullName>
+                    <default>false</default>
+                    <label>Omar Nadhmi</label>
+                </value>
+                <value>
+                    <fullName>Raadi Choudhury</fullName>
+                    <default>false</default>
+                    <label>Raadi Choudhury</label>
+                </value>
+                <value>
+                    <fullName>Rizwan Ali</fullName>
+                    <default>false</default>
+                    <label>Rizwan Ali</label>
+                </value>
+                <value>
+                    <fullName>Sagheer Malik</fullName>
+                    <default>false</default>
+                    <label>Sagheer Malik</label>
+                </value>
+                <value>
+                    <fullName>Saquib Ismail</fullName>
+                    <default>false</default>
+                    <label>Saquib Ismail</label>
+                </value>
+                <value>
+                    <fullName>Shaheen Bandali</fullName>
+                    <default>false</default>
+                    <label>Shaheen Bandali</label>
+                </value>
+                <value>
+                    <fullName>Shamim ChowDavid Harrisury</fullName>
+                    <default>false</default>
+                    <label>Shamim ChowDavid Harrisury</label>
+                </value>
+                <value>
+                    <fullName>Shamim Chowdhury</fullName>
+                    <default>false</default>
+                    <label>Shamim Chowdhury</label>
+                </value>
+                <value>
+                    <fullName>Shazia Tabusam</fullName>
+                    <default>false</default>
+                    <label>Shazia Tabusam</label>
+                </value>
+                <value>
+                    <fullName>Sohaib Bin Hamid</fullName>
+                    <default>false</default>
+                    <label>Sohaib Bin Hamid</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>Zeg Hussain</fullName>
+                    <default>false</default>
+                    <label>Zeg Hussain</label>
+                </value>
+                <value>
+                    <fullName>Suly Mohmed</fullName>
+                    <default>false</default>
+                    <label>Suly Mohmed</label>
+                </value>
+                <value>
+                    <fullName>Farukh Qurban</fullName>
+                    <default>false</default>
+                    <label>Farukh Qurban</label>
+                </value>
+                <value>
+                    <fullName>Intermediary</fullName>
+                    <default>false</default>
+                    <label>Intermediary</label>
+                </value>
+                <value>
+                    <fullName>Mariam Bhamla</fullName>
+                    <default>false</default>
+                    <label>Mariam Bhamla</label>
+                </value>
+                <value>
+                    <fullName>Mohammed Shaikh</fullName>
+                    <default>false</default>
+                    <label>Mohammed Shaikh</label>
+                </value>
+                <value>
+                    <fullName>Omar Fansa</fullName>
+                    <default>false</default>
+                    <label>Omar Fansa</label>
+                </value>
+                <value>
+                    <fullName>Maisam Fazal</fullName>
+                    <default>false</default>
+                    <label>Maisam Fazal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>BDM_for_letters__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>BDM for letters such as abandonment letter</inlineHelpText>
+        <label>BDM for letters</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>HPP_MI2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BDM_telephone_no_for_letters__c</fullName>
+        <externalId>false</externalId>
+        <formula>BDM_for_letters__r.Phone</formula>
+        <label>BDM telephone no for letters</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BTL_Fee_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Fee Amount</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Fee_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Fee Paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Monthly_Repayment__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Monthly Repayment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BTL_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>BTL Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_HPP__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Rent Only</fullName>
+                    <default>false</default>
+                    <label>Rent Only</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>true</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>HPP</controllingFieldValue>
+                <controllingFieldValue>HPS</controllingFieldValue>
+                <controllingFieldValue>GCC</controllingFieldValue>
+                <controllingFieldValue>CPF</controllingFieldValue>
+                <valueName>NA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTL</controllingFieldValue>
+                <valueName>Standard</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTL</controllingFieldValue>
+                <valueName>Rent Only</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Board_Limits__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Board Limits</label>
+        <referenceTo>Board_Limits_v1__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CPF_Arrangement_Fee_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>CPF Arrangement Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CPF_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>CPF Customer Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Abandoned_v1__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Abandoned v1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Case_inactive_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Case inactive date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Case_status__c</fullName>
+        <externalId>false</externalId>
+        <label>Case status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>On hold</fullName>
+                    <default>false</default>
+                    <label>On hold</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>NA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Confirmed_BTL_Repayment_Figure__c</fullName>
+        <externalId>false</externalId>
+        <label>Confirmed BTL Repayment Figure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Monthly_Rental_Cover__c</fullName>
+        <externalId>false</externalId>
+        <formula>Confirmed_Monthly_Rental_Income__c / Confirmed_BTL_Repayment_Figure__c</formula>
+        <label>Confirmed Monthly Rental Cover %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Monthly_Rental_Income__c</fullName>
+        <externalId>false</externalId>
+        <label>Confirmed Monthly Rental Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Construction_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Construction Comments</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact_at_Solicitor__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact at Solicitor</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Credit_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Credit Stage</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Pre Val (Authorised)</fullName>
+                    <default>false</default>
+                    <label>Pre Val (Authorised)</label>
+                </value>
+                <value>
+                    <fullName>Pre Val (Declined)</fullName>
+                    <default>false</default>
+                    <label>Pre Val (Declined)</label>
+                </value>
+                <value>
+                    <fullName>Pre Val (FI)</fullName>
+                    <default>false</default>
+                    <label>Pre Val (FI)</label>
+                </value>
+                <value>
+                    <fullName>Val Inst</fullName>
+                    <default>false</default>
+                    <label>Val Inst</label>
+                </value>
+                <value>
+                    <fullName>Val Rcvd</fullName>
+                    <default>false</default>
+                    <label>Val Rcvd</label>
+                </value>
+                <value>
+                    <fullName>Post Val (Authorised)</fullName>
+                    <default>false</default>
+                    <label>Post Val (Authorised)</label>
+                </value>
+                <value>
+                    <fullName>Post Val (Declined)</fullName>
+                    <default>false</default>
+                    <label>Post Val (Declined)</label>
+                </value>
+                <value>
+                    <fullName>Post Val (FI)</fullName>
+                    <default>false</default>
+                    <label>Post Val (FI)</label>
+                </value>
+                <value>
+                    <fullName>Offer Printed</fullName>
+                    <default>false</default>
+                    <label>Offer Printed</label>
+                </value>
+                <value>
+                    <fullName>Offer Sent</fullName>
+                    <default>false</default>
+                    <label>Offer Sent</label>
+                </value>
+                <value>
+                    <fullName>Offer Returned</fullName>
+                    <default>false</default>
+                    <label>Offer Returned</label>
+                </value>
+                <value>
+                    <fullName>IBB Solicitor Confirmation</fullName>
+                    <default>false</default>
+                    <label>IBB Solicitor Confirmation</label>
+                </value>
+                <value>
+                    <fullName>Original Offer sent to IBB Solicitor</fullName>
+                    <default>false</default>
+                    <label>Original Offer sent to IBB Solicitor</label>
+                </value>
+                <value>
+                    <fullName>ROT Rcvd</fullName>
+                    <default>false</default>
+                    <label>ROT Rcvd</label>
+                </value>
+                <value>
+                    <fullName>ROT (Authorised)</fullName>
+                    <default>false</default>
+                    <label>ROT (Authorised)</label>
+                </value>
+                <value>
+                    <fullName>ROT (FI)</fullName>
+                    <default>false</default>
+                    <label>ROT (FI)</label>
+                </value>
+                <value>
+                    <fullName>ROT (Declined)</fullName>
+                    <default>false</default>
+                    <label>ROT (Declined)</label>
+                </value>
+                <value>
+                    <fullName>Funds Released</fullName>
+                    <default>false</default>
+                    <label>Funds Released</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Abandoned</fullName>
+                    <color>#F3D904</color>
+                    <default>false</default>
+                    <label>Abandoned</label>
+                </value>
+                <value>
+                    <fullName>Redeemed</fullName>
+                    <default>false</default>
+                    <label>Redeemed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Current_FTV__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPP_Balance__c  /  Valuation_Figure__c</formula>
+        <label>Current FTV %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>CustomerID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Customer_Name__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CustomerID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Updates__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Updates</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Customer_update_indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Customer_Updates__c    &lt;=  today() , IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;&quot;), &quot;&quot;
+)</formula>
+        <label>Customer update indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Funds_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Funds Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Redeemed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Redeemed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Valuation_Booked__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Valuation Booked</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Valuation_Fee_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Valuation Fee Paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_abandonment_letter_sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date abandonment letter sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_birth__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Customer_Name__r.Date_of_Birth__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date of birth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_birth_of_main_applicant__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Customer_Name__r.Date_of_Birth__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date of birth of main applicant</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_solicitor_s_fees_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Date solicitor&apos;s fees paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_Since_2nd_Offer_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY () - X2nd_Offer_Letter_Sent__c</formula>
+        <label>Days Since 2nd Offer Letter Sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Offer_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() - Offer_Letter_Sent__c</formula>
+        <label>Days Since Offer Letter Sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Since_Submitted_to_Credit__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISNULL(Actual_Completion_Date__c ), TODAY() - Submitted_to_Credit__c, Actual_Completion_Date__c - Submitted_to_Credit__c )</formula>
+        <label>Days Since Submitted to Credit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_since_valuation_received__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() -  Valuation_Received__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days since valuation received</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Drawdown_Weekly_Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>Board_Limits__r.Drawdown_Weekly_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Drawdown Weekly Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Board_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Board Limit</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Sector__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Sector</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                    <label>Accounting</label>
+                </value>
+                <value>
+                    <fullName>Advertising,Public Relations and Marketing</fullName>
+                    <default>false</default>
+                    <label>Advertising,Public Relations and Marketing</label>
+                </value>
+                <value>
+                    <fullName>Aerospace and Defence</fullName>
+                    <default>false</default>
+                    <label>Aerospace and Defence</label>
+                </value>
+                <value>
+                    <fullName>Agriculture, Forestry and Fishing</fullName>
+                    <default>false</default>
+                    <label>Agriculture, Forestry and Fishing</label>
+                </value>
+                <value>
+                    <fullName>Architecture</fullName>
+                    <default>false</default>
+                    <label>Architecture</label>
+                </value>
+                <value>
+                    <fullName>Arts and Entertainment</fullName>
+                    <default>false</default>
+                    <label>Arts and Entertainment</label>
+                </value>
+                <value>
+                    <fullName>Automotive</fullName>
+                    <default>false</default>
+                    <label>Automotive</label>
+                </value>
+                <value>
+                    <fullName>Aviation and Airlines</fullName>
+                    <default>false</default>
+                    <label>Aviation and Airlines</label>
+                </value>
+                <value>
+                    <fullName>Banking</fullName>
+                    <default>false</default>
+                    <label>Banking</label>
+                </value>
+                <value>
+                    <fullName>Biotechnology</fullName>
+                    <default>false</default>
+                    <label>Biotechnology</label>
+                </value>
+                <value>
+                    <fullName>Clergy</fullName>
+                    <default>false</default>
+                    <label>Clergy</label>
+                </value>
+                <value>
+                    <fullName>Construction and Installation</fullName>
+                    <default>false</default>
+                    <label>Construction and Installation</label>
+                </value>
+                <value>
+                    <fullName>Consulting Services</fullName>
+                    <default>false</default>
+                    <label>Consulting Services</label>
+                </value>
+                <value>
+                    <fullName>Delivery</fullName>
+                    <default>false</default>
+                    <label>Delivery</label>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                    <label>Education</label>
+                </value>
+                <value>
+                    <fullName>Energy and Utilities</fullName>
+                    <default>false</default>
+                    <label>Energy and Utilities</label>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                    <label>Engineering</label>
+                </value>
+                <value>
+                    <fullName>Facilities, Maintenance and Repair</fullName>
+                    <default>false</default>
+                    <label>Facilities, Maintenance and Repair</label>
+                </value>
+                <value>
+                    <fullName>Financial Services</fullName>
+                    <default>false</default>
+                    <label>Financial Services</label>
+                </value>
+                <value>
+                    <fullName>Fire, Law Enforcement and Security</fullName>
+                    <default>false</default>
+                    <label>Fire, Law Enforcement and Security</label>
+                </value>
+                <value>
+                    <fullName>Food,Beverage and Tobacco</fullName>
+                    <default>false</default>
+                    <label>Food,Beverage and Tobacco</label>
+                </value>
+                <value>
+                    <fullName>Government and Local  Authority</fullName>
+                    <default>false</default>
+                    <label>Government and Local  Authority</label>
+                </value>
+                <value>
+                    <fullName>Graphic Arts</fullName>
+                    <default>false</default>
+                    <label>Graphic Arts</label>
+                </value>
+                <value>
+                    <fullName>Healthcare - Administrative</fullName>
+                    <default>false</default>
+                    <label>Healthcare - Administrative</label>
+                </value>
+                <value>
+                    <fullName>Healthcare - Nursing</fullName>
+                    <default>false</default>
+                    <label>Healthcare - Nursing</label>
+                </value>
+                <value>
+                    <fullName>Healthcare - Practitioners</fullName>
+                    <default>false</default>
+                    <label>Healthcare - Practitioners</label>
+                </value>
+                <value>
+                    <fullName>Healthcare - Technicians</fullName>
+                    <default>false</default>
+                    <label>Healthcare - Technicians</label>
+                </value>
+                <value>
+                    <fullName>Hotel,Gaming,Leisure and Travel</fullName>
+                    <default>false</default>
+                    <label>Hotel,Gaming,Leisure and Travel</label>
+                </value>
+                <value>
+                    <fullName>Humans Resources</fullName>
+                    <default>false</default>
+                    <label>Humans Resources</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Internet and New Media</fullName>
+                    <default>false</default>
+                    <label>Internet and New Media</label>
+                </value>
+                <value>
+                    <fullName>IT- All</fullName>
+                    <default>false</default>
+                    <label>IT- All</label>
+                </value>
+                <value>
+                    <fullName>IT - Computers, Hardware</fullName>
+                    <default>false</default>
+                    <label>IT - Computers, Hardware</label>
+                </value>
+                <value>
+                    <fullName>IT - Software</fullName>
+                    <default>false</default>
+                    <label>IT - Software</label>
+                </value>
+                <value>
+                    <fullName>Legal Services</fullName>
+                    <default>false</default>
+                    <label>Legal Services</label>
+                </value>
+                <value>
+                    <fullName>Library Services</fullName>
+                    <default>false</default>
+                    <label>Library Services</label>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                    <label>Manufacturing</label>
+                </value>
+                <value>
+                    <fullName>Media - Broadcast</fullName>
+                    <default>false</default>
+                    <label>Media - Broadcast</label>
+                </value>
+                <value>
+                    <fullName>Media - Print</fullName>
+                    <default>false</default>
+                    <label>Media - Print</label>
+                </value>
+                <value>
+                    <fullName>Mining</fullName>
+                    <default>false</default>
+                    <label>Mining</label>
+                </value>
+                <value>
+                    <fullName>Non - Profit and Social Services</fullName>
+                    <default>false</default>
+                    <label>Non - Profit and Social Services</label>
+                </value>
+                <value>
+                    <fullName>Pharmaceuticals</fullName>
+                    <default>false</default>
+                    <label>Pharmaceuticals</label>
+                </value>
+                <value>
+                    <fullName>Printing and Publishing</fullName>
+                    <default>false</default>
+                    <label>Printing and Publishing</label>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <label>Real Estate</label>
+                </value>
+                <value>
+                    <fullName>Restaurants and Food Services</fullName>
+                    <default>false</default>
+                    <label>Restaurants and Food Services</label>
+                </value>
+                <value>
+                    <fullName>Retail/Wholesale</fullName>
+                    <default>false</default>
+                    <label>Retail/Wholesale</label>
+                </value>
+                <value>
+                    <fullName>Science and Research</fullName>
+                    <default>false</default>
+                    <label>Science and Research</label>
+                </value>
+                <value>
+                    <fullName>Sports and Recreation</fullName>
+                    <default>false</default>
+                    <label>Sports and Recreation</label>
+                </value>
+                <value>
+                    <fullName>Telecommunications</fullName>
+                    <default>false</default>
+                    <label>Telecommunications</label>
+                </value>
+                <value>
+                    <fullName>Training</fullName>
+                    <default>false</default>
+                    <label>Training</label>
+                </value>
+                <value>
+                    <fullName>Transportation and Warehousing</fullName>
+                    <default>false</default>
+                    <label>Transportation and Warehousing</label>
+                </value>
+                <value>
+                    <fullName>Utilities</fullName>
+                    <default>false</default>
+                    <label>Utilities</label>
+                </value>
+                <value>
+                    <fullName>Personal Card and Services</fullName>
+                    <default>false</default>
+                    <label>Personal Card and Services</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Employment_status__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Entry must be one of:                                              
+E: Employed
+S: Self-employed
+R: Retired
+O: Other</inlineHelpText>
+        <label>Employment status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>E</label>
+                </value>
+                <value>
+                    <fullName>S</fullName>
+                    <default>false</default>
+                    <label>S</label>
+                </value>
+                <value>
+                    <fullName>R</fullName>
+                    <default>false</default>
+                    <label>R</label>
+                </value>
+                <value>
+                    <fullName>O</fullName>
+                    <default>false</default>
+                    <label>O</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Enter_Product__c</fullName>
+        <description>To be used on HPP MI to allow the user to manually enter the product type.</description>
+        <externalId>false</externalId>
+        <label>Product M</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Offer_Letter_Sent__c  +  Board_Limits__r.Estimated_Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Completion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exception__c</fullName>
+        <externalId>false</externalId>
+        <label>Exception</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>FTV__c</fullName>
+        <externalId>false</externalId>
+        <formula>Finance_Required__c / Property_Value__c</formula>
+        <label>FTV:%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Filed__c</fullName>
+        <externalId>false</externalId>
+        <label>Filed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Period_Years__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Period (Years)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Rate</label>
+        <precision>14</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Required__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Required</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Firm_FSA_Ref__c</fullName>
+        <defaultValue>&quot;229148&quot;</defaultValue>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <label>Firm FSA Ref</label>
+        <length>6</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_name_of_product__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for letters</inlineHelpText>
+        <label>Full name of product</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Type_of_HPP__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Home Purchase Plan</fullName>
+                    <default>false</default>
+                    <label>Home Purchase Plan</label>
+                </value>
+                <value>
+                    <fullName>Buy to Let Purchase Plan</fullName>
+                    <default>false</default>
+                    <label>Buy to Let Purchase Plan</label>
+                </value>
+                <value>
+                    <fullName>Commercial Property Finance</fullName>
+                    <default>false</default>
+                    <label>Commercial Property Finance</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>HPP</controllingFieldValue>
+                <controllingFieldValue>HPS</controllingFieldValue>
+                <controllingFieldValue>GCC</controllingFieldValue>
+                <valueName>Home Purchase Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>BTL</controllingFieldValue>
+                <valueName>Buy to Let Purchase Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>CPF</controllingFieldValue>
+                <valueName>Commercial Property Finance</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Funds_Released__c</fullName>
+        <externalId>false</externalId>
+        <label>Funds Released</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Balance__c</fullName>
+        <externalId>false</externalId>
+        <formula>ABS(Account_with_IBB__r.Available_Balance__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPP Live Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Characteristics__c</fullName>
+        <defaultValue>&quot;D&quot;</defaultValue>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>D: Diminishing Musharaka</inlineHelpText>
+        <label>HPP Characteristics</label>
+        <length>1</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPP_Opportunity_Owner_sales__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is used by Sales to update and report on drawdown performance based upon the channel the lead was received from</description>
+        <externalId>false</externalId>
+        <inlineHelpText>FOR SALES USE ONLY PLEASE REFER TO JIM MADDEN IF REQUIRED</inlineHelpText>
+        <label>HPP Opportunity Owner (sales)</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>HPP_MI1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HPP_Previous_Month_s_Balance__c</fullName>
+        <externalId>false</externalId>
+        <formula>ABS(Account_with_IBB__r.Previous_Month_s_Balance__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPP Previous Month&apos;s Balance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPP_extended_opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HPP extended opportunity</label>
+        <referenceTo>HPP_extended_opportunity__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HomeDetails__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Primary_Customer_Name__r.Home_Details__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HomeDetails</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Home_Buyer_Type__c</fullName>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>F: First time buyer
+M: Home mover                                                                                           
+R: Re-finance
+C: Council/Registered social landlord exercising their right to buy
+O: Other
+N: Not known</inlineHelpText>
+        <label>Home Buyer Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>M</fullName>
+                    <default>false</default>
+                    <label>M</label>
+                </value>
+                <value>
+                    <fullName>R</fullName>
+                    <default>false</default>
+                    <label>R</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>O</fullName>
+                    <default>false</default>
+                    <label>O</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IBBProductID__c</fullName>
+        <externalId>false</externalId>
+        <formula>IBB_Product__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IBBProductID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IBB_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IBB Product</label>
+        <referenceTo>IBB_Product__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IBB_Solicitors_Confirmation__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Solicitors Confirmation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IBB_Solicitors__c</fullName>
+        <externalId>false</externalId>
+        <label>IBB Solicitors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SGH Martineau</fullName>
+                    <default>false</default>
+                    <label>SGH Martineau</label>
+                </value>
+                <value>
+                    <fullName>Needham &amp; James</fullName>
+                    <default>false</default>
+                    <label>Needham &amp; James</label>
+                </value>
+                <value>
+                    <fullName>Todds Murray</fullName>
+                    <default>false</default>
+                    <label>Todds Murray</label>
+                </value>
+                <value>
+                    <fullName>Jeffery Green Russell</fullName>
+                    <default>false</default>
+                    <label>Jeffery Green Russell</label>
+                </value>
+                <value>
+                    <fullName>T</fullName>
+                    <default>false</default>
+                    <label>T</label>
+                </value>
+                <value>
+                    <fullName>Hinesh</fullName>
+                    <default>false</default>
+                    <label>Hinesh</label>
+                </value>
+                <value>
+                    <fullName>Shakespear Putsman</fullName>
+                    <default>false</default>
+                    <label>Shakespear Putsman</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>If_other_please_specify__c</fullName>
+        <externalId>false</externalId>
+        <label>If other, please specify</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Implied_initial_collateral_value__c</fullName>
+        <externalId>false</externalId>
+        <formula>Finance_Required__c/ ( Finance_Required__c/ Property_Value__c )</formula>
+        <label>Implied initial collateral value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Income_Basis__c</fullName>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>S: Single income
+J: Joint income</inlineHelpText>
+        <label>Income_Basis</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>S</fullName>
+                    <default>false</default>
+                    <label>S</label>
+                </value>
+                <value>
+                    <fullName>J</fullName>
+                    <default>false</default>
+                    <label>J</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Income_Verification__c</fullName>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Y: Income evidenced
+N: Income not evidenced</inlineHelpText>
+        <label>Income Verification</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Y</fullName>
+                    <default>true</default>
+                    <label>Y</label>
+                </value>
+                <value>
+                    <fullName>N</fullName>
+                    <default>false</default>
+                    <label>N</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Insurance_figure__c</fullName>
+        <externalId>false</externalId>
+        <label>Insurance figure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IntermediaryID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Intermediary__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IntermediaryID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Intermediary__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Intermediary</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Business_Contacts__c.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>Operations Sharia Approved Contracts Log, Vendors</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Business_Contacts__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_Month_FTV__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPP_Previous_Month_s_Balance__c / Valuation_Figure__c</formula>
+        <label>Last Month FTV</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Lead_provider__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(  Opportunity__r.Location_of_Lead_Provider__c  )</formula>
+        <label>Lead provider</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Title_at_Land_Registry_Update__c</fullName>
+        <externalId>false</externalId>
+        <label>Legal Title at Land Registry Update</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Monthly_Rental_Cover__c</fullName>
+        <externalId>false</externalId>
+        <formula>Anticipated_Monthly_Rental_Income__c  /  BTL_Monthly_Repayment__c</formula>
+        <label>Monthly Rental Cover %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>New_HPP_CAA_Opp__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>New HPP CAA Opp</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>HPP MI (New HPP CAA Opp)</relationshipLabel>
+        <relationshipName>HPP_MI2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Next_Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Next Payment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Applicants__c</fullName>
+        <externalId>false</externalId>
+        <label>No of Applicants</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Number_of_days_with_Underwriting__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND((5 - (CASE(MOD(  Submitted_to_Credit__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)) &lt; (CASE(MOD(   Pre_Val_Dec_1_Date__c   - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0)) ), 
+(((Pre_Val_Dec_1_Date__c  -   Submitted_to_Credit__c ) + 1) &lt; 7)), 
+((CASE(MOD(  Pre_Val_Dec_1_Date__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0)) - (5 - (CASE(MOD(  Submitted_to_Credit__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)))),
+(((FLOOR(((  Pre_Val_Dec_1_Date__c  -  Submitted_to_Credit__c ) - (CASE(MOD(  Submitted_to_Credit__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 6, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0))) / 7)) * 5) +
+(CASE(MOD( Submitted_to_Credit__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 5, 2, 5, 3, 4, 4, 3, 5, 2, 6, 1, 0)) + 
+(CASE(MOD(  Pre_Val_Dec_1_Date__c  - DATE(1900, 1, 6), 7), 0, 0, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 0))))-1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of days with Underwriting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Accepted_to_Drawdown__c</fullName>
+        <externalId>false</externalId>
+        <formula>Actual_Completion_Date__c - Offer_Returned__c</formula>
+        <label>Offer Accepted to Drawdown</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Letter_Reissued_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Days_Since_2nd_Offer_Letter_Sent__c  &lt;= 5 , IMAGE(&quot;/img/samples/flag_green.gif&quot; , &quot;&quot;),
+IF( AND( Days_Since_2nd_Offer_Letter_Sent__c &gt;= 6, Days_Since_2nd_Offer_Letter_Sent__c &lt;= 8)  , IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;&quot;),
+IF(  Days_Since_2nd_Offer_Letter_Sent__c  &gt;= 8, IMAGE(&quot;/img/samples/flag_red.gif&quot; , &quot;&quot;), &quot;&quot;
+)))</formula>
+        <label>Offer Letter Reissued Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Letter_Sent_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Days_Since_Offer_Letter_Sent__c &lt;= 10 , IMAGE(&quot;/img/samples/flag_green.gif&quot; , &quot;&quot;),
+IF( AND(Days_Since_Offer_Letter_Sent__c &gt;= 11, Days_Since_Offer_Letter_Sent__c &lt;= 14)  , IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;&quot;),
+IF( Days_Since_Offer_Letter_Sent__c &gt;= 15  , IMAGE(&quot;/img/samples/flag_red.gif&quot; , &quot;&quot;), &quot;&quot;
+)))</formula>
+        <label>Offer Letter Sent Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Letter Sent</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Printed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Printed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Returned_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Offer_Letter_Sent__c       =  today()+90 , IMAGE(&quot;/img/samples/flag_red.gif&quot; , &quot;&quot;), &quot;&quot;
+)</formula>
+        <label>Offer Returned Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Offer_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Offer Returned</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Sent_to_Offer_Signed_Accepted__c</fullName>
+        <externalId>false</externalId>
+        <formula>Offer_Returned__c - Offer_Letter_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Offer Sent to Offer Signed &amp; Accepted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_hold_since_date__c</fullName>
+        <externalId>false</externalId>
+        <label>On hold since date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>OppGrossIncome__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Gross_Annual_Income__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OppGrossIncome</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>This will show the Opportunity owner for the</inlineHelpText>
+        <label>Opportunity Owner</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>HPP MI (Opportunity Owner)</relationshipLabel>
+        <relationshipName>HPP_MI1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Original_Offer_Sent_to_IBB__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Offer  Sent to IBB Solicitors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Decline_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Overall Decline Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Occupired__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>This will be ticked automatically for HPP and not for BTL.
+It will need to manually be ticked for any other product manually</inlineHelpText>
+        <label>Owner Occupied</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Person__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Person</label>
+        <referenceTo>Person__c</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Auth_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(  Post_Val_Dec_1__c , &quot;Authorised&quot;),  Post_Val_Dec_1_Date__c , null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Post Val Auth Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Auth_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Pre_Val_Dec_2__c, &quot;Authorised&quot;),  Pre_Val_Dec_2_Date__c , null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Post Val Auth Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Dec_1_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Val Dec 1 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Dec_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Val Dec 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Further Information Required</fullName>
+                    <default>false</default>
+                    <label>Further Information Required</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal</fullName>
+                    <default>false</default>
+                    <label>Withdrawal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Dec_2_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Val Dec 2 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Post_Val_Dec_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Val Dec 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Further Information Required</fullName>
+                    <default>false</default>
+                    <label>Further Information Required</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal</fullName>
+                    <default>false</default>
+                    <label>Withdrawal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Postcode__c</fullName>
+        <externalId>false</externalId>
+        <label>Postcode</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Auth_Date_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Pre_Val_Dec_1__c, &quot;Authorised&quot;),  Pre_Val_Dec_1_Date__c, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pre Val Auth Date 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Auth_Date_2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL( Pre_Val_Dec_2__c, &quot;Authorised&quot;), Pre_Val_Dec_2_Date__c, null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pre Val Auth Date 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Dec_1_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre Val Dec 1 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Dec_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre Val Dec 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Further Information Required</fullName>
+                    <default>false</default>
+                    <label>Further Information Required</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal</fullName>
+                    <default>false</default>
+                    <label>Withdrawal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Dec_2_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre Val Dec 2 Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Val_Dec_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre Val Dec 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Further Information Required</fullName>
+                    <default>false</default>
+                    <label>Further Information Required</label>
+                </value>
+                <value>
+                    <fullName>Withdrawal</fullName>
+                    <default>false</default>
+                    <label>Withdrawal</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PriAppEmploymentStatus__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Primary_Customer_Name__r.Employment_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PriAppEmploymentStatus</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Customer_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text (Primary_Customer_Name__r.Salutation) +&quot; &quot; +  Primary_Customer_Name__r.FirstName +&quot; &quot; + Primary_Customer_Name__r.LastName</formula>
+        <label>Primary Customer Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Customer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Customer Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>HPP MI</relationshipLabel>
+        <relationshipName>HPP_MI</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Board_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Board Limit%</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Product_Interested_in__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Interested in</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>HPS</fullName>
+                    <default>false</default>
+                    <label>HPS</label>
+                </value>
+                <value>
+                    <fullName>BTL</fullName>
+                    <default>false</default>
+                    <label>BTL</label>
+                </value>
+                <value>
+                    <fullName>GCC</fullName>
+                    <default>false</default>
+                    <label>GCC</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.IBB_Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Property_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Property Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Finance_v1__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Finance</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New Purchase</fullName>
+                    <default>false</default>
+                    <label>New Purchase</label>
+                </value>
+                <value>
+                    <fullName>Refinance</fullName>
+                    <default>false</default>
+                    <label>Refinance</label>
+                </value>
+                <value>
+                    <fullName>Equity Release</fullName>
+                    <default>false</default>
+                    <label>Equity Release</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ROT_Decision_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>ROT Decision Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>ROT_Decision__c</fullName>
+        <externalId>false</externalId>
+        <label>ROT Decision</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Authorised</fullName>
+                    <default>false</default>
+                    <label>Authorised</label>
+                </value>
+                <value>
+                    <fullName>Declined</fullName>
+                    <default>false</default>
+                    <label>Declined</label>
+                </value>
+                <value>
+                    <fullName>Further Information Required</fullName>
+                    <default>false</default>
+                    <label>Further Information Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ROT_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IMAGE(
+Case(ROT_Decision__c,
+&apos;Authorised&apos;,&quot;/img/samples/flag_green.gif&quot;,
+&apos;Further Information Required&apos;,&quot;/img/samples/flag_yellow.gif&quot;,
+&apos;Declined&apos;,&quot;/img/samples/flag_red.gif&quot;,
+&quot;&quot;
+)
+,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ROT Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ROT_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>ROT Received</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_abandonment__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for abandonment</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Withdrew</fullName>
+                    <default>false</default>
+                    <label>Customer Withdrew</label>
+                </value>
+                <value>
+                    <fullName>Underwriting decision</fullName>
+                    <default>false</default>
+                    <label>Underwriting decision</label>
+                </value>
+                <value>
+                    <fullName>SLA decision(REAT)</fullName>
+                    <default>false</default>
+                    <label>SLA decision(REAT)</label>
+                </value>
+                <value>
+                    <fullName>Resubmitted</fullName>
+                    <default>false</default>
+                    <label>Resubmitted</label>
+                </value>
+                <value>
+                    <fullName>Change of Property</fullName>
+                    <default>false</default>
+                    <label>Change of Property</label>
+                </value>
+                <value>
+                    <fullName>FI not supplied</fullName>
+                    <default>false</default>
+                    <label>FI not supplied</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reason_for_update__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If other, please complete the field below.</inlineHelpText>
+        <label>Reason for update</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Missing documents</fullName>
+                    <default>false</default>
+                    <label>Missing documents</label>
+                </value>
+                <value>
+                    <fullName>Incomplete documents signed</fullName>
+                    <default>false</default>
+                    <label>Incomplete documents signed</label>
+                </value>
+                <value>
+                    <fullName>Change to details</fullName>
+                    <default>false</default>
+                    <label>Change to details</label>
+                </value>
+                <value>
+                    <fullName>Photocopy/not original documents</fullName>
+                    <default>false</default>
+                    <label>Photocopy/not original documents</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region_Board_Limit__c</fullName>
+        <externalId>false</externalId>
+        <label>Region Board Limit</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Rental_Rate_Type__c</fullName>
+        <description>For use with HPP FSA return report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>F: Fixed rate                                
+V: Variable rate                             
+O: Other (Use this when product is not one of the above)</inlineHelpText>
+        <label>Rental Rate Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>V</fullName>
+                    <default>false</default>
+                    <label>V</label>
+                </value>
+                <value>
+                    <fullName>O</fullName>
+                    <default>false</default>
+                    <label>O</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Request_Completion_Date_v1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requested_Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Request Completion Date v1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SDLT_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>SDLT Received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SDLT_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>SDLT Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Second_Credit_Check__c</fullName>
+        <externalId>false</externalId>
+        <label>Second Credit Check</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Customer_Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text (Secondary_Customer_Name__r.Salutation) +&quot; &quot; +  Secondary_Customer_Name__r.FirstName  +&quot; &quot; +  Secondary_Customer_Name__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Secondary Customer Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Secondary_Customer_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Customer Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>HPP MI (Secondary Customer Name)</relationshipLabel>
+        <relationshipName>HPP_MI1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SolicitorLineOneAddress__c</fullName>
+        <externalId>false</externalId>
+        <formula>Solicitor_Flat_No_Home_Name__c +&quot; &quot;+ Solicitor_Street__c</formula>
+        <label>SolicitorLineOneAddress</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Flat_No_Home_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Flat No/Home Name</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Phone_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Phone Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Postcode__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Postcode</label>
+        <length>8</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Street__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Street</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitor_Town_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitor Town/City</label>
+        <length>35</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Solicitors_fees_to_be_paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Solicitors fees to be paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Submission_Quality_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Submission Quality Notes</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Submission_Quality__c</fullName>
+        <externalId>false</externalId>
+        <label>Submission Quality</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Excellent</fullName>
+                    <default>false</default>
+                    <label>Excellent</label>
+                </value>
+                <value>
+                    <fullName>Good</fullName>
+                    <default>false</default>
+                    <label>Good</label>
+                </value>
+                <value>
+                    <fullName>Incomplete</fullName>
+                    <default>false</default>
+                    <label>Incomplete</label>
+                </value>
+                <value>
+                    <fullName>Poor</fullName>
+                    <default>false</default>
+                    <label>Poor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submitted_to_Credit__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Submitted to Credit</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Subsidence__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Subsidence</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TR1_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>TR1 Received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TR1_Sent_to_IBB__c</fullName>
+        <externalId>false</externalId>
+        <label>TR1 Sent to IBB</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Target_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Value</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Time_Since_2nd_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Since 2nd Offer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-30 days</fullName>
+                    <default>false</default>
+                    <label>0-30 days</label>
+                </value>
+                <value>
+                    <fullName>30-60 days</fullName>
+                    <default>false</default>
+                    <label>30-60 days</label>
+                </value>
+                <value>
+                    <fullName>60-90 days</fullName>
+                    <default>false</default>
+                    <label>60-90 days</label>
+                </value>
+                <value>
+                    <fullName>90 plus days</fullName>
+                    <default>false</default>
+                    <label>90 plus days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Time_Since_Offer__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please do not edit or alter.
+This will automatically change based on workflow rules.</inlineHelpText>
+        <label>Time Since Offer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-30 days</fullName>
+                    <default>false</default>
+                    <label>0-30 days</label>
+                </value>
+                <value>
+                    <fullName>30-60 days</fullName>
+                    <default>false</default>
+                    <label>30-60 days</label>
+                </value>
+                <value>
+                    <fullName>60-90 days</fullName>
+                    <default>false</default>
+                    <label>60-90 days</label>
+                </value>
+                <value>
+                    <fullName>90 plus days</fullName>
+                    <default>false</default>
+                    <label>90 plus days</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Gross_Income__c</fullName>
+        <externalId>false</externalId>
+        <formula>Primary_Customer_Name__r.Gross_Annual_Income__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Gross Income</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Finance__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Opportunity__r.Purpose_of_Finance__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Type of Finance</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_HPP__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of HPP</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HPP</fullName>
+                    <default>false</default>
+                    <label>HPP</label>
+                </value>
+                <value>
+                    <fullName>HPS</fullName>
+                    <default>false</default>
+                    <label>HPS</label>
+                </value>
+                <value>
+                    <fullName>BTL</fullName>
+                    <default>false</default>
+                    <label>BTL</label>
+                </value>
+                <value>
+                    <fullName>GCC</fullName>
+                    <default>false</default>
+                    <label>GCC</label>
+                </value>
+                <value>
+                    <fullName>CPF</fullName>
+                    <default>false</default>
+                    <label>CPF</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Underwriter__c</fullName>
+        <externalId>false</externalId>
+        <label>Underwriter</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>David Harris</fullName>
+                    <default>false</default>
+                    <label>David Harris</label>
+                </value>
+                <value>
+                    <fullName>Zahid Butt</fullName>
+                    <default>false</default>
+                    <label>Zahid Butt</label>
+                </value>
+                <value>
+                    <fullName>Peter Battersby</fullName>
+                    <default>false</default>
+                    <label>Peter Battersby</label>
+                </value>
+                <value>
+                    <fullName>Sultan Choudhury</fullName>
+                    <default>false</default>
+                    <label>Sultan Choudhury</label>
+                </value>
+                <value>
+                    <fullName>Credit Committee</fullName>
+                    <default>false</default>
+                    <label>Credit Committee</label>
+                </value>
+                <value>
+                    <fullName>Board</fullName>
+                    <default>false</default>
+                    <label>Board</label>
+                </value>
+                <value>
+                    <fullName>Aasim Ahmed</fullName>
+                    <default>false</default>
+                    <label>Aasim Ahmed</label>
+                </value>
+                <value>
+                    <fullName>Roger Farnsworth</fullName>
+                    <default>false</default>
+                    <label>Roger Farnsworth</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Underwriting_Days__c</fullName>
+        <externalId>false</externalId>
+        <formula>Pre_Val_Dec_1_Date__c - Submitted_to_Credit__c</formula>
+        <label>Days with Underwriting</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Val_FTV__c</fullName>
+        <externalId>false</externalId>
+        <formula>Finance_Required__c /  Valuation_Figure__c</formula>
+        <label>Val FTV%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation Comments</label>
+        <length>5000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Valuation_Fee_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation Fee Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_Figure__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation Figure</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_Instructed__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation Instructed</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Valuation Received</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Valuation_Received_to_Offer_Sent__c</fullName>
+        <externalId>false</externalId>
+        <formula>Offer_Letter_Sent__c  -  Valuation_Received__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Valuation Received to Offer Sent</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>With_Scanning__c</fullName>
+        <externalId>false</externalId>
+        <label>With Scanning</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_IBB_Solicitors_Confirmation__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd IBB Solicitors Confirmation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Offer_Letter_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Offer Letter Returned</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Offer_Letter_Sent_Indicator__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Days_Since_2nd_Offer_Letter_Sent__c  &lt;= 5 , IMAGE(&quot;/img/samples/flag_green.gif&quot; , &quot;&quot;),
+IF( AND(Days_Since_2nd_Offer_Letter_Sent__c &gt;= 6, Days_Since_Offer_Letter_Sent__c &lt;= 8)  , IMAGE(&quot;/img/samples/flag_yellow.gif&quot; , &quot;&quot;),
+IF(Days_Since_2nd_Offer_Letter_Sent__c &gt;= 8  , IMAGE(&quot;/img/samples/flag_red.gif&quot; , &quot;&quot;), &quot;&quot;
+)))</formula>
+        <label>2nd Offer Letter Sent Indicator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X2nd_Offer_Letter_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Offer Letter Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Offer_Printed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Offer Printed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>X2nd_Original_Offer_Sent_to_IBB_Solicito__c</fullName>
+        <externalId>false</externalId>
+        <label>2nd Original Offer Sent to IBB Solicitor</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>HPP MI</label>
+    <nameField>
+        <label>HPP MI</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>HPP MI</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Address_Line_1__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Credit_Stage__c</customTabListAdditionalFields>
+        <lookupFilterFields>Account_with_IBB__c</lookupFilterFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Opportunity__c</lookupFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Primary_Customer_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Address_Line_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Credit_Stage__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CPF_Customer_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Administrator__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Advance_to_sols</fullName>
+        <active>false</active>
+        <errorConditionFormula>Advance_to_Solicitors__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Advance_to_Solicitors__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Archived</fullName>
+        <active>true</active>
+        <errorConditionFormula>Archived__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Archived__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BTL_fee_paid</fullName>
+        <active>true</active>
+        <errorConditionFormula>BTL_Fee_Paid__c &gt; today()</errorConditionFormula>
+        <errorDisplayField>BTL_Fee_Paid__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Customer_update</fullName>
+        <active>true</active>
+        <errorConditionFormula>Customer_Updates__c   &gt; today()</errorConditionFormula>
+        <errorDisplayField>Customer_Updates__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Date_Valuation_Booked_not_in_the_past</fullName>
+        <active>false</active>
+        <description>The valuation booked date cannot be in the past</description>
+        <errorConditionFormula>Date_Valuation_Booked__c  &lt; today()</errorConditionFormula>
+        <errorDisplayField>Date_Valuation_Booked__c</errorDisplayField>
+        <errorMessage>This date cannot be in the past</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Date_funds_sent</fullName>
+        <active>true</active>
+        <errorConditionFormula>Date_Funds_Sent__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Date_Funds_Sent__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Date_redeemed</fullName>
+        <active>true</active>
+        <errorConditionFormula>Date_Redeemed__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Date_Redeemed__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Exception_Field_Completed</fullName>
+        <active>true</active>
+        <errorConditionFormula>and 
+( 
+NOT(ISPICKVAL(Underwriter__c ,&quot;&quot;)), 
+
+ISPICKVAL(Exception__c,&quot;&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>Exception__c</errorDisplayField>
+        <errorMessage>It is mandatory that the exception field is completed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_Returned_not_less_than_Offer_Sent</fullName>
+        <active>true</active>
+        <description>The offer returned date cannot be less than offer sent date</description>
+        <errorConditionFormula>Offer_Returned__c  &lt;  Offer_Letter_Sent__c</errorConditionFormula>
+        <errorDisplayField>Offer_Returned__c</errorDisplayField>
+        <errorMessage>This date cannot be less than the offer sent date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_Sent_equal_more_than_offer_print</fullName>
+        <active>true</active>
+        <description>Offer Letter Sent Date cannot be less than offer printed date</description>
+        <errorConditionFormula>Offer_Letter_Sent__c   &lt;  Offer_Printed_Date__c</errorConditionFormula>
+        <errorDisplayField>Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>This field date cannot be before the offer printed date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_printed_date_less_than_valuation</fullName>
+        <active>true</active>
+        <description>Offer letter sent date cannot be less than the valuation received date</description>
+        <errorConditionFormula>Offer_Letter_Sent__c   &lt;  Valuation_Received__c</errorConditionFormula>
+        <errorDisplayField>Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>Offer printed date and sent cannot be less than the valuation received date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_returned</fullName>
+        <active>true</active>
+        <errorConditionFormula>Offer_Returned__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Offer_Returned__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Overall_decline_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Overall_Decline_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Overall_Decline_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Post_val_dec_1_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Post_Val_Dec_1_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Post_Val_Dec_1_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Post_val_dec_2_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Post_Val_Dec_2_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Post_Val_Dec_2_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ROT_Received</fullName>
+        <active>true</active>
+        <description>The ROT Received date must be completed before ROT Decision and Second Credit Check boxes can be completed</description>
+        <errorConditionFormula>and
+(
+ISBLANK( ROT_Received__c  ),
+
+OR(
+not(ispickval( ROT_Decision__c ,&quot;&quot;  )),
+not(isblank(Second_Credit_Check__c))
+
+)
+
+
+)</errorConditionFormula>
+        <errorDisplayField>ROT_Decision__c</errorDisplayField>
+        <errorMessage>ROT Received Date must be completed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ROT_dec_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>ROT_Decision_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>ROT_Decision_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ROT_recieved</fullName>
+        <active>true</active>
+        <errorConditionFormula>ROT_Received__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>ROT_Received__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Request_Completion_cannot_be_in_the_past</fullName>
+        <active>false</active>
+        <description>The Requested Completion Date cannot be in the past</description>
+        <errorConditionFormula>Requested_Completion_Date__c  &lt; today()</errorConditionFormula>
+        <errorDisplayField>Requested_Completion_Date__c</errorDisplayField>
+        <errorMessage>This date cannot be in the past</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SDLT_Rec</fullName>
+        <active>true</active>
+        <errorConditionFormula>SDLT_Received__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>SDLT_Received__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SDLT_Sent</fullName>
+        <active>true</active>
+        <errorConditionFormula>SDLT_Sent__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>SDLT_Sent__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Submitted_to_credit</fullName>
+        <active>true</active>
+        <errorConditionFormula>Submitted_to_Credit__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Submitted_to_Credit__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1_REC</fullName>
+        <active>true</active>
+        <errorConditionFormula>TR1_Received__c &gt; today()</errorConditionFormula>
+        <errorDisplayField>TR1_Received__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TR1_sent_to_IBB</fullName>
+        <active>true</active>
+        <errorConditionFormula>TR1_Sent_to_IBB__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>TR1_Sent_to_IBB__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>X2nd_Offer_Returned_not_less_offer_sen</fullName>
+        <active>true</active>
+        <description>The 2nd offer letter returned date cannot be less than 2nd offer sent date</description>
+        <errorConditionFormula>X2nd_Offer_Letter_Returned__c   &lt;  X2nd_Offer_Letter_Sent__c</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Letter_Returned__c</errorDisplayField>
+        <errorMessage>This date cannot be less than the 2nd offer letter sent date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>X2nd_Offer_letter_Returned</fullName>
+        <active>true</active>
+        <errorConditionFormula>X2nd_Offer_Letter_Returned__c  &gt;  TODAY()</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Letter_Returned__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>X2nd_offer_letter_printed_not_less_val</fullName>
+        <active>true</active>
+        <description>Offer printed date and sent cannot be less than the valuation received date</description>
+        <errorConditionFormula>X2nd_Offer_Printed_Date__c  &lt;  Valuation_Received__c</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Printed_Date__c</errorDisplayField>
+        <errorMessage>2nd Offer letter printed date and sent cannot be less than the valuation received date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>admin_fee_paid</fullName>
+        <active>true</active>
+        <errorConditionFormula>Admin_Fee_Paid__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Admin_Fee_Paid__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>date_val_fee_paid</fullName>
+        <active>true</active>
+        <errorConditionFormula>Date_Valuation_Fee_Paid__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Date_Valuation_Fee_Paid__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>filed</fullName>
+        <active>true</active>
+        <errorConditionFormula>Filed__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Filed__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>funds_released</fullName>
+        <active>true</active>
+        <errorConditionFormula>Funds_Released__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Funds_Released__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>ibb_sols_conf</fullName>
+        <active>true</active>
+        <errorConditionFormula>IBB_Solicitors_Confirmation__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>IBB_Solicitors_Confirmation__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>offer_letter_printed</fullName>
+        <active>true</active>
+        <description>Offer printed date and sent cannot be less than the valuation received date</description>
+        <errorConditionFormula>Offer_Printed_Date__c  &lt;  Valuation_Received__c</errorConditionFormula>
+        <errorDisplayField>Offer_Printed_Date__c</errorDisplayField>
+        <errorMessage>Offer printed date and sent cannot be less than the valuation received date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>offer_letter_sent</fullName>
+        <active>true</active>
+        <errorConditionFormula>Offer_Letter_Sent__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>offer_printed_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Offer_Printed_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Offer_Printed_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>original_offer_returned_to_sols</fullName>
+        <active>true</active>
+        <errorConditionFormula>Original_Offer_Sent_to_IBB__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Original_Offer_Sent_to_IBB__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>second_credit_check</fullName>
+        <active>true</active>
+        <errorConditionFormula>Second_Credit_Check__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Second_Credit_Check__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>val_instr</fullName>
+        <active>true</active>
+        <errorConditionFormula>Valuation_Instructed__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>Valuation_Instructed__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>val_rec</fullName>
+        <active>true</active>
+        <errorConditionFormula>Valuation_Received__c &gt; today()</errorConditionFormula>
+        <errorDisplayField>Valuation_Received__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>with_scanning</fullName>
+        <active>true</active>
+        <errorConditionFormula>With_Scanning__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>With_Scanning__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>x2nd_Offer_Sent_date_less_valuation</fullName>
+        <active>true</active>
+        <description>Offer letter sent date cannot be less than the valuation received date</description>
+        <errorConditionFormula>X2nd_Offer_Letter_Sent__c   &lt;  Valuation_Received__c</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>2nd Offer Letter Sent date cannot be less than the valuation received date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>x2nd_Offer_Sent_not_less_Offer_Printed</fullName>
+        <active>true</active>
+        <description>Offer Letter Sent Date cannot be less than offer printed date</description>
+        <errorConditionFormula>X2nd_Offer_Letter_Sent__c    &lt;   X2nd_Offer_Printed_Date__c</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>This field date cannot be before the  2nd offer printed date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>x2nd_offer_letter_printed_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>X2nd_Offer_Printed_Date__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Printed_Date__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>x2nd_offer_letter_sent</fullName>
+        <active>true</active>
+        <errorConditionFormula>X2nd_Offer_Letter_Sent__c  &gt; today ()</errorConditionFormula>
+        <errorDisplayField>X2nd_Offer_Letter_Sent__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>x2nd_original_offer_sent_to_sols</fullName>
+        <active>true</active>
+        <errorConditionFormula>X2nd_Original_Offer_Sent_to_IBB_Solicito__c  &gt; today()</errorConditionFormula>
+        <errorDisplayField>X2nd_Original_Offer_Sent_to_IBB_Solicito__c</errorDisplayField>
+        <errorMessage>This date field cannot be in the future.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Abandonment_Letters</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Abandonment Letters</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.appextremes.com/apps/Conga/Composer.aspx
+?SessionId={!API.Session_ID}
+&amp;ServerUrl={!API.Partner_Server_URL_210}
+&amp;Id={!HPP_MI__c.Id}
+&amp;Reportid=00OD0000005pktE</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Days_Since_Offer_Letter_Sent</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Days Since Offer Letter Sent</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FELA</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Funds_Request_Daily</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Funds Request Daily</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FEKH</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Offer_Letter_Pending</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Offer Letter Pending</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FELA</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Pipeline_Overview</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Pipeline Overview</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FEJn</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Valuation_Instructed_and_not_received</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Valuation Instructed and not received</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FEHh</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Valuation_Pending</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Valuation Pending</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FEMI</url>
+    </webLinks>
+    <webLinks>
+        <fullName>X90_Day_Warning</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>90 Day Warning</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://eu1.salesforce.com/00OD0000005FEM3</url>
+    </webLinks>
+</CustomObject>

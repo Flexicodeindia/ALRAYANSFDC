@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>C00203</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ConfigDataType__c</fullName>
+        <description>C00203</description>
+        <externalId>false</externalId>
+        <label>ConfigDataType</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ConfigValue__c</fullName>
+        <description>C00203</description>
+        <externalId>false</externalId>
+        <label>ConfigValue</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>HPPConfigSettings</label>
+    <visibility>Protected</visibility>
+</CustomObject>

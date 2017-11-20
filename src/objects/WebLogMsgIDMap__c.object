@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Object to store the mapping between XML message type and the object ID it needs to use when processing buffered messages.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ID_Field_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>ID Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>XML_Message_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>XML Message Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Web Log Message ID Mapping</label>
+    <visibility>Protected</visibility>
+</CustomObject>

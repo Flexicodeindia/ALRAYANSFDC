@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Instruction_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Instruction Description</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Processed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Staff_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Staff Member</label>
+        <referenceTo>Staff_Member__c</referenceTo>
+        <relationshipLabel>Instructions for HR</relationshipLabel>
+        <relationshipName>Instructions_for_HR</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_change__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of change</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Address change</fullName>
+                    <default>false</default>
+                    <label>Address change</label>
+                </value>
+                <value>
+                    <fullName>Change of role</fullName>
+                    <default>false</default>
+                    <label>Change of role</label>
+                </value>
+                <value>
+                    <fullName>Change of department</fullName>
+                    <default>false</default>
+                    <label>Change of department</label>
+                </value>
+                <value>
+                    <fullName>Change of pension contribution</fullName>
+                    <default>false</default>
+                    <label>Change of pension contribution</label>
+                </value>
+                <value>
+                    <fullName>Salary increase</fullName>
+                    <default>false</default>
+                    <label>Salary increase</label>
+                </value>
+                <value>
+                    <fullName>Bank account change</fullName>
+                    <default>false</default>
+                    <label>Bank account change</label>
+                </value>
+                <value>
+                    <fullName>Payment of Directors fees</fullName>
+                    <default>false</default>
+                    <label>Payment of Directors fees</label>
+                </value>
+                <value>
+                    <fullName>Childcare vouchers change</fullName>
+                    <default>false</default>
+                    <label>Childcare vouchers change</label>
+                </value>
+                <value>
+                    <fullName>Add Car allowance</fullName>
+                    <default>false</default>
+                    <label>Add Car allowance</label>
+                </value>
+                <value>
+                    <fullName>Add Temporary Allowance</fullName>
+                    <default>false</default>
+                    <label>Add Temporary Allowance</label>
+                </value>
+                <value>
+                    <fullName>Change to Hours</fullName>
+                    <default>false</default>
+                    <label>Change to Hours</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>With_effect_from__c</fullName>
+        <externalId>false</externalId>
+        <label>With effect from</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Instruction for HR</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>HRI{0000}</displayFormat>
+        <label>Instruction for HR Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Instructions for HR</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

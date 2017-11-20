@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Events_Opened__c</fullName>
+        <externalId>false</externalId>
+        <label>Events Opened</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Event Rewinds</relationshipLabel>
+        <relationshipName>Event_Rewinds</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>RewindType__c</fullName>
+        <externalId>false</externalId>
+        <label>RewindType</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre Submission</fullName>
+                    <default>false</default>
+                    <label>Pre Submission</label>
+                </value>
+                <value>
+                    <fullName>Post Submission</fullName>
+                    <default>false</default>
+                    <label>Post Submission</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Rewind_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewind Comments</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Rewind_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewind Reason</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Change of finance amount</fullName>
+                    <default>false</default>
+                    <label>Change of finance amount</label>
+                </value>
+                <value>
+                    <fullName>Change of term</fullName>
+                    <default>false</default>
+                    <label>Change of term</label>
+                </value>
+                <value>
+                    <fullName>Missed information/addresses taken incorrectly and amended</fullName>
+                    <default>false</default>
+                    <label>Missed information/addresses taken incorrectly and amended</label>
+                </value>
+                <value>
+                    <fullName>Re-key of Budget Planner following return of application form</fullName>
+                    <default>false</default>
+                    <label>Re-key of Budget Planner following return of application form</label>
+                </value>
+                <value>
+                    <fullName>Re-issue of Offer Letter</fullName>
+                    <default>false</default>
+                    <label>Re-issue of Offer Letter</label>
+                </value>
+                <value>
+                    <fullName>Product Switch Rewind</fullName>
+                    <default>false</default>
+                    <label>Product Switch Rewind</label>
+                </value>
+                <value>
+                    <fullName>Product suitability needs to be reviewed</fullName>
+                    <default>false</default>
+                    <label>Product suitability needs to be reviewed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RewoundBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>RewoundBy</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Event_Rewinds</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RewoundDate__c</fullName>
+        <externalId>false</externalId>
+        <label>RewoundDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Rewound_From_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewound From Stage</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rewound_From_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewound From Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rewound_To_Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewound To Stage</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rewound_To_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Rewound To Status</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rewound_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Rewound To</label>
+        <referenceTo>Event__c</referenceTo>
+        <relationshipLabel>Event Rewinds</relationshipLabel>
+        <relationshipName>Event_Rewinds</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Event Rewind</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RewoundBy__c</columns>
+        <columns>RewoundDate__c</columns>
+        <columns>RewindType__c</columns>
+        <columns>Rewind_Reason__c</columns>
+        <columns>Rewind_Comments__c</columns>
+        <columns>Rewound_From_Stage__c</columns>
+        <columns>Rewound_To_Stage__c</columns>
+        <columns>Rewound_From_Status__c</columns>
+        <columns>Rewound_To_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>RW-{00000}</displayFormat>
+        <label>Event Rewind Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Event Rewinds</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <webLinks>
+        <fullName>Show_field_changes</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>ISO-8859-1</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Show field changes</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://appsrv01:86/rewind/re/{!CASESAFEID(Event_Rewind__c.Id)}</url>
+    </webLinks>
+</CustomObject>

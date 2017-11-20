@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>External__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick if this pick list value is to show on external CAA</inlineHelpText>
+        <label>External</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Field__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the field tag in the code</inlineHelpText>
+        <label>Field</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Internal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Tick if this pick list value is to show on internal CAA</inlineHelpText>
+        <label>Internal</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsEuroCountry__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This is only to be used for the nationality pick list values for the EU validation</inlineHelpText>
+        <label>IsEuroCountry</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsYPSA__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Type YES if this value is only applicable for a young person (if the question is asked). Type NO is this is only applicable for an adult. Leave blank if this should show for both an adult and a young person.</inlineHelpText>
+        <label>IsYPSA</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Decides the order in which the pick list value is shown on screen</inlineHelpText>
+        <label>Order</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Text__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How the pick list value displays on screen</inlineHelpText>
+        <label>Text</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Value__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>The value which saves in the Salesforce record (e.g. account)</inlineHelpText>
+        <label>Value</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>CAA Picklists</label>
+    <visibility>Protected</visibility>
+</CustomObject>
